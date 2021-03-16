@@ -87,10 +87,10 @@
 
 ## Researchers & Others Resources
 
-- https://labs.f-secure.com/
-- https://3gstudent.github.io/3gstudent.github.io/：有很多从渗透测试角度审视的Windows下提权方法
-- https://github.com/3gstudent/Pentest-and-Development-Tips：列举了Windows下渗透测试的Tips
-- https://r00tk1ts.github.io/
+- https://labs.f-secure.com
+- https://3gstudent.github.io/3gstudent.github.io:有很多从渗透测试角度审视的Windows下提权方法
+- https://github.com/3gstudent/Pentest-and-Development-Tips:列举了Windows下渗透测试的Tips
+- https://r00tk1ts.github.io
 - https://guide.offsecnewbie.com: 见过的最全面的总结
 - https://github.com/ExpLife0011/awesome-windows-kernel-security-development
 - https://github.com/sam-b/windows_kernel_resources
