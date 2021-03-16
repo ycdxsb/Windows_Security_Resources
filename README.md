@@ -1,24 +1,39 @@
 # Windows_Kernel_Resources
 
-## Security Patch
+## Patch Analyse
 
-- [Extracting and Diffing Windows Patches in 2020](https://wumb0.in/extracting-and-diffing-ms-patches-in-2020.html)：通过Windows更新提取和分析补丁
+- [Extracting and Diffing Windows Patches in 2020](https://wumb0.in/extracting-and-diffing-ms-patches-in-2020.html)（blog link）：通过Windows更新提取和分析补丁，含相应脚本
+
+
+
+## Token Use
+
+- [windows-privilege-abuse-auditing-detection-and-defense](https://medium.com/palantir/windows-privilege-abuse-auditing-detection-and-defense-3078a403d74e)(blog link)：windows token利用
+- [Abusing Token Privileges For EoP](https://github.com/hatRiot/token-priv)(paper and tool link)：windows token 利用
+
+
+
+## Windows Kernel Exploit
+
+- [HackSysExtremeVulnerableDriver](https://github.com/hacksysteam/HackSysExtremeVulnerableDriver)(download link)：windows内核利用学习的经典项目
+
+- [HackSysExtremeVulnerableDriver HEAD tutorail](https://www.fuzzysecurity.com/tutorials.html)(blog link)：HEAD利用的教程
 
 
 
 ## analyse tools
 
-- [Windbg](https://docs.microsoft.com/zh-cn/windows-hardware/drivers/debugger/debugger-download-tools)
+- [Windbg](https://docs.microsoft.com/zh-cn/windows-hardware/drivers/debugger/debugger-download-tools)(download link)：windows kernel调试工具
+- [oleview](https://github.com/tyranid/oleviewdotnet)(download link)
+- [process monitor](https://docs.microsoft.com/en-us/sysinternals/downloads/procmon)(download link)
+- [Windows-Kernel-Explorer](https://github.com/AxtMueller/Windows-Kernel-Explorer/)(download link)
+- [sandbox-attacksurface-analysis-tools](https://github.com/googleprojectzero/sandbox-attacksurface-analysis-tools)(download link)
+- [SystemExplorer](https://github.com/zodiacon/SystemExplorer)(download link)
+- [ProcessHacker](https://processhacker.sourceforge.io/downloads.php)(download link)
 
-- [oleview](https://github.com/tyranid/oleviewdotnet)
+## Attack tools
 
-- [process monitor](https://docs.microsoft.com/en-us/sysinternals/downloads/procmon)
 
-- [Windows-Kernel-Explorer](https://github.com/AxtMueller/Windows-Kernel-Explorer/)
-
-- [sandbox-attacksurface-analysis-tools](https://github.com/googleprojectzero/sandbox-attacksurface-analysis-tools)
-
-  
 
 ## windows books
 
@@ -28,13 +43,6 @@
 - 《Windows驱动开发技术详解》
 - 《深入解析Windows操作系统(第6版)》上下册
 
+## Research Labs
 
-
-## Others
-
-- [windows-privilege-abuse-auditing-detection-and-defense](https://medium.com/palantir/windows-privilege-abuse-auditing-detection-and-defense-3078a403d74e)：windows token提权和防御
-
-- [Abusing Token Privileges For EoP](https://github.com/hatRiot/token-priv)：windows token 提权和防御的github repo
-
-  
-
+- https://labs.f-secure.com/
