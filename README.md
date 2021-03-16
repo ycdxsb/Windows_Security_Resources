@@ -2,7 +2,7 @@
 
 ## Patch Analyse
 
-- 【Extracting and Diffing Windows Patches in 2020】： 通过Windows更新提取和分析补丁，含相应脚本
+- 【Extracting and Diffing Windows Patches in 2020】： 通过Windows更新提取和分析补丁（含代码）
   -  [English Blog](https://wumb0.in/extracting-and-diffing-ms-patches-in-2020.html)
 
 
@@ -21,7 +21,7 @@
 
 - 【windows-privilege-abuse-auditing-detection-and-defense】：windows token利用
   - [English Blog](https://medium.com/palantir/windows-privilege-abuse-auditing-detection-and-defense-3078a403d74e)
-- 【Abusing Token Privileges For EoP】：windows token 利用文章（含工具）
+- 【Abusing Token Privileges For EoP】：windows token 利用文章（含代码）
   - [English Paper](https://github.com/hatRiot/token-priv/blob/master/abusing_token_eop_1.0.txt)
   - [download](https://github.com/hatRiot/token-priv)
 
@@ -30,6 +30,16 @@
 - 【Bitmap轶事：Windows 10纪念版后的GDI对象泄露】
   - [中文博客](https://labs.mwrinfosecurity.com/blog/a-tale-of-bitmaps/) 
   - [English Blog](https://labs.mwrinfosecurity.com/blog/a-tale-of-bitmaps/)
+
+### Vulerables and Exploits
+
+- https://github.com/SecWiki/windows-kernel-exploits
+
+- https://github.com/abatchy17/WindowsExploits
+
+- https://github.com/Ascotbe/Kernelhub
+
+  
 
 ### Conclusion
 
@@ -66,13 +76,22 @@
 - 《Windows驱动开发技术详解》
 - 《深入解析Windows操作系统(第6版)》上下册
 
+## Useful Source Code
+
+- 【The Windows Research Kernel AKA WRK】
+  - [download](https://github.com/zhuhuibeishadiao/ntoskrnl)
+- 【ReactOS：A free Windows-compatible Operating System】
+  - [download](https://github.com/reactos/reactos)
 
 
-## Blogs & Others
+
+## Researchers & Others Resources
 
 - https://labs.f-secure.com/
 - https://3gstudent.github.io/3gstudent.github.io/：有很多从渗透测试角度审视的Windows下提权方法
 - https://github.com/3gstudent/Pentest-and-Development-Tips：列举了Windows下渗透测试的Tips
 - https://r00tk1ts.github.io/
 - https://guide.offsecnewbie.com: 见过的最全面的总结
+- https://github.com/ExpLife0011/awesome-windows-kernel-security-development
+- https://github.com/sam-b/windows_kernel_resources
 
