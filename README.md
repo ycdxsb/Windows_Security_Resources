@@ -18,6 +18,7 @@
 - [HackSysExtremeVulnerableDriver](https://github.com/hacksysteam/HackSysExtremeVulnerableDriver)(download link)：windows内核利用学习的经典项目
 
 - [HackSysExtremeVulnerableDriver HEAD tutorail](https://www.fuzzysecurity.com/tutorials.html)(blog link)：HEAD利用的教程
+- Bitmap轶事：Windows 10纪念版后的GDI对象泄露(blog link)：[Chinese](https://labs.mwrinfosecurity.com/blog/a-tale-of-bitmaps/) | [English](https://labs.mwrinfosecurity.com/blog/a-tale-of-bitmaps/)
 
 
 
@@ -43,6 +44,11 @@
 - 《Windows驱动开发技术详解》
 - 《深入解析Windows操作系统(第6版)》上下册
 
-## Research Labs
+
+
+## Blogs & Others
 
 - https://labs.f-secure.com/
+- https://3gstudent.github.io/3gstudent.github.io/：有很多渗透角度的Windows下提权方法
+- https://github.com/3gstudent/Pentest-and-Development-Tips：Windows下渗透测试Tips
+
