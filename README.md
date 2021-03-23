@@ -17,10 +17,24 @@
 - 【ReactOS：A free Windows-compatible Operating System】
   - [download](https://github.com/reactos/reactos)
 
+
+
 ### Windows Iso
 
 - https://msdn.itellyou.cn/
 - https://next.itellyou.cn/
+
+
+
+
+
+## CheatSheet
+
+- 查看系统信息和补丁信息：
+  - `systeminfo`
+  - `wmic qfe list full`
+  - 输出html格式：`wmic qfe list full /format:htable >C:\Temp\hotfixes.htm `
+- 
 
 ## Windows Kernel Exploit
 
@@ -31,6 +45,13 @@
 
 - 【HackSysExtremeVulnerableDriver HEAD tutorail】：HEAD驱动利用教程
   - [English Blog](https://www.fuzzysecurity.com/tutorials.html)
+
+
+
+### Update KB info
+
+- https://msrc.microsoft.com/update-guide/
+- 
 
 ### Token Use
 
@@ -52,6 +73,8 @@
 - https://github.com/abatchy17/WindowsExploits
 - https://github.com/Ascotbe/Kernelhub
 - https://github.com/WindowsExploits/Exploits
+- https://github.com/Heptagrams/Heptagram/tree/master/Windows/Elevation
+- https://bugs.hacking8.com/tiquan/：根据KB补丁号或者systeminfo查找对应的exp
 
 ### Conclusion
 
@@ -69,6 +92,8 @@
 
 - 【Windbg】：windows kernel调试工具
   - [download](https://docs.microsoft.com/zh-cn/windows-hardware/drivers/debugger/debugger-download-tools)
+- 【accesschk】
+  - [download](https://docs.microsoft.com/en-us/sysinternals/downloads/accesschk)
 - 【oleview】
   - [download](https://github.com/tyranid/oleviewdotnet)
 
@@ -96,4 +121,5 @@
 - https://guide.offsecnewbie.com: 见过的最全面的总结
 - https://github.com/ExpLife0011/awesome-windows-kernel-security-development
 - https://github.com/sam-b/windows_kernel_resources
+- https://github.com/itm4n：itm4n大佬，有很多windows分析工具，博客里也有很多干货
 
