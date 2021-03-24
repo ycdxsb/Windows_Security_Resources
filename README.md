@@ -17,16 +17,18 @@
 - 【ReactOS：A free Windows-compatible Operating System】
   - [download](https://github.com/reactos/reactos)
 
-
-
 ### Windows Iso
 
 - https://msdn.itellyou.cn/
 - https://next.itellyou.cn/
 
+### Blogs
 
+- 【关键的windows内核数据结构一览(上)】
+  - [中文博客](https://r00tk1ts.github.io/2018/01/08/%E5%85%B3%E9%94%AE%E7%9A%84Windows%E5%86%85%E6%A0%B8%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%80%E8%A7%88%EF%BC%88%E4%B8%8A%EF%BC%89/)
 
-
+- 【关键的windows内核数据结构一览(下)】
+  - [中文博客](https://r00tk1ts.github.io/2018/01/14/%E5%85%B3%E9%94%AE%E7%9A%84Windows%E5%86%85%E6%A0%B8%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%80%E8%A7%88%EF%BC%88%E4%B8%8B%EF%BC%89/)
 
 ## CheatSheet
 
@@ -51,9 +53,8 @@
 ### Update KB info
 
 - https://msrc.microsoft.com/update-guide/
-- 
 
-### Token Use
+### Token Abuse
 
 - 【windows-privilege-abuse-auditing-detection-and-defense】：windows token利用
   - [English Blog](https://medium.com/palantir/windows-privilege-abuse-auditing-detection-and-defense-3078a403d74e)
@@ -61,11 +62,16 @@
   - [English Paper](https://github.com/hatRiot/token-priv/blob/master/abusing_token_eop_1.0.txt)
   - [download](https://github.com/hatRiot/token-priv)
 
-### GDI Use
+### GDI Abuse
 
 - 【Bitmap轶事：Windows 10纪念版后的GDI对象泄露】
   - [中文博客](https://r00tk1ts.github.io/2018/03/21/Bitmaps%E8%BD%B6%E4%BA%8B%EF%BC%9AWindows%2010%E7%BA%AA%E5%BF%B5%E7%89%88%E5%89%8D%E7%9A%84GDI%E5%AF%B9%E8%B1%A1%E6%B3%84%E9%9C%B2/) 
   - [English Blog](https://labs.mwrinfosecurity.com/blog/a-tale-of-bitmaps/)
+
+- 【exp in GDI】
+  - [中文pdf](http://www.vxjump.net/files/seccon/exp-in-gdi.pdf)
+
+
 
 ### Vulerables and Exploits
 
@@ -76,6 +82,13 @@
 - https://github.com/WindowsExploits/Exploits
 - https://github.com/Heptagrams/Heptagram/tree/master/Windows/Elevation
 - https://bugs.hacking8.com/tiquan/：根据KB补丁号或者systeminfo查找对应的exp
+
+
+
+### Talks and Workstation
+
+- 【Level Up! Practical Windows Privilege Escalation - Andrew Smith】
+  - [Youtube](https://www.youtube.com/watch?v=PC_iMqiuIRQ)
 
 ### Conclusion
 
@@ -93,8 +106,10 @@
 
 - 【Windbg】：windows kernel调试工具
   - [download](https://docs.microsoft.com/zh-cn/windows-hardware/drivers/debugger/debugger-download-tools)
-- 【Windbg Preview】
-- 【OSRLoader】：添加卸载驱动工具
+- 【Windbg Preview】：windows kernel调试工具(美观)
+- 【dbgview】：windows驱动调试工具，捕获调试信息，用于Guest
+  - [download](https://docs.microsoft.com/en-us/sysinternals/downloads/debugview)
+- 【OSRLoader】：驱动管理工具（安装，启动，暂停，卸载）
   - [download](https://www.osronline.com/article.cfm%5earticle=157.htm)
 - 【accesschk】
   - [download](https://docs.microsoft.com/en-us/sysinternals/downloads/accesschk)
@@ -120,9 +135,12 @@
 - https://labs.f-secure.com
 - https://3gstudent.github.io/3gstudent.github.io:有很多从渗透测试角度审视的Windows下提权方法
 - https://github.com/3gstudent/Pentest-and-Development-Tips:列举了Windows下渗透测试的Tips
-- https://r00tk1ts.github.io
+- https://r00tk1ts.github.io/tags/windows-kernel/
 - https://guide.offsecnewbie.com: 见过的最全面的总结
 - https://github.com/ExpLife0011/awesome-windows-kernel-security-development
 - https://github.com/sam-b/windows_kernel_resources
 - https://github.com/itm4n：itm4n大佬，有很多windows分析工具，博客里也有很多干货
+- https://github.com/sailay1996/awesome_windows_logical_bugs
+- https://github.com/topics/windows-privilege-escalation
+- http://www.fuzzysecurity.com/tutorials/16.html
 
