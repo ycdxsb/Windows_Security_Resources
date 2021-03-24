@@ -93,11 +93,13 @@
 
 - 【Windbg】：windows kernel调试工具
   - [download](https://docs.microsoft.com/zh-cn/windows-hardware/drivers/debugger/debugger-download-tools)
+- 【Windbg Preview】
+- 【OSRLoader】：添加卸载驱动工具
+  - [download](https://www.osronline.com/article.cfm%5earticle=157.htm)
 - 【accesschk】
   - [download](https://docs.microsoft.com/en-us/sysinternals/downloads/accesschk)
 - 【oleview】
   - [download](https://github.com/tyranid/oleviewdotnet)
-
 - 【process monitor】
   - [download](https://docs.microsoft.com/en-us/sysinternals/downloads/procmon)
 - 【Windows-Kernel-Explorer】
