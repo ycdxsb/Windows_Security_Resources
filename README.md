@@ -64,7 +64,7 @@
 ### GDI Use
 
 - 【Bitmap轶事：Windows 10纪念版后的GDI对象泄露】
-  - [中文博客](https://labs.mwrinfosecurity.com/blog/a-tale-of-bitmaps/) 
+  - [中文博客](https://r00tk1ts.github.io/2018/03/21/Bitmaps%E8%BD%B6%E4%BA%8B%EF%BC%9AWindows%2010%E7%BA%AA%E5%BF%B5%E7%89%88%E5%89%8D%E7%9A%84GDI%E5%AF%B9%E8%B1%A1%E6%B3%84%E9%9C%B2/) 
   - [English Blog](https://labs.mwrinfosecurity.com/blog/a-tale-of-bitmaps/)
 
 ### Vulerables and Exploits
