@@ -70,6 +70,7 @@
 ### Vulerables and Exploits
 
 - https://github.com/SecWiki/windows-kernel-exploits
+- https://github.com/nu11secur1ty/Windows10Exploits
 - https://github.com/abatchy17/WindowsExploits
 - https://github.com/Ascotbe/Kernelhub
 - https://github.com/WindowsExploits/Exploits
