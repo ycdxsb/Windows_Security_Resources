@@ -111,9 +111,6 @@
 
 - 【windows-privilege-abuse-auditing-detection-and-defense】：windows token利用
   - [English Blog](https://medium.com/palantir/windows-privilege-abuse-auditing-detection-and-defense-3078a403d74e)
-- 【Abusing Token Privileges For EoP】：windows token 利用文章（含代码）
-  - [English Paper](https://github.com/hatRiot/token-priv/blob/master/abusing_token_eop_1.0.txt)
-  - [download](https://github.com/hatRiot/token-priv)
 
 ### GDI Abuse
 
@@ -123,6 +120,16 @@
 
 - 【exp in GDI】
   - [中文pdf](http://www.vxjump.net/files/seccon/exp-in-gdi.pdf)
+
+
+
+### Paper
+
+- 【Abusing Token Privileges For EoP】：windows token 利用文章（含代码）
+  - [Paper](https://github.com/hatRiot/token-priv/blob/master/abusing_token_eop_1.0.txt)
+  - [Code](https://github.com/hatRiot/token-priv)
+
+
 
 ## Other Resources
 
