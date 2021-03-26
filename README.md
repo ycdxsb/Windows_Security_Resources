@@ -60,10 +60,17 @@
 
 - 【Windbg】：windows kernel调试工具
   - [download](https://docs.microsoft.com/zh-cn/windows-hardware/drivers/debugger/debugger-download-tools)
+  - [getting-started-with-windows-debugging](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/getting-started-with-windows-debugging)
+  - [Getting Started with WinDbg (User-Mode)](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/getting-started-with-windbg)
+  - [Getting Started with WinDbg (Kernel-Mode)](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/getting-started-with-windbg--kernel-mode-)
 - 【Windbg Preview】：windows kernel调试工具(美观)
   - [download](https://www.microsoft.com/en-us/p/windbg-preview/)
+  - [Debugging Using WinDbg Preview](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/debugging-using-windbg-preview)
 - 【dbgview】：windows调试工具，捕获调试信息，用于Guest
   - [download](https://docs.microsoft.com/en-us/sysinternals/downloads/debugview)
+  - [Document help DebugView](https://documentation.help/DebugView/)
+  - [Using DbgView To Capture Debug Traces From An Application](http://nutsaboutnets.com/faqs/dbgview/)
+  - [Using DebugView to see debug output in real-time](https://tedgustaf.com/blog/2011/use-debugview-to-view-debug-output-from-asp-net-web-application/)
 - 【OSRLoader】：驱动管理工具（安装，启动，暂停，卸载）
   - [download](https://www.osronline.com/article.cfm%5earticle=157.htm)
 - 【VirtualKD】：双机调试工具，较老，不支持最新版VMWare
