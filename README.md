@@ -17,18 +17,20 @@
 - 【ReactOS：A free Windows-compatible Operating System】
   - [download](https://github.com/reactos/reactos)
 
-### Windows Iso
+### Windows iso
 
 - https://msdn.itellyou.cn/
 - https://next.itellyou.cn/
 
-### Blogs
+### Windows Structure
 
 - 【关键的windows内核数据结构一览(上)】
   - [中文博客](https://r00tk1ts.github.io/2018/01/08/%E5%85%B3%E9%94%AE%E7%9A%84Windows%E5%86%85%E6%A0%B8%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%80%E8%A7%88%EF%BC%88%E4%B8%8A%EF%BC%89/)
 
 - 【关键的windows内核数据结构一览(下)】
   - [中文博客](https://r00tk1ts.github.io/2018/01/14/%E5%85%B3%E9%94%AE%E7%9A%84Windows%E5%86%85%E6%A0%B8%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%80%E8%A7%88%EF%BC%88%E4%B8%8B%EF%BC%89/)
+- 【Catalog of key Windows kernel data structures】
+  - [English Blog](https://codemachine.com/articles/kernel_structures.html)
 
 ## CheatSheet
 
@@ -40,19 +42,25 @@
 
 ## Windows Kernel Exploit
 
+### Update KB info
+
+- https://msrc.microsoft.com/update-guide/
+
+
+
 ### Learn Exploit
 
 - 【HackSysExtremeVulnerableDriver】：windows内核利用技术学习项目
   - [download](https://github.com/hacksysteam/HackSysExtremeVulnerableDriver)
-
 - 【HackSysExtremeVulnerableDriver HEAD tutorail】：HEAD驱动利用教程
   - [English Blog](https://www.fuzzysecurity.com/tutorials.html)
+- https://rootkits.xyz/blog/
+- https://bbs.pediy.com/thread-252775.htm
+
+- 【HEVD Exploit】：
+  - https://github.com/h0mbre/Windows-Exploits/tree/162dfd45d284556b47739835116a962177b243b0/Exploit-Code/HEVD
 
 
-
-### Update KB info
-
-- https://msrc.microsoft.com/update-guide/
 
 ### Token Abuse
 
@@ -107,10 +115,15 @@
 - 【Windbg】：windows kernel调试工具
   - [download](https://docs.microsoft.com/zh-cn/windows-hardware/drivers/debugger/debugger-download-tools)
 - 【Windbg Preview】：windows kernel调试工具(美观)
-- 【dbgview】：windows驱动调试工具，捕获调试信息，用于Guest
+  - [download](https://www.microsoft.com/en-us/p/windbg-preview/)
+- 【dbgview】：windows调试工具，捕获调试信息，用于Guest
   - [download](https://docs.microsoft.com/en-us/sysinternals/downloads/debugview)
 - 【OSRLoader】：驱动管理工具（安装，启动，暂停，卸载）
   - [download](https://www.osronline.com/article.cfm%5earticle=157.htm)
+- 【VirtualKD】：双机调试工具
+  - [download](https://sysprogs.com/legacy/virtualkd/)
+- 【VirtualKD-Redux】：双机调试工具，支持最新版本VMWare
+  - [download](https://github.com/4d61726b/VirtualKD-Redux)
 - 【accesschk】
   - [download](https://docs.microsoft.com/en-us/sysinternals/downloads/accesschk)
 - 【oleview】
@@ -125,10 +138,6 @@
   - [download](https://github.com/zodiacon/SystemExplorer)
 - 【ProcessHacker】
   - [download](https://processhacker.sourceforge.io/downloads.php)
-
-## Pentest
-
-
 
 ## Others Resources
 
