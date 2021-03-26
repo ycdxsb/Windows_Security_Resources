@@ -107,9 +107,6 @@ https://github.com/h0mbre/Windows-Exploits/tree/162dfd45d284556b47739835116a9621
 
 - 【HackSysExtremeVulnerableDriver】：windows内核利用技术学习项目
   - [download](https://github.com/hacksysteam/HackSysExtremeVulnerableDriver)
-- 【HackSysExtremeVulnerableDriver HEAD tutorail】：HEAD驱动利用教程
-  - [English Blog](https://www.fuzzysecurity.com/tutorials.html)
-
 - 【HEVD StackOverflow】：
 
   - [win7sp1 x86 python2.7 exp](https://github.com/h0mbre/Windows-Exploits/blob/162dfd45d284556b47739835116a962177b243b0/Exploit-Code/HEVD/x86_StackOverflow.py)
