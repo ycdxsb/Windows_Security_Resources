@@ -1,5 +1,7 @@
 # Windows_Kernel_Resources
 
+> 在学习Windows kernel时搜集到的资源列表
+
 ## Learn Windows
 
 ### Books
@@ -34,10 +36,14 @@
 
 ## Windows Kernel Exploit
 
-### KB info
+### KB and Patch
 
 - https://msrc.microsoft.com/update-guide/：官方KB对应补丁信息
 - https://bugs.hacking8.com/tiquan/：根据KB补丁号或者systeminfo查找对应的exp
+- 【Extracting and Diffing Windows Patches in 2020】： 通过Windows更新提取和分析补丁（含代码）
+  -  [English Blog](https://wumb0.in/extracting-and-diffing-ms-patches-in-2020.html)
+
+
 
 ### Exploits
 
@@ -48,14 +54,44 @@
 - https://github.com/WindowsExploits/Exploits
 - https://github.com/Heptagrams/Heptagram/tree/master/Windows/Elevation
 
-### CVE
 
 
+### Tools & Docs
 
-### Conclusion
+- 【Windbg】：windows kernel调试工具
+  - [download](https://docs.microsoft.com/zh-cn/windows-hardware/drivers/debugger/debugger-download-tools)
+- 【Windbg Preview】：windows kernel调试工具(美观)
+  - [download](https://www.microsoft.com/en-us/p/windbg-preview/)
+- 【dbgview】：windows调试工具，捕获调试信息，用于Guest
+  - [download](https://docs.microsoft.com/en-us/sysinternals/downloads/debugview)
+- 【OSRLoader】：驱动管理工具（安装，启动，暂停，卸载）
+  - [download](https://www.osronline.com/article.cfm%5earticle=157.htm)
+- 【VirtualKD】：双机调试工具，较老，不支持最新版VMWare
+  - [download](https://sysprogs.com/legacy/virtualkd/)
+- 【VirtualKD-Redux】：双机调试工具，支持最新版本VMWare
+  - [download](https://github.com/4d61726b/VirtualKD-Redux)
+- 【accesschk】
+  - [download](https://docs.microsoft.com/en-us/sysinternals/downloads/accesschk)
+- 【oleview】
+  - [download](https://github.com/tyranid/oleviewdotnet)
+- 【process monitor】
+  - [download](https://docs.microsoft.com/en-us/sysinternals/downloads/procmon)
+- 【Windows-Kernel-Explorer】
+  - [download](https://github.com/AxtMueller/Windows-Kernel-Explorer/)
+- 【sandbox-attacksurface-analysis-tools】
+  - [download](https://github.com/googleprojectzero/sandbox-attacksurface-analysis-tools)
+- 【SystemExplorer】
+  - [download](https://github.com/zodiacon/SystemExplorer)
+- 【ProcessHacker】
+  - [download](https://processhacker.sourceforge.io/downloads.php)
+
+### Blogs && Talks && Workstation
 
 - 【Windows 提权总结】
   - [中文博客](https://www.cnblogs.com/-mo-/p/12718115.html) 
+
+- 【Level Up! Practical Windows Privilege Escalation - Andrew Smith】
+  - [Youtube](https://www.youtube.com/watch?v=PC_iMqiuIRQ)
 
 ## Learn Exploit
 
@@ -88,50 +124,7 @@
 - 【exp in GDI】
   - [中文pdf](http://www.vxjump.net/files/seccon/exp-in-gdi.pdf)
 
-
-
-### Talks and Workstation
-
-- 【Level Up! Practical Windows Privilege Escalation - Andrew Smith】
-  - [Youtube](https://www.youtube.com/watch?v=PC_iMqiuIRQ)
-
-## Analyse
-
-### Analyse Blogs & Papers
-
-- 【Extracting and Diffing Windows Patches in 2020】： 通过Windows更新提取和分析补丁（含代码）
-  -  [English Blog](https://wumb0.in/extracting-and-diffing-ms-patches-in-2020.html)
-
-### Analyse Tools & Docs
-
-- 【Windbg】：windows kernel调试工具
-  - [download](https://docs.microsoft.com/zh-cn/windows-hardware/drivers/debugger/debugger-download-tools)
-- 【Windbg Preview】：windows kernel调试工具(美观)
-  - [download](https://www.microsoft.com/en-us/p/windbg-preview/)
-- 【dbgview】：windows调试工具，捕获调试信息，用于Guest
-  - [download](https://docs.microsoft.com/en-us/sysinternals/downloads/debugview)
-- 【OSRLoader】：驱动管理工具（安装，启动，暂停，卸载）
-  - [download](https://www.osronline.com/article.cfm%5earticle=157.htm)
-- 【VirtualKD】：双机调试工具
-  - [download](https://sysprogs.com/legacy/virtualkd/)
-- 【VirtualKD-Redux】：双机调试工具，支持最新版本VMWare
-  - [download](https://github.com/4d61726b/VirtualKD-Redux)
-- 【accesschk】
-  - [download](https://docs.microsoft.com/en-us/sysinternals/downloads/accesschk)
-- 【oleview】
-  - [download](https://github.com/tyranid/oleviewdotnet)
-- 【process monitor】
-  - [download](https://docs.microsoft.com/en-us/sysinternals/downloads/procmon)
-- 【Windows-Kernel-Explorer】
-  - [download](https://github.com/AxtMueller/Windows-Kernel-Explorer/)
-- 【sandbox-attacksurface-analysis-tools】
-  - [download](https://github.com/googleprojectzero/sandbox-attacksurface-analysis-tools)
-- 【SystemExplorer】
-  - [download](https://github.com/zodiacon/SystemExplorer)
-- 【ProcessHacker】
-  - [download](https://processhacker.sourceforge.io/downloads.php)
-
-## Others Resources
+## Other Resources
 
 - https://labs.f-secure.com
 - https://3gstudent.github.io/3gstudent.github.io:有很多从渗透测试角度审视的Windows下提权方法
