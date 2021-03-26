@@ -91,6 +91,8 @@
   - [download](https://github.com/zodiacon/SystemExplorer)
 - 【ProcessHacker】
   - [download](https://processhacker.sourceforge.io/downloads.php)
+- 【drmemory】
+  - [download](https://github.com/DynamoRIO/drmemory)
 
 ### Blogs && Talks && Workstation
 
@@ -112,13 +114,19 @@ https://www.fuzzysecurity.com/tutorials.html
 
 https://github.com/h0mbre/Windows-Exploits/tree/162dfd45d284556b47739835116a962177b243b0/Exploit-Code/HEVD
 
+https://github.com/GradiusX/HEVD-Python-Solutions
+
+https://github.com/dhn/OSEE/tree/master/Kernel_Exploitation/HEVD
+
 - 【HackSysExtremeVulnerableDriver】：windows内核利用技术学习项目
   - [download](https://github.com/hacksysteam/HackSysExtremeVulnerableDriver)
 - 【HEVD StackOverflow】：
 
   - [win7sp1 x86 python2.7 exp](https://github.com/h0mbre/Windows-Exploits/blob/162dfd45d284556b47739835116a962177b243b0/Exploit-Code/HEVD/x86_StackOverflow.py)
-  - [HEVD内核漏洞之栈溢出writeup](https://bbs.pediy.com/thread-252775.htm)
-  - [HEVD栈溢出writeup](https://50u1w4y.github.io/site/HEVD/stackoverflow/)
+  - [win7sp1 x86 c++ exp](https://github.com/w4fz5uck5/HEVD_EXPLOITS/blob/master/StackOverflow/HEVDTriggerOverflow.cpp)
+  - [HEVD内核漏洞之栈溢出](https://bbs.pediy.com/thread-252775.htm)
+  - [HEVD栈溢出](https://50u1w4y.github.io/site/HEVD/stackoverflow/)
+  - [Windows Kernel Exploitation Tutorial Part 2: Stack Overflow](https://rootkits.xyz/blog/2017/08/kernel-stack-overflow/)
 
 
 
