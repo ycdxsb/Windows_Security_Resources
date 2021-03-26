@@ -32,23 +32,34 @@
 - 【Catalog of key Windows kernel data structures】
   - [English Blog](https://codemachine.com/articles/kernel_structures.html)
 
-## CheatSheet
-
-- 查看系统信息和补丁信息：
-  - `systeminfo`
-  - `wmic qfe list full`
-  - 输出html格式：`wmic qfe list full /format:htable >C:\Temp\hotfixes.htm `
-- 
-
 ## Windows Kernel Exploit
 
-### Update KB info
+### KB info
 
-- https://msrc.microsoft.com/update-guide/
+- https://msrc.microsoft.com/update-guide/：官方KB对应补丁信息
+- https://bugs.hacking8.com/tiquan/：根据KB补丁号或者systeminfo查找对应的exp
+
+### Exploits
+
+- https://github.com/SecWiki/windows-kernel-exploits
+- https://github.com/nu11secur1ty/Windows10Exploits
+- https://github.com/abatchy17/WindowsExploits
+- https://github.com/Ascotbe/Kernelhub
+- https://github.com/WindowsExploits/Exploits
+- https://github.com/Heptagrams/Heptagram/tree/master/Windows/Elevation
+
+### CVE
 
 
 
-### Learn Exploit
+### Conclusion
+
+- 【Windows 提权总结】
+  - [中文博客](https://www.cnblogs.com/-mo-/p/12718115.html) 
+
+## Learn Exploit
+
+### HEVD
 
 - 【HackSysExtremeVulnerableDriver】：windows内核利用技术学习项目
   - [download](https://github.com/hacksysteam/HackSysExtremeVulnerableDriver)
@@ -59,8 +70,6 @@
 
 - 【HEVD Exploit】：
   - https://github.com/h0mbre/Windows-Exploits/tree/162dfd45d284556b47739835116a962177b243b0/Exploit-Code/HEVD
-
-
 
 ### Token Abuse
 
@@ -81,27 +90,10 @@
 
 
 
-### Vulerables and Exploits
-
-- https://github.com/SecWiki/windows-kernel-exploits
-- https://github.com/nu11secur1ty/Windows10Exploits
-- https://github.com/abatchy17/WindowsExploits
-- https://github.com/Ascotbe/Kernelhub
-- https://github.com/WindowsExploits/Exploits
-- https://github.com/Heptagrams/Heptagram/tree/master/Windows/Elevation
-- https://bugs.hacking8.com/tiquan/：根据KB补丁号或者systeminfo查找对应的exp
-
-
-
 ### Talks and Workstation
 
 - 【Level Up! Practical Windows Privilege Escalation - Andrew Smith】
   - [Youtube](https://www.youtube.com/watch?v=PC_iMqiuIRQ)
-
-### Conclusion
-
-- 【Windows 提权总结】
-  - [中文博客](https://www.cnblogs.com/-mo-/p/12718115.html) 
 
 ## Analyse
 
