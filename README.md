@@ -43,19 +43,6 @@
 - 【Extracting and Diffing Windows Patches in 2020】： 通过Windows更新提取和分析补丁（含代码）
   -  [English Blog](https://wumb0.in/extracting-and-diffing-ms-patches-in-2020.html)
 
-
-
-### Exploits
-
-- https://github.com/SecWiki/windows-kernel-exploits
-- https://github.com/nu11secur1ty/Windows10Exploits
-- https://github.com/abatchy17/WindowsExploits
-- https://github.com/Ascotbe/Kernelhub
-- https://github.com/WindowsExploits/Exploits
-- https://github.com/Heptagrams/Heptagram/tree/master/Windows/Elevation
-
-
-
 ### Tools & Docs
 
 - 【Windbg】：windows kernel调试工具
@@ -119,10 +106,15 @@
 - 【HEVD ArbitraryWrite】：
   - [HEVD内核漏洞之任意地址覆盖](https://bbs.pediy.com/thread-253848.htm)
   - [HEVD 任意地址覆盖](https://50u1w4y.github.io/site/HEVD/arbitraryWrite/)
+  - [Windows Kernel Exploit 内核漏洞学习(3)-任意内存覆盖漏洞](https://bbs.pediy.com/thread-252506.htm)
   - [Windows Kernel Exploitation Tutorial Part 3: Arbitrary Memory Overwrite (Write-What-Where)](https://rootkits.xyz/blog/2017/09/kernel-write-what-where/)
   - 
 
+
+
 https://bbs.pediy.com/user-831334.htm
+
+https://bbs.pediy.com/user-home-825245.htm
 
 https://rootkits.xyz/blog/
 
@@ -152,7 +144,22 @@ https://50u1w4y.github.io/site/HEVD/homePage/
 
 
 
-### Paper
+## CVE and Exploits
+
+- https://github.com/SecWiki/windows-kernel-exploits
+- https://github.com/nu11secur1ty/Windows10Exploits
+- https://github.com/abatchy17/WindowsExploits
+- https://github.com/Ascotbe/Kernelhub
+- https://github.com/WindowsExploits/Exploits
+- https://github.com/Heptagrams/Heptagram/tree/master/Windows/Elevation
+
+### CVE-2020-0796 SMB整数溢出漏洞
+
+### CVE-2020-0787 BITS 任意文件移动漏洞
+
+
+
+## Paper
 
 - 【Abusing Token Privileges For EoP】：windows token 利用文章（含代码）
   - [Paper](https://github.com/hatRiot/token-priv/blob/master/abusing_token_eop_1.0.txt)
