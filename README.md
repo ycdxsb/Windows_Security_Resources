@@ -23,8 +23,17 @@
 
 - https://msdn.itellyou.cn/
 - https://next.itellyou.cn/
+- https://en.wikipedia.org/wiki/Windows_10_version_history：Win10版本关系
+
+### Windows Design
+
+- 【Windows结构设计】
+  - [中文博客](https://r00tk1ts.github.io/2017/12/19/Windows%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1/)
 
 ### Windows Structure
+
+- 【terminus】：很好的Windows结构搜索网页
+  - [page link](http://terminus.rewolf.pl/terminus/)
 
 - 【关键的windows内核数据结构一览(上)】
   - [中文博客](https://r00tk1ts.github.io/2018/01/08/%E5%85%B3%E9%94%AE%E7%9A%84Windows%E5%86%85%E6%A0%B8%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%80%E8%A7%88%EF%BC%88%E4%B8%8A%EF%BC%89/)
@@ -144,7 +153,14 @@
   - [English pdf](https://www.coresecurity.com/sites/default/files/private-files/publications/2016/10/Abusing-GDI-Reloaded-ekoparty-2016_0.pdf)
 - 【ring0层exp原语之滥用GDI】
   - [中文博客](https://r00tk1ts.github.io/2018/01/15/ring0%E5%B1%82exp%E5%8E%9F%E8%AF%AD%E4%B9%8B%E6%BB%A5%E7%94%A8GDI/)
-  - 
+
+
+
+### 保护绕过
+
+- 【SMEP和SMAP绕过】
+  - [中文博客](https://bbs.pediy.com/thread-261744.htm)
+- 
 
 
 
