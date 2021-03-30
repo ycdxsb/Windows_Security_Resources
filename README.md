@@ -84,10 +84,18 @@
 ### Blogs && Talks && Workstation
 
 - 【Windows 提权总结】
-  - [中文博客](https://www.cnblogs.com/-mo-/p/12718115.html) 
-
+  
+- [中文博客](https://www.cnblogs.com/-mo-/p/12718115.html) 
+  
 - 【Level Up! Practical Windows Privilege Escalation - Andrew Smith】
+  
   - [Youtube](https://www.youtube.com/watch?v=PC_iMqiuIRQ)
+  
+- 【I Got 99 Problem But a Kernel Pointer Ain’t One】
+
+  - [English pdf](https://recon.cx/2013/slides/Recon2013-Alex%20Ionescu-I%20got%2099%20problems%20but%20a%20kernel%20pointer%20ain't%20one.pdf)
+
+  
 
 ## Learn Exploit
 
@@ -134,6 +142,9 @@
   - [中文pdf](http://www.vxjump.net/files/seccon/exp-in-gdi.pdf)
 - 【Abusing GDI for ring0 exploit primitives】
   - [English pdf](https://www.coresecurity.com/sites/default/files/private-files/publications/2016/10/Abusing-GDI-Reloaded-ekoparty-2016_0.pdf)
+- 【ring0层exp原语之滥用GDI】
+  - [中文博客](https://r00tk1ts.github.io/2018/01/15/ring0%E5%B1%82exp%E5%8E%9F%E8%AF%AD%E4%B9%8B%E6%BB%A5%E7%94%A8GDI/)
+  - 
 
 
 
