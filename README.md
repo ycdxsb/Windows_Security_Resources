@@ -110,23 +110,15 @@
   - [Windows Kernel Exploitation Tutorial Part 3: Arbitrary Memory Overwrite (Write-What-Where)](https://rootkits.xyz/blog/2017/09/kernel-write-what-where/)
   - 
 
-
-
-https://bbs.pediy.com/user-831334.htm
-
-https://bbs.pediy.com/user-home-825245.htm
-
-https://rootkits.xyz/blog/
-
-https://www.fuzzysecurity.com/tutorials.html
-
-https://github.com/h0mbre/Windows-Exploits/tree/162dfd45d284556b47739835116a962177b243b0/Exploit-Code/HEVD
-
-https://github.com/GradiusX/HEVD-Python-Solutions
-
-https://github.com/dhn/OSEE/tree/master/Kernel_Exploitation/HEVD
-
-https://50u1w4y.github.io/site/HEVD/homePage/
+- Others
+  - https://bbs.pediy.com/user-831334.htm
+  - https://bbs.pediy.com/user-home-825245.htm
+  - https://rootkits.xyz/blog/
+  - https://www.fuzzysecurity.com/tutorials.html
+  - https://github.com/h0mbre/Windows-Exploits/tree/162dfd45d284556b47739835116a962177b243b0/Exploit-Code/HEVD
+  - https://github.com/GradiusX/HEVD-Python-Solutions
+  - https://github.com/dhn/OSEE/tree/master/Kernel_Exploitation/HEVD
+  - https://50u1w4y.github.io/site/HEVD/homePage/
 
 ### Token Abuse
 
@@ -138,9 +130,12 @@ https://50u1w4y.github.io/site/HEVD/homePage/
 - 【Bitmap轶事：Windows 10纪念版后的GDI对象泄露】
   - [中文博客](https://r00tk1ts.github.io/2018/03/21/Bitmaps%E8%BD%B6%E4%BA%8B%EF%BC%9AWindows%2010%E7%BA%AA%E5%BF%B5%E7%89%88%E5%89%8D%E7%9A%84GDI%E5%AF%B9%E8%B1%A1%E6%B3%84%E9%9C%B2/) 
   - [English Blog](https://labs.mwrinfosecurity.com/blog/a-tale-of-bitmaps/)
-
 - 【exp in GDI】
   - [中文pdf](http://www.vxjump.net/files/seccon/exp-in-gdi.pdf)
+- 【Abusing GDI for ring0 exploit primitives】
+  - [English pdf](https://www.coresecurity.com/sites/default/files/private-files/publications/2016/10/Abusing-GDI-Reloaded-ekoparty-2016_0.pdf)
+
+
 
 
 
