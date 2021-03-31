@@ -94,18 +94,15 @@
 ### Blogs && Talks && Workstation
 
 - 【Windows 提权总结】
-  
 - [中文博客](https://www.cnblogs.com/-mo-/p/12718115.html) 
-  
 - 【Level Up! Practical Windows Privilege Escalation - Andrew Smith】
   
   - [Youtube](https://www.youtube.com/watch?v=PC_iMqiuIRQ)
-  
 - 【I Got 99 Problem But a Kernel Pointer Ain’t One】
 
   - [English pdf](https://recon.cx/2013/slides/Recon2013-Alex%20Ionescu-I%20got%2099%20problems%20but%20a%20kernel%20pointer%20ain't%20one.pdf)
-
-  
+- 【The Life And Death of Kernel Object Abuse】
+  - [English pdf](https://conference.hitb.org/hitbsecconf2018ams/materials/D1%20COMMSEC%20-%20Saif%20Elsherei%20and%20Ian%20Kronquist%20-%20The%20Life%20&%20Death%20of%20Kernel%20Object%20Abuse.pdf)
 
 ## Learn Exploit
 
@@ -125,7 +122,7 @@
   - [Windows Kernel Exploitation Tutorial Part 3: Arbitrary Memory Overwrite (Write-What-Where)](https://rootkits.xyz/blog/2017/09/kernel-write-what-where/)
 - 【HEVD ArbitrayWrite BitMap】:
   - [bitmap 任意地址写漏洞利用](https://50u1w4y.github.io/site/HEVD/bitmap)
-  - [Windows Kernel Exploit Part 5](Windows Kernel Exploit Part 5)
+  - [Windows Kernel Exploit Part 5](https://paper.seebug.org/876/)
 
 - Others
   - https://bbs.pediy.com/user-831334.htm
@@ -157,8 +154,20 @@
   - [English pdf](https://www.coresecurity.com/sites/default/files/private-files/publications/2016/10/Abusing-GDI-Reloaded-ekoparty-2016_0.pdf)
 - 【ring0层exp原语之滥用GDI】
   - [中文博客](https://r00tk1ts.github.io/2018/01/15/ring0%E5%B1%82exp%E5%8E%9F%E8%AF%AD%E4%B9%8B%E6%BB%A5%E7%94%A8GDI/)
+- 【滥用GDI对象】
+  - [中文博客](https://saturn35.com/2019/07/25/20190725-1/)
 
 
+
+### Potato
+
+- 【Potato家族本地提权细节】
+  - [中文博客](https://xz.aliyun.com/t/7776)
+
+### 利用历史
+
+- 【猫鼠游戏：Windows内核提权样本狩猎思路分享】
+  - [中文博客](https://www.anquanke.com/post/id/235716)
 
 ### 保护绕过
 
@@ -171,8 +180,6 @@
 
 
 
-
-
 ## CVE and Exploits
 
 - https://github.com/SecWiki/windows-kernel-exploits
@@ -182,10 +189,6 @@
 - https://github.com/WindowsExploits/Exploits
 - https://github.com/Heptagrams/Heptagram/tree/master/Windows/Elevation
 - https://github.com/Al1ex/WindowsElevation
-
-### CVE-2020-0796 SMB整数溢出漏洞
-
-### CVE-2020-0787 BITS 任意文件移动漏洞
 
 
 
