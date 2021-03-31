@@ -115,18 +115,17 @@
   - [download](https://github.com/hacksysteam/HackSysExtremeVulnerableDriver)
 - 【HEVD StackOverflow】：
 
-  - [win7sp1 x86 python2.7 exp](https://github.com/h0mbre/Windows-Exploits/blob/162dfd45d284556b47739835116a962177b243b0/Exploit-Code/HEVD/x86_StackOverflow.py)
-  - [win7sp1 x86 c++ exp](https://github.com/w4fz5uck5/HEVD_EXPLOITS/blob/master/StackOverflow/HEVDTriggerOverflow.cpp)
   - [HEVD内核漏洞之栈溢出](https://bbs.pediy.com/thread-252775.htm)
   - [HEVD栈溢出](https://50u1w4y.github.io/site/HEVD/stackoverflow/)
   - [Windows Kernel Exploitation Tutorial Part 2: Stack Overflow](https://rootkits.xyz/blog/2017/08/kernel-stack-overflow/)
-
 - 【HEVD ArbitraryWrite】：
   - [HEVD内核漏洞之任意地址覆盖](https://bbs.pediy.com/thread-253848.htm)
   - [HEVD 任意地址覆盖](https://50u1w4y.github.io/site/HEVD/arbitraryWrite/)
   - [Windows Kernel Exploit 内核漏洞学习(3)-任意内存覆盖漏洞](https://bbs.pediy.com/thread-252506.htm)
   - [Windows Kernel Exploitation Tutorial Part 3: Arbitrary Memory Overwrite (Write-What-Where)](https://rootkits.xyz/blog/2017/09/kernel-write-what-where/)
-  - 
+- 【HEVD ArbitrayWrite BitMap】:
+  - [bitmap 任意地址写漏洞利用](https://50u1w4y.github.io/site/HEVD/bitmap)
+  - [Windows Kernel Exploit Part 5](Windows Kernel Exploit Part 5)
 
 - Others
   - https://bbs.pediy.com/user-831334.htm
@@ -145,6 +144,10 @@
 
 ### GDI Abuse
 
+- 【Windows GDI BitMap】
+  - [中文博客](https://kernel32.org/posts/windows-gdi-bitmap/)
+  - [English Blog](https://www.fuzzysecurity.com/tutorials/expDev/21.html)
+
 - 【Bitmap轶事：Windows 10纪念版后的GDI对象泄露】
   - [中文博客](https://r00tk1ts.github.io/2018/03/21/Bitmaps%E8%BD%B6%E4%BA%8B%EF%BC%9AWindows%2010%E7%BA%AA%E5%BF%B5%E7%89%88%E5%89%8D%E7%9A%84GDI%E5%AF%B9%E8%B1%A1%E6%B3%84%E9%9C%B2/) 
   - [English Blog](https://labs.mwrinfosecurity.com/blog/a-tale-of-bitmaps/)
@@ -161,7 +164,10 @@
 
 - 【SMEP和SMAP绕过】
   - [中文博客](https://bbs.pediy.com/thread-261744.htm)
-- 
+- 【Windows 10 x64上令牌窃取有效载荷问题，并绕过SMEP 上】
+  - [中文博客](https://www.4hou.com/posts/21y1)
+- 【Windows 10 x64上令牌窃取有效载荷问题，并绕过SMEP 下】
+  - [中文博客](Windows 10 x64上令牌窃取有效载荷问题，并绕过SMEP（下）)
 
 
 
