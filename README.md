@@ -59,6 +59,7 @@
   - [getting-started-with-windows-debugging](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/getting-started-with-windows-debugging)
   - [Getting Started with WinDbg (User-Mode)](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/getting-started-with-windbg)
   - [Getting Started with WinDbg (Kernel-Mode)](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/getting-started-with-windbg--kernel-mode-)
+  - [my-personal-cheat-sheet-for-using-windbg-for-kernel-debugging](https://laptrinhx.com/my-personal-cheat-sheet-for-using-windbg-for-kernel-debugging-1997973673/)
 - 【Windbg Preview】：windows kernel调试工具(美观)
   - [download](https://www.microsoft.com/en-us/p/windbg-preview/)
   - [Debugging Using WinDbg Preview](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/debugging-using-windbg-preview)
@@ -174,6 +175,7 @@
 - https://github.com/Ascotbe/Kernelhub
 - https://github.com/WindowsExploits/Exploits
 - https://github.com/Heptagrams/Heptagram/tree/master/Windows/Elevation
+- https://github.com/Al1ex/WindowsElevation
 
 ### CVE-2020-0796 SMB整数溢出漏洞
 
