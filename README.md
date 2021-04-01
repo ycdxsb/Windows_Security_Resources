@@ -94,7 +94,7 @@
 ### Blogs && Talks && Workstation
 
 - 【Windows 提权总结】
-- [中文博客](https://www.cnblogs.com/-mo-/p/12718115.html) 
+  - [中文博客](https://www.cnblogs.com/-mo-/p/12718115.html) 
 - 【Level Up! Practical Windows Privilege Escalation - Andrew Smith】
   
   - [Youtube](https://www.youtube.com/watch?v=PC_iMqiuIRQ)
@@ -123,8 +123,8 @@
 - 【HEVD ArbitrayWrite BitMap】:
   - [bitmap 任意地址写漏洞利用](https://50u1w4y.github.io/site/HEVD/bitmap)
   - [Windows Kernel Exploit Part 5](https://paper.seebug.org/876/)
-
 - Others
+  - https://thunderjie.github.io/2019/06/28/Windows-Kernel-Exploit/
   - https://bbs.pediy.com/user-831334.htm
   - https://bbs.pediy.com/user-home-825245.htm
   - https://rootkits.xyz/blog/
@@ -156,6 +156,16 @@
   - [中文博客](https://r00tk1ts.github.io/2018/01/15/ring0%E5%B1%82exp%E5%8E%9F%E8%AF%AD%E4%B9%8B%E6%BB%A5%E7%94%A8GDI/)
 - 【滥用GDI对象】
   - [中文博客](https://saturn35.com/2019/07/25/20190725-1/)
+
+- 【www漏洞从win7-win10】
+  - [中文博客](https://thunderjie.github.io/2019/08/19/www%E6%BC%8F%E6%B4%9E%E4%BB%8Ewin7-win10/)
+
+### Kernel Address Leaks
+
+- 【Windows Kernel Address Leaks】
+  - [Code](https://github.com/sam-b/windows_kernel_address_leaks)
+
+
 
 
 

@@ -33,6 +33,10 @@
 
 - 查看PsInitialSystemProcess：dd nt!PsInitialSystemProcess
 
+- 查看teb：dt _teb
+
+- 查看peb：dt _peb
+
 - 去除无效输出
 
   ```
