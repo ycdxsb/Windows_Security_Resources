@@ -5,7 +5,6 @@
 ## Learn Windows
 
 ### Books
-
 - 《寒江独钓——Windows内核安全编程》
 - 《天书夜读——从汇编语言到Windows内核编程》
 - 《Windows内核情景分析》上下册
@@ -13,36 +12,29 @@
 - 《深入解析Windows操作系统(第6版)》上下册
 
 ### Source Code
-
 - 【The Windows Research Kernel AKA WRK】
   - [download](https://github.com/zhuhuibeishadiao/ntoskrnl)
 - 【ReactOS：A free Windows-compatible Operating System】
   - [download](https://github.com/reactos/reactos)
 
 ### Windows iso
-
 - https://msdn.itellyou.cn/
 - https://next.itellyou.cn/
 - https://en.wikipedia.org/wiki/Windows_10_version_history：Win10版本关系
 
 ### Windows Design
-
 - 【Windows结构设计】
   - [中文博客](https://r00tk1ts.github.io/2017/12/19/Windows%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1/)
 
 ### Windows Structure
-
 - 【terminus】：很好的Windows结构搜索网页
   - [page link](http://terminus.rewolf.pl/terminus/)
-
 - 【关键的windows内核数据结构一览(上)】
   - [中文博客](https://r00tk1ts.github.io/2018/01/08/%E5%85%B3%E9%94%AE%E7%9A%84Windows%E5%86%85%E6%A0%B8%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%80%E8%A7%88%EF%BC%88%E4%B8%8A%EF%BC%89/)
-
 - 【关键的windows内核数据结构一览(下)】
   - [中文博客](https://r00tk1ts.github.io/2018/01/14/%E5%85%B3%E9%94%AE%E7%9A%84Windows%E5%86%85%E6%A0%B8%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%80%E8%A7%88%EF%BC%88%E4%B8%8B%EF%BC%89/)
 - 【Catalog of key Windows kernel data structures】
   - [English Blog](https://codemachine.com/articles/kernel_structures.html)
-
 - 【Object】
   - [object categories](https://docs.microsoft.com/zh-cn/windows/win32/sysinfo/object-categories)
   - [user Object](https://docs.microsoft.com/zh-cn/windows/win32/sysinfo/user-objects)
@@ -52,14 +44,12 @@
 ## Windows Kernel Exploit
 
 ### KB and Patch
-
 - https://msrc.microsoft.com/update-guide/：官方KB对应补丁信息
 - https://bugs.hacking8.com/tiquan/：根据KB补丁号或者systeminfo查找对应的exp
 - 【Extracting and Diffing Windows Patches in 2020】： 通过Windows更新提取和分析补丁（含代码）
   -  [English Blog](https://wumb0.in/extracting-and-diffing-ms-patches-in-2020.html)
 
 ### Tools & Docs
-
 - 【Windbg】：windows kernel调试工具
   - [download](https://docs.microsoft.com/zh-cn/windows-hardware/drivers/debugger/debugger-download-tools)
   - [getting-started-with-windows-debugging](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/getting-started-with-windows-debugging)
@@ -99,35 +89,29 @@
   - [download](https://github.com/DynamoRIO/drmemory)
 
 ### Blogs && Talks && Workstation
-
 - 【Windows 提权总结】
   - [中文博客](https://www.cnblogs.com/-mo-/p/12718115.html) 
 - 【Level Up! Practical Windows Privilege Escalation - Andrew Smith】
-  
   - [Youtube](https://www.youtube.com/watch?v=PC_iMqiuIRQ)
 - 【I Got 99 Problem But a Kernel Pointer Ain’t One】
-
   - [English pdf](https://recon.cx/2013/slides/Recon2013-Alex%20Ionescu-I%20got%2099%20problems%20but%20a%20kernel%20pointer%20ain't%20one.pdf)
 - 【The Life And Death of Kernel Object Abuse】
   - [English pdf](https://conference.hitb.org/hitbsecconf2018ams/materials/D1%20COMMSEC%20-%20Saif%20Elsherei%20and%20Ian%20Kronquist%20-%20The%20Life%20&%20Death%20of%20Kernel%20Object%20Abuse.pdf)
 - 【A Window into Ring0】
   - [English pdf](https://labs.f-secure.com/assets/BlogFiles/mwri-steelcon-2017-samdb-a-window-into-ring0.pdf)
-
 - 【Taking-Windows-10-Kernel-Exploitation-To-The-Next-Level–Leveraging-Write-What-Where-Vulnerabilities-In-Creators-Update-wp】
   - [English pdf](https://www.blackhat.com/docs/us-17/wednesday/us-17-Schenk-Taking-Windows-10-Kernel-Exploitation-To-The-Next-Level%E2%80%93Leveraging-Write-What-Where-Vulnerabilities-In-Creators-Update-wp.pdf)
   - [中文 pdf](https://bbs.pediy.com/thread-227102.htm)
-
 - 【Easy local Windows Kernel exploitation】
   - [English pdf](https://paper.bobylive.com/Meeting_Papers/BlackHat/USA-2012/BH_US_12_Cerrudo_Windows_Kernel_WP.pdf)
 
 ## Learn Exploit
 
 ### HEVD
-
 - 【HackSysExtremeVulnerableDriver】：windows内核利用技术学习项目
   - [download](https://github.com/hacksysteam/HackSysExtremeVulnerableDriver)
 - 【HEVD StackOverflow】：
-- [HEVD内核漏洞之栈溢出](https://bbs.pediy.com/thread-252775.htm)
+  - [HEVD内核漏洞之栈溢出](https://bbs.pediy.com/thread-252775.htm)
   - [HEVD栈溢出](https://50u1w4y.github.io/site/HEVD/stackoverflow/)
   - [Windows Kernel Exploitation Tutorial Part 2: Stack Overflow](https://rootkits.xyz/blog/2017/08/kernel-stack-overflow/)
 - 【HEVD ArbitraryWrite】：
@@ -153,12 +137,10 @@
   - https://github.com/ThunderJie/Windows-Kernel-Exploit
 
 ### Token Abuse
-
 - 【windows-privilege-abuse-auditing-detection-and-defense】：windows token利用
   - [English Blog](https://medium.com/palantir/windows-privilege-abuse-auditing-detection-and-defense-3078a403d74e)
 
 ### GDI Abuse
-
 - 【Windows GDI BitMap】
   - [中文博客](https://kernel32.org/posts/windows-gdi-bitmap/)
   - [English Blog](https://www.fuzzysecurity.com/tutorials/expDev/21.html)
@@ -177,52 +159,40 @@
   - [中文博客](https://r00tk1ts.github.io/2018/01/15/ring0%E5%B1%82exp%E5%8E%9F%E8%AF%AD%E4%B9%8B%E6%BB%A5%E7%94%A8GDI/)
 - 【滥用GDI对象】
   - [中文博客](https://saturn35.com/2019/07/25/20190725-1/)
-
 - 【www漏洞从win7-win10】
   - [中文博客](https://thunderjie.github.io/2019/08/19/www%E6%BC%8F%E6%B4%9E%E4%BB%8Ewin7-win10/)
 
 ### Pool
-
 - 【Windows内核池喷射的乐趣】
   - [中文博客](https://www.anquanke.com/post/id/86896)
   - [English Blog](https://theevilbit.blogspot.com/2017/09/pool-spraying-fun-part-1.html)
-
 - 【Kernel Pool Exploitation on Windows 7】
   - [English paper](https://www.exploit-db.com/docs/english/16032-kernel-pool-exploitation-on-windows-7.pdf)
 
 ### Kernel Address Leaks
-
 - 【Windows Kernel Address Leaks】
   - [Code](https://github.com/sam-b/windows_kernel_address_leaks)
 
 
-
-
-
 ### Potato
-
 - 【Potato家族本地提权细节】
   - [中文博客](https://xz.aliyun.com/t/7776)
 
 ### 利用历史
-
 - 【猫鼠游戏：Windows内核提权样本狩猎思路分享】
   - [中文博客](https://www.anquanke.com/post/id/235716)
 
 ### 保护绕过
-
 - 【SMEP和SMAP绕过】
   - [中文博客](https://bbs.pediy.com/thread-261744.htm)
 - 【Windows 10 x64上令牌窃取有效载荷问题，并绕过SMEP 上】
   - [中文博客](https://www.4hou.com/posts/21y1)
 - 【Windows 10 x64上令牌窃取有效载荷问题，并绕过SMEP 下】
   - [中文博客](Windows 10 x64上令牌窃取有效载荷问题，并绕过SMEP（下）)
-
 - 【Windows SMEP Bypass U=S】
   - [English pdf](https://www.coresecurity.com/sites/default/files/2020-06/Windows%20SMEP%20bypass%20U%20equals%20S_0.pdf)
 
 ## CVE and Exploits
-
 - https://github.com/SecWiki/windows-kernel-exploits
 - https://github.com/nu11secur1ty/Windows10Exploits
 - https://github.com/abatchy17/WindowsExploits
@@ -234,7 +204,6 @@
 
 
 ## Paper
-
 - 【Abusing Token Privileges For EoP】：windows token 利用文章（含代码）
   - [Paper](https://github.com/hatRiot/token-priv/blob/master/abusing_token_eop_1.0.txt)
   - [Code](https://github.com/hatRiot/token-priv)
@@ -242,7 +211,6 @@
 
 
 ## Other Resources
-
 - https://labs.f-secure.com
 - https://3gstudent.github.io/3gstudent.github.io:有很多从渗透测试角度审视的Windows下提权方法
 - https://github.com/3gstudent/Pentest-and-Development-Tips:列举了Windows下渗透测试的Tips
@@ -254,4 +222,3 @@
 - https://github.com/sailay1996/awesome_windows_logical_bugs
 - https://github.com/topics/windows-privilege-escalation
 - http://www.fuzzysecurity.com/tutorials/16.html
-
