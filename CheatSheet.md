@@ -37,6 +37,19 @@
 
 - 查看peb：dt _peb
 
+- 查看gSharedInfo：x user32!gSharedInfo
+
+- 查看gdisharedtable：
+
+  ```
+  .process xxxx
+  .context 
+  r $peb
+  dt nt!_PEB xxxx GdiSharedHandleTable
+  ```
+
+  
+
 - 去除无效输出
 
   ```
@@ -50,3 +63,6 @@
 
 
 
+[软件调试实战：windbg 内核调试 （lkd kd ）](https://blog.csdn.net/huanongying131/article/details/90792994)
+
+- https://www.anquanke.com/post/id/86896

@@ -43,6 +43,12 @@
 - 【Catalog of key Windows kernel data structures】
   - [English Blog](https://codemachine.com/articles/kernel_structures.html)
 
+- 【Object】
+  - [object categories](https://docs.microsoft.com/zh-cn/windows/win32/sysinfo/object-categories)
+  - [user Object](https://docs.microsoft.com/zh-cn/windows/win32/sysinfo/user-objects)
+  - [gdi Object](https://docs.microsoft.com/zh-cn/windows/win32/sysinfo/gdi-objects)
+  - [kernel Object](https://docs.microsoft.com/zh-cn/windows/win32/sysinfo/kernel-objects?redirectedfrom=MSDN)
+
 ## Windows Kernel Exploit
 
 ### KB and Patch
@@ -60,6 +66,7 @@
   - [Getting Started with WinDbg (User-Mode)](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/getting-started-with-windbg)
   - [Getting Started with WinDbg (Kernel-Mode)](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/getting-started-with-windbg--kernel-mode-)
   - [my-personal-cheat-sheet-for-using-windbg-for-kernel-debugging](https://laptrinhx.com/my-personal-cheat-sheet-for-using-windbg-for-kernel-debugging-1997973673/)
+  - [Windbg加载用户层、内核层pdb文件](https://blog.csdn.net/forchoosen/article/details/107441660)
 - 【Windbg Preview】：windows kernel调试工具(美观)
   - [download](https://www.microsoft.com/en-us/p/windbg-preview/)
   - [Debugging Using WinDbg Preview](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/debugging-using-windbg-preview)
@@ -111,8 +118,7 @@
 - 【HackSysExtremeVulnerableDriver】：windows内核利用技术学习项目
   - [download](https://github.com/hacksysteam/HackSysExtremeVulnerableDriver)
 - 【HEVD StackOverflow】：
-
-  - [HEVD内核漏洞之栈溢出](https://bbs.pediy.com/thread-252775.htm)
+- [HEVD内核漏洞之栈溢出](https://bbs.pediy.com/thread-252775.htm)
   - [HEVD栈溢出](https://50u1w4y.github.io/site/HEVD/stackoverflow/)
   - [Windows Kernel Exploitation Tutorial Part 2: Stack Overflow](https://rootkits.xyz/blog/2017/08/kernel-stack-overflow/)
 - 【HEVD ArbitraryWrite】：
@@ -123,16 +129,18 @@
 - 【HEVD ArbitrayWrite BitMap】:
   - [bitmap 任意地址写漏洞利用](https://50u1w4y.github.io/site/HEVD/bitmap)
   - [Windows Kernel Exploit Part 5](https://paper.seebug.org/876/)
-- Others
-  - https://thunderjie.github.io/2019/06/28/Windows-Kernel-Exploit/
-  - https://bbs.pediy.com/user-831334.htm
-  - https://bbs.pediy.com/user-home-825245.htm
-  - https://rootkits.xyz/blog/
-  - https://www.fuzzysecurity.com/tutorials.html
+- 【Writeup综合】
+  - [www漏洞从win7-win10](https://thunderjie.github.io/2019/08/19/www%E6%BC%8F%E6%B4%9E%E4%BB%8Ewin7-win10/)
+  - [thunderjie 的 writeup](https://thunderjie.github.io/2019/06/28/Windows-Kernel-Exploit/)
+  - [50u1w4y 的 writeup](https://50u1w4y.github.io/site/HEVD/homePage/)
+  - [Saturn35 的 writeup](https://bbs.pediy.com/user-831334.htm)
+  - [rootkit 的 writeup](https://rootkits.xyz/blog/)
+  - [Thunder J 的 writeup](https://bbs.pediy.com/user-home-825245.htm)
+  - [fuzzing security 的 writeup](https://www.fuzzysecurity.com/tutorials.html)
+- 【Exp综合】
   - https://github.com/h0mbre/Windows-Exploits/tree/162dfd45d284556b47739835116a962177b243b0/Exploit-Code/HEVD
   - https://github.com/GradiusX/HEVD-Python-Solutions
   - https://github.com/dhn/OSEE/tree/master/Kernel_Exploitation/HEVD
-  - https://50u1w4y.github.io/site/HEVD/homePage/
 
 ### Token Abuse
 
@@ -144,7 +152,6 @@
 - 【Windows GDI BitMap】
   - [中文博客](https://kernel32.org/posts/windows-gdi-bitmap/)
   - [English Blog](https://www.fuzzysecurity.com/tutorials/expDev/21.html)
-
 - 【Bitmap轶事：Windows 10纪念版后的GDI对象泄露】
   - [中文博客](https://r00tk1ts.github.io/2018/03/21/Bitmaps%E8%BD%B6%E4%BA%8B%EF%BC%9AWindows%2010%E7%BA%AA%E5%BF%B5%E7%89%88%E5%89%8D%E7%9A%84GDI%E5%AF%B9%E8%B1%A1%E6%B3%84%E9%9C%B2/) 
   - [English Blog](https://labs.mwrinfosecurity.com/blog/a-tale-of-bitmaps/)
@@ -152,6 +159,8 @@
   - [中文pdf](http://www.vxjump.net/files/seccon/exp-in-gdi.pdf)
 - 【Abusing GDI for ring0 exploit primitives】
   - [English pdf](https://www.coresecurity.com/sites/default/files/private-files/publications/2016/10/Abusing-GDI-Reloaded-ekoparty-2016_0.pdf)
+- 【Abusing GDI objects: Bitmap object’s size in the kernel pool】
+  - [English Blog](http://theevilbit.blogspot.com/2017/10/abusing-gdi-objects-bitmap-objects-size.html)
 - 【ring0层exp原语之滥用GDI】
   - [中文博客](https://r00tk1ts.github.io/2018/01/15/ring0%E5%B1%82exp%E5%8E%9F%E8%AF%AD%E4%B9%8B%E6%BB%A5%E7%94%A8GDI/)
 - 【滥用GDI对象】
@@ -159,6 +168,14 @@
 
 - 【www漏洞从win7-win10】
   - [中文博客](https://thunderjie.github.io/2019/08/19/www%E6%BC%8F%E6%B4%9E%E4%BB%8Ewin7-win10/)
+
+### Pool
+
+- 【Windows内核池喷射的乐趣】
+  - [中文博客](https://www.anquanke.com/post/id/86896)
+  - [English Blog](https://theevilbit.blogspot.com/2017/09/pool-spraying-fun-part-1.html)
+
+
 
 ### Kernel Address Leaks
 
