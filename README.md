@@ -113,6 +113,13 @@
 - 【A Window into Ring0】
   - [English pdf](https://labs.f-secure.com/assets/BlogFiles/mwri-steelcon-2017-samdb-a-window-into-ring0.pdf)
 
+- 【Taking-Windows-10-Kernel-Exploitation-To-The-Next-Level–Leveraging-Write-What-Where-Vulnerabilities-In-Creators-Update-wp】
+  - [English pdf](https://www.blackhat.com/docs/us-17/wednesday/us-17-Schenk-Taking-Windows-10-Kernel-Exploitation-To-The-Next-Level%E2%80%93Leveraging-Write-What-Where-Vulnerabilities-In-Creators-Update-wp.pdf)
+  - [中文 pdf](https://bbs.pediy.com/thread-227102.htm)
+
+- 【Easy local Windows Kernel exploitation】
+  - [English pdf](https://paper.bobylive.com/Meeting_Papers/BlackHat/USA-2012/BH_US_12_Cerrudo_Windows_Kernel_WP.pdf)
+
 ## Learn Exploit
 
 ### HEVD
@@ -211,7 +218,8 @@
 - 【Windows 10 x64上令牌窃取有效载荷问题，并绕过SMEP 下】
   - [中文博客](Windows 10 x64上令牌窃取有效载荷问题，并绕过SMEP（下）)
 
-
+- 【Windows SMEP Bypass U=S】
+  - [English pdf](https://www.coresecurity.com/sites/default/files/2020-06/Windows%20SMEP%20bypass%20U%20equals%20S_0.pdf)
 
 ## CVE and Exploits
 
