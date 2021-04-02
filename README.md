@@ -208,6 +208,10 @@
   - [Paper](https://github.com/hatRiot/token-priv/blob/master/abusing_token_eop_1.0.txt)
   - [Code](https://github.com/hatRiot/token-priv)
 
+- 【Bugs on the Windshield: Fuzzing the Windows Kernel】：Windows kernel fuzz
+  - [English Blog](https://research.checkpoint.com/2020/bugs-on-the-windshield-fuzzing-the-windows-kernel/)
+  - [Paper](https://github.com/yoava333/presentations/blob/master/Fuzzing%20the%20Windows%20Kernel%20-%20OffensiveCon%202020.pdf)
+
 
 
 ## Other Resources
