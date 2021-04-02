@@ -110,6 +110,8 @@
   - [English pdf](https://recon.cx/2013/slides/Recon2013-Alex%20Ionescu-I%20got%2099%20problems%20but%20a%20kernel%20pointer%20ain't%20one.pdf)
 - 【The Life And Death of Kernel Object Abuse】
   - [English pdf](https://conference.hitb.org/hitbsecconf2018ams/materials/D1%20COMMSEC%20-%20Saif%20Elsherei%20and%20Ian%20Kronquist%20-%20The%20Life%20&%20Death%20of%20Kernel%20Object%20Abuse.pdf)
+- 【A Window into Ring0】
+  - [English pdf](https://labs.f-secure.com/assets/BlogFiles/mwri-steelcon-2017-samdb-a-window-into-ring0.pdf)
 
 ## Learn Exploit
 
@@ -141,6 +143,7 @@
   - https://github.com/h0mbre/Windows-Exploits/tree/162dfd45d284556b47739835116a962177b243b0/Exploit-Code/HEVD
   - https://github.com/GradiusX/HEVD-Python-Solutions
   - https://github.com/dhn/OSEE/tree/master/Kernel_Exploitation/HEVD
+  - https://github.com/ThunderJie/Windows-Kernel-Exploit
 
 ### Token Abuse
 
@@ -155,12 +158,14 @@
 - 【Bitmap轶事：Windows 10纪念版后的GDI对象泄露】
   - [中文博客](https://r00tk1ts.github.io/2018/03/21/Bitmaps%E8%BD%B6%E4%BA%8B%EF%BC%9AWindows%2010%E7%BA%AA%E5%BF%B5%E7%89%88%E5%89%8D%E7%9A%84GDI%E5%AF%B9%E8%B1%A1%E6%B3%84%E9%9C%B2/) 
   - [English Blog](https://labs.mwrinfosecurity.com/blog/a-tale-of-bitmaps/)
-- 【exp in GDI】
+- 【GDI魔术:漏洞利用中的利器】
   - [中文pdf](http://www.vxjump.net/files/seccon/exp-in-gdi.pdf)
-- 【Abusing GDI for ring0 exploit primitives】
+- 【Abusing GDI for ring0 exploit primitives:Reloaded】
   - [English pdf](https://www.coresecurity.com/sites/default/files/private-files/publications/2016/10/Abusing-GDI-Reloaded-ekoparty-2016_0.pdf)
 - 【Abusing GDI objects: Bitmap object’s size in the kernel pool】
   - [English Blog](http://theevilbit.blogspot.com/2017/10/abusing-gdi-objects-bitmap-objects-size.html)
+- 【Abusing GDI for ring0 exploit primitives: Evolution】
+  - [English Blog](https://labs.bluefrostsecurity.de/files/Abusing_GDI_for_ring0_exploit_primitives_Evolution_Slides.pdf)
 - 【ring0层exp原语之滥用GDI】
   - [中文博客](https://r00tk1ts.github.io/2018/01/15/ring0%E5%B1%82exp%E5%8E%9F%E8%AF%AD%E4%B9%8B%E6%BB%A5%E7%94%A8GDI/)
 - 【滥用GDI对象】
@@ -175,7 +180,8 @@
   - [中文博客](https://www.anquanke.com/post/id/86896)
   - [English Blog](https://theevilbit.blogspot.com/2017/09/pool-spraying-fun-part-1.html)
 
-
+- 【Kernel Pool Exploitation on Windows 7】
+  - [English paper](https://www.exploit-db.com/docs/english/16032-kernel-pool-exploitation-on-windows-7.pdf)
 
 ### Kernel Address Leaks
 
