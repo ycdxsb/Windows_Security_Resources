@@ -40,6 +40,9 @@
   - [user Object](https://docs.microsoft.com/zh-cn/windows/win32/sysinfo/user-objects)
   - [gdi Object](https://docs.microsoft.com/zh-cn/windows/win32/sysinfo/gdi-objects)
   - [kernel Object](https://docs.microsoft.com/zh-cn/windows/win32/sysinfo/kernel-objects?redirectedfrom=MSDN)
+  - [Windows Object Header](https://codemachine.com/articles/object_headers.html)
+
+
 
 ## Windows Kernel Exploit
 
@@ -88,7 +91,11 @@
 - 【drmemory】
   - [download](https://github.com/DynamoRIO/drmemory)
 
+- 【openark】：一款Windows平台上的开源Ark工具. Ark是Anti-Rootkit（对抗恶意程序）的简写, OpenArk目标成为逆向工程师、编程人员的工具，同时也能为那些希望清理恶意软件的用户服务
+  - [download](https://github.com/BlackINT3/OpenArk)
+
 ### Blogs && Talks && Workstation
+
 - 【Windows 提权总结】
   - [中文博客](https://www.cnblogs.com/-mo-/p/12718115.html) 
 - 【Level Up! Practical Windows Privilege Escalation - Andrew Smith】
@@ -166,6 +173,14 @@
 - 【Windows内核池喷射的乐趣】
   - [中文博客](https://www.anquanke.com/post/id/86896)
   - [English Blog](https://theevilbit.blogspot.com/2017/09/pool-spraying-fun-part-1.html)
+- 【Windows kernel pool spraying fun - Part 1 - Determine kernel object size】
+  - [English Blog](https://theevilbit.blogspot.com/2017/09/pool-spraying-fun-part-1.html)
+- 【Windows kernel pool spraying fun - Part 2 - More objects】
+  - [English Blog](https://theevilbit.blogspot.com/2017/09/windows-kernel-pool-spraying-fun-part-2.html)
+- 【Windows kernel pool spraying fun - Part 3 - Let's make holes】
+  - [English Blog](https://theevilbit.blogspot.com/2017/09/windows-kernel-pool-spraying-fun-part-3.html)
+- 【Windows kernel pool spraying fun - Part 4 - object & pool headers, kex & putting it all together】
+  - [English Blog](https://theevilbit.blogspot.com/2017/09/windows-kernel-pool-spraying-fun-part-4.html)
 - 【Kernel Pool Exploitation on Windows 7】
   - [English paper](https://www.exploit-db.com/docs/english/16032-kernel-pool-exploitation-on-windows-7.pdf)
 
@@ -188,7 +203,7 @@
 - 【Windows 10 x64上令牌窃取有效载荷问题，并绕过SMEP 上】
   - [中文博客](https://www.4hou.com/posts/21y1)
 - 【Windows 10 x64上令牌窃取有效载荷问题，并绕过SMEP 下】
-  - [中文博客](Windows 10 x64上令牌窃取有效载荷问题，并绕过SMEP（下）)
+  - [中文博客](https://www.4hou.com/posts/4YAV)
 - 【Windows SMEP Bypass U=S】
   - [English pdf](https://www.coresecurity.com/sites/default/files/2020-06/Windows%20SMEP%20bypass%20U%20equals%20S_0.pdf)
 
