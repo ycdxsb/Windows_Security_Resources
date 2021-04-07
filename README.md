@@ -241,3 +241,15 @@
 - https://github.com/sailay1996/awesome_windows_logical_bugs
 - https://github.com/topics/windows-privilege-escalation
 - http://www.fuzzysecurity.com/tutorials/16.html
+
+## 待整理
+
+• [*Windows, Tools*] gtworek/Priv2Admin: [
+https://github.com/gtworek/Priv2Admin](https://github.com/gtworek/Priv2Admin)
+
+  ・ Priv2Admin：在 Windows 中利用漏洞提权。 – [potato](https://sec.today/user/dc071663-2f31-4d9f-928e-150b2cafeef3/pushes/)
+
+• Windows Privileges: [
+https://speakerdeck.com/fr0gger/windows-privileges](https://speakerdeck.com/fr0gger/windows-privileges)
+
+  ・ 【图片】有关 Windows privileges 的备忘录。 – [potato](https://sec.today/user/dc071663-2f31-4d9f-928e-150b2cafeef3/pushes/)
