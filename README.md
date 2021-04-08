@@ -25,6 +25,8 @@
 - https://next.itellyou.cn/
 - https://en.wikipedia.org/wiki/Windows_10_version_history：Win10版本关系
 
+
+
 ### Windows Design
 
 - 【Windows结构设计】
@@ -99,6 +101,11 @@
   - [download](https://github.com/DynamoRIO/drmemory)
 - 【openark】：一款Windows平台上的开源Ark工具. Ark是Anti-Rootkit（对抗恶意程序）的简写, OpenArk目标成为逆向工程师、编程人员的工具，同时也能为那些希望清理恶意软件的用户服务
   - [download](https://github.com/BlackINT3/OpenArk)
+
+- 【FourEye】：exe、shellcode免杀
+  - [download](https://github.com/lengjibo/FourEye)
+
+
 
 ### Blogs && Talks && Workstation
 
@@ -230,6 +237,7 @@
 - https://github.com/WindowsExploits/Exploits
 - https://github.com/Heptagrams/Heptagram/tree/master/Windows/Elevation
 - https://github.com/Al1ex/WindowsElevation
+- https://github.com/nomi-sec/PoC-in-GitHub
 
 ## Paper
 
@@ -239,6 +247,10 @@
 - 【Bugs on the Windshield: Fuzzing the Windows Kernel】：Windows kernel fuzz
   - [English Blog](https://research.checkpoint.com/2020/bugs-on-the-windshield-fuzzing-the-windows-kernel/)
   - [Paper](https://github.com/yoava333/presentations/blob/master/Fuzzing%20the%20Windows%20Kernel%20-%20OffensiveCon%202020.pdf)
+
+- 【NTFUZZ: Enabling Type-Aware Kernel Fuzzing on Windows with Static Binary Analysis(S& P 2021)】：Windows kernel Fuzz
+
+
 
 ## Other Resources
 
@@ -265,3 +277,5 @@ https://github.com/gtworek/Priv2Admin](https://github.com/gtworek/Priv2Admin)
 https://speakerdeck.com/fr0gger/windows-privileges](https://speakerdeck.com/fr0gger/windows-privileges)
 
   ・ 【图片】有关 Windows privileges 的备忘录。 – [potato](https://sec.today/user/dc071663-2f31-4d9f-928e-150b2cafeef3/pushes/)
+
+https://wadcoms.github.io/
