@@ -302,3 +302,40 @@ https://speakerdeck.com/fr0gger/windows-privileges](https://speakerdeck.com/fr0g
 
 https://wadcoms.github.io/
 
+Attack Detection Fundamentals 2021: Windows - Lab #2: [
+https://labs.f-secure.com/blog/attack-detection-fundamentals-2021-windows-lab-2/](https://labs.f-secure.com/blog/attack-detection-fundamentals-2021-windows-lab-2/)
+
+  ・ Attack Detection Fundamentals 2021 Windows Lab #2 ：引入其它绕过防御的技术优化 payload。 – [potato](https://sec.today/user/dc071663-2f31-4d9f-928e-150b2cafeef3/pushes/)
+
+
+
+• Attack Detection Fundamentals 2021: Windows - Lab #1: [
+https://labs.f-secure.com/blog/attack-detection-fundamentals-2021-windows-lab-1/](https://labs.f-secure.com/blog/attack-detection-fundamentals-2021-windows-lab-1/)
+
+  ・ Attack Detection Fundamentals 2021 Windows Lab #1：构建一个可以绕过最常见保护机制的原始 payload。 – [potato](https://sec.today/user/dc071663-2f31-4d9f-928e-150b2cafeef3/pushes/)
+
+
+
+• Attack Detection Fundamentals 2021: Windows - Lab #3: [
+https://labs.f-secure.com/blog/attack-detection-fundamentals-2021-windows-lab-3/](https://labs.f-secure.com/blog/attack-detection-fundamentals-2021-windows-lab-3/)
+
+  ・ Attack Detection Fundamentals 2021 Windows Lab #3：借助 API HOOK 针对使用远程桌面连接的用户劫持纯文本凭据。 – [potato](https://sec.today/user/dc071663-2f31-4d9f-928e-150b2cafeef3/pushes/)
+
+
+
+• Attack Detection Fundamentals 2021: Windows - Lab #4: [
+https://labs.f-secure.com/blog/attack-detection-fundamentals-2021-windows-lab-4/](https://labs.f-secure.com/blog/attack-detection-fundamentals-2021-windows-lab-4/)
+
+  ・ Attack Detection Fundamentals 2021 Windows Lab #4：窃取目标用户的 Chrome 浏览器中的 cookie，并探索如何检测这类可疑的劫持行为。 – [potato](https://sec.today/user/dc071663-2f31-4d9f-928e-150b2cafeef3/pushes/)
+
+
+
+[*Windows*] Analysis of a Windows IPv6 Fragmentation Vulnerability: CVE-2021-24086: [
+http://blog.quarkslab.com/analysis-of-a-windows-ipv6-fragmentation-vulnerability-cve-2021-24086.html](http://blog.quarkslab.com/analysis-of-a-windows-ipv6-fragmentation-vulnerability-cve-2021-24086.html)
+
+  ・ CVE-2021-24086 漏洞原理分析。CVE-2021-24086 是 Windows IPv6 协议栈存在一处拒绝服务漏洞，远程攻击者可通过向存在此漏洞的系统发送特制数据包，导致目标系统拒绝服务（蓝屏）。 – [potato](https://sec.today/user/dc071663-2f31-4d9f-928e-150b2cafeef3/pushes/)
+
+• Attack Surface Reduction: [
+https://github.com/commial/experiments/tree/master/windows-defender/ASR](https://github.com/commial/experiments/tree/master/windows-defender/ASR)
+
+  ・ 揭秘 Windows 减少攻击面（ASR：attack surface reduction）的细节。 – [potato](https://sec.today/user/dc071663-2f31-4d9f-928e-150b2cafeef3/pushes/)
