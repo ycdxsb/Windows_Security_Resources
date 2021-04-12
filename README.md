@@ -164,7 +164,7 @@
 
 ### GDI Abuse
 
-#### BitMap
+#### BitMap  RS1(v1607)前
 
 - 【Windows GDI BitMap】
   - [中文博客](https://kernel32.org/posts/windows-gdi-bitmap/)
@@ -178,17 +178,24 @@
 - 【ring0层exp原语之滥用GDI】
   - [中文博客](https://r00tk1ts.github.io/2018/01/15/ring0%E5%B1%82exp%E5%8E%9F%E8%AF%AD%E4%B9%8B%E6%BB%A5%E7%94%A8GDI/)
 
-#### Accelerator Table
+#### Accelerator Table RS1(v1607)
+
+- 【RS1 下 bitmap 的替代方法】
+  - [中文博客](https://50u1w4y.github.io/site/HEVD/bitmapReplace_RS1/)
+- 【Windows10 v1607内核提权技术的发展——利用AcceleratorTable】
+  - [中文博客](https://www.anquanke.com/post/id/168356)
+
+#### HMValidateHandle RS2(v1703)
+
+- 【Windows10 v1703基于桌面堆泄露的内核提权技术】
+  - [中文博客](https://www.anquanke.com/post/id/168441)
 
 
 
-#### lpszMenuName
+#### Palette RS3 (v1709)
 
-
-
-#### Palette
-
-
+- 【Windows10 v1709特权提升：GDI Palette滥用】
+  - [中文博客](https://www.anquanke.com/post/id/168572)
 
 
 
