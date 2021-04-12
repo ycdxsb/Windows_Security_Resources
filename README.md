@@ -48,6 +48,7 @@
   - [gdi Object](https://docs.microsoft.com/zh-cn/windows/win32/sysinfo/gdi-objects)
   - [kernel Object](https://docs.microsoft.com/zh-cn/windows/win32/sysinfo/kernel-objects?redirectedfrom=MSDN)
   - [Windows Object Header](https://codemachine.com/articles/object_headers.html)
+  - [Windows Desktop Heap](https://docs.microsoft.com/zh-cn/archive/blogs/ntdebugging/desktop-heap-overview)
 
 
 
@@ -164,6 +165,8 @@
 
 ### GDI Abuse
 
+>  内核利用从任意地址写 转换为 任意地址读写
+
 #### BitMap  RS1(v1607)前
 
 - 【Windows GDI BitMap】
@@ -185,7 +188,7 @@
 - 【Windows10 v1607内核提权技术的发展——利用AcceleratorTable】
   - [中文博客](https://www.anquanke.com/post/id/168356)
 
-#### HMValidateHandle RS2(v1703)
+#### lpszMenuName RS2(v1703)
 
 - 【Windows10 v1703基于桌面堆泄露的内核提权技术】
   - [中文博客](https://www.anquanke.com/post/id/168441)
