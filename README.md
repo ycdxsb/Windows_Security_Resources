@@ -1,6 +1,32 @@
 # Windows_Kernel_Resources
 
 > 在学习Windows kernel时搜集到的资源列表
+- [Windows_Kernel_Resources](#windows_kernel_resources)
+  - [Windows基础知识](#windows基础知识)
+    - [Windows相关书籍](#windows相关书籍)
+    - [Windows相关源代码](#windows相关源代码)
+    - [Windows镜像下载](#windows镜像下载)
+  - [Windows 内核漏洞利用技术](#windows-内核漏洞利用技术)
+    - [内核利用基础知识](#内核利用基础知识)
+    - [内核调试工具](#内核调试工具)
+    - [HEVD 内核利用教程](#hevd-内核利用教程)
+    - [token 权限滥用](#token-权限滥用)
+    - [GDI 滥用提权](#gdi-滥用提权)
+      - [BitMap  RS1(v1607)前](#bitmap--rs1v1607前)
+      - [Accelerator Table RS1(v1607)](#accelerator-table-rs1v1607)
+      - [lpszMenuName RS2(v1703)](#lpszmenuname-rs2v1703)
+      - [Palette RS3 (v1709)](#palette-rs3-v1709)
+      - [综述](#综述)
+    - [堆利用](#堆利用)
+    - [保护绕过](#保护绕过)
+    - [综述](#综述-1)
+  - [Windows 漏洞分析](#windows-漏洞分析)
+    - [Windows 补丁](#windows-补丁)
+    - [Windows 漏洞集合](#windows-漏洞集合)
+    - [Windows 分析工具](#windows-分析工具)
+  - [Paper](#paper)
+  - [其他资源](#其他资源)
+  - [待整理](#待整理)
 
 ## Windows基础知识
 
@@ -13,38 +39,27 @@
 - 《深入解析Windows操作系统(第6版)》上下册
 
 ### Windows相关源代码
-
 - 【The Windows Research Kernel AKA WRK】
   - [download](https://github.com/zhuhuibeishadiao/ntoskrnl)
 - 【ReactOS：A free Windows-compatible Operating System】
   - [download](https://github.com/reactos/reactos)
-
 - 【Windows内核泄露源码的】
   - [download](https://github.com/cryptoAlgorithm/nt5src)
   - [download](https://github.com/travismills82/nt5src)
 
-
-
 ### Windows镜像下载
-
 - https://msdn.itellyou.cn/
 - https://next.itellyou.cn/
 - https://en.wikipedia.org/wiki/Windows_10_version_history：Win10版本关系
 
-
-
 ## Windows 内核漏洞利用技术
-
 ### 内核利用基础知识
-
 - Windows架构设计
   - 【Windows架构设计】
     - [中文博客](https://r00tk1ts.github.io/2017/12/19/Windows%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1/)
-
 - Windows权限管理
   - 【浅析Windows的访问权限检查机制】
     - [中文博客](http://drops.xmd5.com/static/drops/tips-11803.html)
-
 - Windows相关结构体
   - 【terminus】：很好的Windows结构搜索网页
     - [page link](http://terminus.rewolf.pl/terminus/)
@@ -63,7 +78,6 @@
     - [Windows Desktop Heap](https://docs.microsoft.com/zh-cn/archive/blogs/ntdebugging/desktop-heap-overview)
 
 ### 内核调试工具
-
 - 【Windbg】：windows kernel调试工具
   - [download](https://docs.microsoft.com/zh-cn/windows-hardware/drivers/debugger/debugger-download-tools)
   - [getting-started-with-windows-debugging](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/getting-started-with-windows-debugging)
@@ -87,7 +101,6 @@
   - [download](https://github.com/4d61726b/VirtualKD-Redux)
 
 ### HEVD 内核利用教程
-
 - 【HackSysExtremeVulnerableDriver】：windows内核利用技术学习项目
   - [download](https://github.com/hacksysteam/HackSysExtremeVulnerableDriver)
 - 【HEVD StackOverflow】：
@@ -117,7 +130,6 @@
   - https://github.com/ThunderJie/Windows-Kernel-Exploit
 
 ### token 权限滥用
-
 - 【windows-privilege-abuse-auditing-detection-and-defense】：windows token利用
   - [English Blog](https://medium.com/palantir/windows-privilege-abuse-auditing-detection-and-defense-3078a403d74e)
 - 【Abusing Token Privileges For EoP】：windows token权限滥用利用文章（含代码）
@@ -128,14 +140,11 @@
 - 【Potato家族本地提权细节】
   - [中文博客](https://xz.aliyun.com/t/7776)
 
-
-
 ### GDI 滥用提权
 
 >  内核利用从任意地址写 转换为 任意地址读写
 
 #### BitMap  RS1(v1607)前
-
 - 【Windows GDI BitMap】
   - [中文博客](https://kernel32.org/posts/windows-gdi-bitmap/)
   - [English Blog](https://www.fuzzysecurity.com/tutorials/expDev/21.html)
@@ -144,33 +153,27 @@
   - [English Blog](https://labs.mwrinfosecurity.com/blog/a-tale-of-bitmaps/)
 - 【Abusing GDI objects: Bitmap object’s size in the kernel pool】
   - [English Blog](http://theevilbit.blogspot.com/2017/10/abusing-gdi-objects-bitmap-objects-size.html)
-
 - 【ring0层exp原语之滥用GDI】
   - [中文博客](https://r00tk1ts.github.io/2018/01/15/ring0%E5%B1%82exp%E5%8E%9F%E8%AF%AD%E4%B9%8B%E6%BB%A5%E7%94%A8GDI/)
 
 #### Accelerator Table RS1(v1607)
-
 - 【RS1 下 bitmap 的替代方法】
   - [中文博客](https://50u1w4y.github.io/site/HEVD/bitmapReplace_RS1/)
 - 【Windows10 v1607内核提权技术的发展——利用AcceleratorTable】
   - [中文博客](https://www.anquanke.com/post/id/168356)
 
 #### lpszMenuName RS2(v1703)
-
 - 【Windows10 v1703基于桌面堆泄露的内核提权技术】
   - [中文博客](https://www.anquanke.com/post/id/168441)
-
 - 【Part 18: Kernel Exploitation -> RS2 Bitmap Necromancy】
   - [English Blog](http://fuzzysecurity.com/tutorials/expDev/22.html)
   - [中文博客](https://bbs.pediy.com/thread-225296.htm)
 
 #### Palette RS3 (v1709)
-
 - 【Windows10 v1709特权提升：GDI Palette滥用】
   - [中文博客](https://www.anquanke.com/post/id/168572)
 
 #### 综述
-
 - 【GDI魔术:漏洞利用中的利器】
   - [中文pdf](http://www.vxjump.net/files/seccon/exp-in-gdi.pdf)
 - 【Abusing GDI for ring0 exploit primitives:Reloaded】
@@ -181,15 +184,11 @@
   - [中文博客](https://saturn35.com/2019/07/25/20190725-1/)
 - 【www漏洞从win7-win10】
   - [中文博客](https://thunderjie.github.io/2019/08/19/www%E6%BC%8F%E6%B4%9E%E4%BB%8Ewin7-win10/)
-
 - 【Taking-Windows-10-Kernel-Exploitation-To-The-Next-Level–Leveraging-Write-What-Where-Vulnerabilities-In-Creators-Update-wp】
   - [English pdf](https://www.blackhat.com/docs/us-17/wednesday/us-17-Schenk-Taking-Windows-10-Kernel-Exploitation-To-The-Next-Level%E2%80%93Leveraging-Write-What-Where-Vulnerabilities-In-Creators-Update-wp.pdf)
   - [中文 pdf](https://bbs.pediy.com/thread-227102.htm)
 
-
-
 ### 堆利用
-
 - 【Windows内核池喷射的乐趣】
   - [中文博客](https://www.anquanke.com/post/id/86896)
   - [English Blog](https://theevilbit.blogspot.com/2017/09/pool-spraying-fun-part-1.html)
@@ -205,7 +204,6 @@
   - [English paper](https://www.exploit-db.com/docs/english/16032-kernel-pool-exploitation-on-windows-7.pdf)
 
 ### 保护绕过
-
 - 【SMEP和SMAP绕过】
   - [中文博客](https://bbs.pediy.com/thread-261744.htm)
 - 【Windows 10 x64上令牌窃取有效载荷问题，并绕过SMEP 上】
@@ -216,19 +214,14 @@
   - [English pdf](https://www.coresecurity.com/sites/default/files/2020-06/Windows%20SMEP%20bypass%20U%20equals%20S_0.pdf)
 
 ### 综述
-
 - 【猫鼠游戏：Windows内核提权样本狩猎思路分享】
   - [中文博客](https://www.anquanke.com/post/id/235716)
-
 - 【Windows Kernel Address Leaks】
   - [Code](https://github.com/sam-b/windows_kernel_address_leaks)
-
 - 【通过内核地址保护措施，回顾Windows安全加固技术】
   - [中文博客](https://www.anquanke.com/post/id/85614)
-
 - 【关于内核漏洞的原理分析】
   - [中文博客](https://www.yuque.com/posec/public/sp9bs1)
-
 - 【Windows 提权总结】
   - [中文博客](https://www.cnblogs.com/-mo-/p/12718115.html) 
 - 【Level Up! Practical Windows Privilege Escalation - Andrew Smith】
@@ -242,19 +235,14 @@
 - 【Easy local Windows Kernel exploitation】
   - [English pdf](https://paper.bobylive.com/Meeting_Papers/BlackHat/USA-2012/BH_US_12_Cerrudo_Windows_Kernel_WP.pdf)
 
-
-
 ## Windows 漏洞分析
-
 ### Windows 补丁
-
 - https://msrc.microsoft.com/update-guide/：官方KB对应补丁信息
 - https://bugs.hacking8.com/tiquan/：根据KB补丁号或者systeminfo查找对应的exp
 - 【Extracting and Diffing Windows Patches in 2020】： 通过Windows更新提取和分析补丁（含代码）
   -  [English Blog](https://wumb0.in/extracting-and-diffing-ms-patches-in-2020.html)
 
 ### Windows 漏洞集合
-
 - https://github.com/SecWiki/windows-kernel-exploits
 - https://github.com/nu11secur1ty/Windows10Exploits
 - https://github.com/abatchy17/WindowsExploits
@@ -265,7 +253,6 @@
 - https://github.com/nomi-sec/PoC-in-GitHub
 
 ### Windows 分析工具
-
 - 【accesschk】
   - [download](https://docs.microsoft.com/en-us/sysinternals/downloads/accesschk)
 - 【oleview】
@@ -280,22 +267,16 @@
   - [download](https://github.com/zodiacon/SystemExplorer)
 - 【ProcessHacker】
   - [download](https://processhacker.sourceforge.io/downloads.php)
-
 - 【drmemory】
   - [download](https://github.com/DynamoRIO/drmemory)
 
 ## Paper
-
 - 【Bugs on the Windshield: Fuzzing the Windows Kernel】：Windows kernel fuzz
   - [English Blog](https://research.checkpoint.com/2020/bugs-on-the-windshield-fuzzing-the-windows-kernel/)
   - [Paper](https://github.com/yoava333/presentations/blob/master/Fuzzing%20the%20Windows%20Kernel%20-%20OffensiveCon%202020.pdf)
-
 - 【NTFUZZ: Enabling Type-Aware Kernel Fuzzing on Windows with Static Binary Analysis(S& P 2021)】：Windows kernel Fuzz
 
-
-
 ## 其他资源
-
 - https://labs.f-secure.com
 - https://3gstudent.github.io/3gstudent.github.io:有很多从渗透测试角度审视的Windows下提权方法
 - https://github.com/3gstudent/Pentest-and-Development-Tips:列举了Windows下渗透测试的Tips
@@ -307,10 +288,6 @@
 - https://github.com/sailay1996/awesome_windows_logical_bugs
 - https://github.com/topics/windows-privilege-escalation
 - http://www.fuzzysecurity.com
-
-
-
-
 
 ## 待整理
 
@@ -363,4 +340,3 @@ https://github.com/commial/experiments/tree/master/windows-defender/ASR](https:/
   - [download](https://github.com/BlackINT3/OpenArk)
 - 【FourEye】：exe、shellcode免杀
   - [download](https://github.com/lengjibo/FourEye)
-
