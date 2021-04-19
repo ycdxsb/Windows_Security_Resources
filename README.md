@@ -2,9 +2,9 @@
 
 > 在学习Windows kernel时搜集到的资源列表
 
-## Learn Windows
+## Windows基础知识
 
-### Books
+### Windows相关书籍
 
 - 《寒江独钓——Windows内核安全编程》
 - 《天书夜读——从汇编语言到Windows内核编程》
@@ -12,14 +12,20 @@
 - 《Windows驱动开发技术详解》
 - 《深入解析Windows操作系统(第6版)》上下册
 
-### Source Code
+### Windows相关源代码
 
 - 【The Windows Research Kernel AKA WRK】
   - [download](https://github.com/zhuhuibeishadiao/ntoskrnl)
 - 【ReactOS：A free Windows-compatible Operating System】
   - [download](https://github.com/reactos/reactos)
 
-### Windows iso
+- 【Windows内核泄露源码的】
+  - [download](https://github.com/cryptoAlgorithm/nt5src)
+  - [download](https://github.com/travismills82/nt5src)
+
+
+
+### Windows镜像下载
 
 - https://msdn.itellyou.cn/
 - https://next.itellyou.cn/
@@ -27,41 +33,36 @@
 
 
 
-### Windows Design
+## Windows 内核漏洞利用技术
 
-- 【Windows结构设计】
-  - [中文博客](https://r00tk1ts.github.io/2017/12/19/Windows%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1/)
+### 内核利用基础知识
 
-### Windows Structure
+- Windows架构设计
+  - 【Windows架构设计】
+    - [中文博客](https://r00tk1ts.github.io/2017/12/19/Windows%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1/)
 
-- 【terminus】：很好的Windows结构搜索网页
-  - [page link](http://terminus.rewolf.pl/terminus/)
-- 【关键的windows内核数据结构一览(上)】
-  - [中文博客](https://r00tk1ts.github.io/2018/01/08/%E5%85%B3%E9%94%AE%E7%9A%84Windows%E5%86%85%E6%A0%B8%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%80%E8%A7%88%EF%BC%88%E4%B8%8A%EF%BC%89/)
-- 【关键的windows内核数据结构一览(下)】
-  - [中文博客](https://r00tk1ts.github.io/2018/01/14/%E5%85%B3%E9%94%AE%E7%9A%84Windows%E5%86%85%E6%A0%B8%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%80%E8%A7%88%EF%BC%88%E4%B8%8B%EF%BC%89/)
-- 【Catalog of key Windows kernel data structures】
-  - [English Blog](https://codemachine.com/articles/kernel_structures.html)
-- 【Object】
-  - [object categories](https://docs.microsoft.com/zh-cn/windows/win32/sysinfo/object-categories)
-  - [user Object](https://docs.microsoft.com/zh-cn/windows/win32/sysinfo/user-objects)
-  - [gdi Object](https://docs.microsoft.com/zh-cn/windows/win32/sysinfo/gdi-objects)
-  - [kernel Object](https://docs.microsoft.com/zh-cn/windows/win32/sysinfo/kernel-objects?redirectedfrom=MSDN)
-  - [Windows Object Header](https://codemachine.com/articles/object_headers.html)
-  - [Windows Desktop Heap](https://docs.microsoft.com/zh-cn/archive/blogs/ntdebugging/desktop-heap-overview)
+- Windows权限管理
+  - 【浅析Windows的访问权限检查机制】
+    - [中文博客](http://drops.xmd5.com/static/drops/tips-11803.html)
 
+- Windows相关结构体
+  - 【terminus】：很好的Windows结构搜索网页
+    - [page link](http://terminus.rewolf.pl/terminus/)
+  - 【关键的windows内核数据结构一览(上)】
+    - [中文博客](https://r00tk1ts.github.io/2018/01/08/%E5%85%B3%E9%94%AE%E7%9A%84Windows%E5%86%85%E6%A0%B8%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%80%E8%A7%88%EF%BC%88%E4%B8%8A%EF%BC%89/)
+  - 【关键的windows内核数据结构一览(下)】
+    - [中文博客](https://r00tk1ts.github.io/2018/01/14/%E5%85%B3%E9%94%AE%E7%9A%84Windows%E5%86%85%E6%A0%B8%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%80%E8%A7%88%EF%BC%88%E4%B8%8B%EF%BC%89/)
+  - 【Catalog of key Windows kernel data structures】
+    - [English Blog](https://codemachine.com/articles/kernel_structures.html)
+  - 【Windows 对象】
+    - [object categories](https://docs.microsoft.com/zh-cn/windows/win32/sysinfo/object-categories)
+    - [user Object](https://docs.microsoft.com/zh-cn/windows/win32/sysinfo/user-objects)
+    - [gdi Object](https://docs.microsoft.com/zh-cn/windows/win32/sysinfo/gdi-objects)
+    - [kernel Object](https://docs.microsoft.com/zh-cn/windows/win32/sysinfo/kernel-objects?redirectedfrom=MSDN)
+    - [Windows Object Header](https://codemachine.com/articles/object_headers.html)
+    - [Windows Desktop Heap](https://docs.microsoft.com/zh-cn/archive/blogs/ntdebugging/desktop-heap-overview)
 
-
-## Windows Kernel Exploit
-
-### KB and Patch
-
-- https://msrc.microsoft.com/update-guide/：官方KB对应补丁信息
-- https://bugs.hacking8.com/tiquan/：根据KB补丁号或者systeminfo查找对应的exp
-- 【Extracting and Diffing Windows Patches in 2020】： 通过Windows更新提取和分析补丁（含代码）
-  -  [English Blog](https://wumb0.in/extracting-and-diffing-ms-patches-in-2020.html)
-
-### Tools & Docs
+### 内核调试工具
 
 - 【Windbg】：windows kernel调试工具
   - [download](https://docs.microsoft.com/zh-cn/windows-hardware/drivers/debugger/debugger-download-tools)
@@ -84,51 +85,8 @@
   - [download](https://sysprogs.com/legacy/virtualkd/)
 - 【VirtualKD-Redux】：双机调试工具，支持最新版本VMWare
   - [download](https://github.com/4d61726b/VirtualKD-Redux)
-- 【accesschk】
-  - [download](https://docs.microsoft.com/en-us/sysinternals/downloads/accesschk)
-- 【oleview】
-  - [download](https://github.com/tyranid/oleviewdotnet)
-- 【process monitor】
-  - [download](https://docs.microsoft.com/en-us/sysinternals/downloads/procmon)
-- 【Windows-Kernel-Explorer】
-  - [download](https://github.com/AxtMueller/Windows-Kernel-Explorer/)
-- 【sandbox-attacksurface-analysis-tools】
-  - [download](https://github.com/googleprojectzero/sandbox-attacksurface-analysis-tools)
-- 【SystemExplorer】
-  - [download](https://github.com/zodiacon/SystemExplorer)
-- 【ProcessHacker】
-  - [download](https://processhacker.sourceforge.io/downloads.php)
-- 【drmemory】
-  - [download](https://github.com/DynamoRIO/drmemory)
-- 【openark】：一款Windows平台上的开源Ark工具. Ark是Anti-Rootkit（对抗恶意程序）的简写, OpenArk目标成为逆向工程师、编程人员的工具，同时也能为那些希望清理恶意软件的用户服务
-  - [download](https://github.com/BlackINT3/OpenArk)
 
-- 【FourEye】：exe、shellcode免杀
-  - [download](https://github.com/lengjibo/FourEye)
-
-
-
-### Blogs && Talks && Workstation
-
-- 【Windows 提权总结】
-  - [中文博客](https://www.cnblogs.com/-mo-/p/12718115.html) 
-- 【Level Up! Practical Windows Privilege Escalation - Andrew Smith】
-  - [Youtube](https://www.youtube.com/watch?v=PC_iMqiuIRQ)
-- 【I Got 99 Problem But a Kernel Pointer Ain’t One】
-  - [English pdf](https://recon.cx/2013/slides/Recon2013-Alex%20Ionescu-I%20got%2099%20problems%20but%20a%20kernel%20pointer%20ain't%20one.pdf)
-- 【The Life And Death of Kernel Object Abuse】
-  - [English pdf](https://conference.hitb.org/hitbsecconf2018ams/materials/D1%20COMMSEC%20-%20Saif%20Elsherei%20and%20Ian%20Kronquist%20-%20The%20Life%20&%20Death%20of%20Kernel%20Object%20Abuse.pdf)
-- 【A Window into Ring0】
-  - [English pdf](https://labs.f-secure.com/assets/BlogFiles/mwri-steelcon-2017-samdb-a-window-into-ring0.pdf)
-- 【Taking-Windows-10-Kernel-Exploitation-To-The-Next-Level–Leveraging-Write-What-Where-Vulnerabilities-In-Creators-Update-wp】
-  - [English pdf](https://www.blackhat.com/docs/us-17/wednesday/us-17-Schenk-Taking-Windows-10-Kernel-Exploitation-To-The-Next-Level%E2%80%93Leveraging-Write-What-Where-Vulnerabilities-In-Creators-Update-wp.pdf)
-  - [中文 pdf](https://bbs.pediy.com/thread-227102.htm)
-- 【Easy local Windows Kernel exploitation】
-  - [English pdf](https://paper.bobylive.com/Meeting_Papers/BlackHat/USA-2012/BH_US_12_Cerrudo_Windows_Kernel_WP.pdf)
-
-## Learn Exploit
-
-### HEVD
+### HEVD 内核利用教程
 
 - 【HackSysExtremeVulnerableDriver】：windows内核利用技术学习项目
   - [download](https://github.com/hacksysteam/HackSysExtremeVulnerableDriver)
@@ -158,12 +116,21 @@
   - https://github.com/dhn/OSEE/tree/master/Kernel_Exploitation/HEVD
   - https://github.com/ThunderJie/Windows-Kernel-Exploit
 
-### Token Abuse
+### token 权限滥用
 
 - 【windows-privilege-abuse-auditing-detection-and-defense】：windows token利用
   - [English Blog](https://medium.com/palantir/windows-privilege-abuse-auditing-detection-and-defense-3078a403d74e)
+- 【Abusing Token Privileges For EoP】：windows token权限滥用利用文章（含代码）
+  - [Paper](https://github.com/hatRiot/token-priv/blob/master/abusing_token_eop_1.0.txt)
+  - [Code](https://github.com/hatRiot/token-priv)
+- 【windows-privileges】
+  - [English pdf][https://speakerdeck.com/fr0gger/windows-privileges]
+- 【Potato家族本地提权细节】
+  - [中文博客](https://xz.aliyun.com/t/7776)
 
-### GDI Abuse
+
+
+### GDI 滥用提权
 
 >  内核利用从任意地址写 转换为 任意地址读写
 
@@ -193,16 +160,16 @@
 - 【Windows10 v1703基于桌面堆泄露的内核提权技术】
   - [中文博客](https://www.anquanke.com/post/id/168441)
 
-
+- 【Part 18: Kernel Exploitation -> RS2 Bitmap Necromancy】
+  - [English Blog](http://fuzzysecurity.com/tutorials/expDev/22.html)
+  - [中文博客](https://bbs.pediy.com/thread-225296.htm)
 
 #### Palette RS3 (v1709)
 
 - 【Windows10 v1709特权提升：GDI Palette滥用】
   - [中文博客](https://www.anquanke.com/post/id/168572)
 
-
-
-#### Others
+#### 综述
 
 - 【GDI魔术:漏洞利用中的利器】
   - [中文pdf](http://www.vxjump.net/files/seccon/exp-in-gdi.pdf)
@@ -215,9 +182,13 @@
 - 【www漏洞从win7-win10】
   - [中文博客](https://thunderjie.github.io/2019/08/19/www%E6%BC%8F%E6%B4%9E%E4%BB%8Ewin7-win10/)
 
+- 【Taking-Windows-10-Kernel-Exploitation-To-The-Next-Level–Leveraging-Write-What-Where-Vulnerabilities-In-Creators-Update-wp】
+  - [English pdf](https://www.blackhat.com/docs/us-17/wednesday/us-17-Schenk-Taking-Windows-10-Kernel-Exploitation-To-The-Next-Level%E2%80%93Leveraging-Write-What-Where-Vulnerabilities-In-Creators-Update-wp.pdf)
+  - [中文 pdf](https://bbs.pediy.com/thread-227102.htm)
 
 
-### Pool
+
+### 堆利用
 
 - 【Windows内核池喷射的乐趣】
   - [中文博客](https://www.anquanke.com/post/id/86896)
@@ -233,22 +204,6 @@
 - 【Kernel Pool Exploitation on Windows 7】
   - [English paper](https://www.exploit-db.com/docs/english/16032-kernel-pool-exploitation-on-windows-7.pdf)
 
-### Kernel Address Leaks
-
-- 【Windows Kernel Address Leaks】
-  - [Code](https://github.com/sam-b/windows_kernel_address_leaks)
-
-
-### Potato
-
-- 【Potato家族本地提权细节】
-  - [中文博客](https://xz.aliyun.com/t/7776)
-
-### 利用历史
-
-- 【猫鼠游戏：Windows内核提权样本狩猎思路分享】
-  - [中文博客](https://www.anquanke.com/post/id/235716)
-
 ### 保护绕过
 
 - 【SMEP和SMAP绕过】
@@ -260,7 +215,45 @@
 - 【Windows SMEP Bypass U=S】
   - [English pdf](https://www.coresecurity.com/sites/default/files/2020-06/Windows%20SMEP%20bypass%20U%20equals%20S_0.pdf)
 
-## CVE and Exploits
+### 综述
+
+- 【猫鼠游戏：Windows内核提权样本狩猎思路分享】
+  - [中文博客](https://www.anquanke.com/post/id/235716)
+
+- 【Windows Kernel Address Leaks】
+  - [Code](https://github.com/sam-b/windows_kernel_address_leaks)
+
+- 【通过内核地址保护措施，回顾Windows安全加固技术】
+  - [中文博客](https://www.anquanke.com/post/id/85614)
+
+- 【关于内核漏洞的原理分析】
+  - [中文博客](https://www.yuque.com/posec/public/sp9bs1)
+
+- 【Windows 提权总结】
+  - [中文博客](https://www.cnblogs.com/-mo-/p/12718115.html) 
+- 【Level Up! Practical Windows Privilege Escalation - Andrew Smith】
+  - [Youtube](https://www.youtube.com/watch?v=PC_iMqiuIRQ)
+- 【I Got 99 Problem But a Kernel Pointer Ain’t One】
+  - [English pdf](https://recon.cx/2013/slides/Recon2013-Alex%20Ionescu-I%20got%2099%20problems%20but%20a%20kernel%20pointer%20ain't%20one.pdf)
+- 【The Life And Death of Kernel Object Abuse】
+  - [English pdf](https://conference.hitb.org/hitbsecconf2018ams/materials/D1%20COMMSEC%20-%20Saif%20Elsherei%20and%20Ian%20Kronquist%20-%20The%20Life%20&%20Death%20of%20Kernel%20Object%20Abuse.pdf)
+- 【A Window into Ring0】
+  - [English pdf](https://labs.f-secure.com/assets/BlogFiles/mwri-steelcon-2017-samdb-a-window-into-ring0.pdf)
+- 【Easy local Windows Kernel exploitation】
+  - [English pdf](https://paper.bobylive.com/Meeting_Papers/BlackHat/USA-2012/BH_US_12_Cerrudo_Windows_Kernel_WP.pdf)
+
+
+
+## Windows 漏洞分析
+
+### Windows 补丁
+
+- https://msrc.microsoft.com/update-guide/：官方KB对应补丁信息
+- https://bugs.hacking8.com/tiquan/：根据KB补丁号或者systeminfo查找对应的exp
+- 【Extracting and Diffing Windows Patches in 2020】： 通过Windows更新提取和分析补丁（含代码）
+  -  [English Blog](https://wumb0.in/extracting-and-diffing-ms-patches-in-2020.html)
+
+### Windows 漏洞集合
 
 - https://github.com/SecWiki/windows-kernel-exploits
 - https://github.com/nu11secur1ty/Windows10Exploits
@@ -271,11 +264,28 @@
 - https://github.com/Al1ex/WindowsElevation
 - https://github.com/nomi-sec/PoC-in-GitHub
 
+### Windows 分析工具
+
+- 【accesschk】
+  - [download](https://docs.microsoft.com/en-us/sysinternals/downloads/accesschk)
+- 【oleview】
+  - [download](https://github.com/tyranid/oleviewdotnet)
+- 【process monitor】
+  - [download](https://docs.microsoft.com/en-us/sysinternals/downloads/procmon)
+- 【Windows-Kernel-Explorer】
+  - [download](https://github.com/AxtMueller/Windows-Kernel-Explorer/)
+- 【sandbox-attacksurface-analysis-tools】
+  - [download](https://github.com/googleprojectzero/sandbox-attacksurface-analysis-tools)
+- 【SystemExplorer】
+  - [download](https://github.com/zodiacon/SystemExplorer)
+- 【ProcessHacker】
+  - [download](https://processhacker.sourceforge.io/downloads.php)
+
+- 【drmemory】
+  - [download](https://github.com/DynamoRIO/drmemory)
+
 ## Paper
 
-- 【Abusing Token Privileges For EoP】：windows token 利用文章（含代码）
-  - [Paper](https://github.com/hatRiot/token-priv/blob/master/abusing_token_eop_1.0.txt)
-  - [Code](https://github.com/hatRiot/token-priv)
 - 【Bugs on the Windshield: Fuzzing the Windows Kernel】：Windows kernel fuzz
   - [English Blog](https://research.checkpoint.com/2020/bugs-on-the-windshield-fuzzing-the-windows-kernel/)
   - [Paper](https://github.com/yoava333/presentations/blob/master/Fuzzing%20the%20Windows%20Kernel%20-%20OffensiveCon%202020.pdf)
@@ -284,7 +294,7 @@
 
 
 
-## Other Resources
+## 其他资源
 
 - https://labs.f-secure.com
 - https://3gstudent.github.io/3gstudent.github.io:有很多从渗透测试角度审视的Windows下提权方法
@@ -296,7 +306,11 @@
 - https://github.com/itm4n：itm4n大佬，有很多windows分析工具，博客里也有很多干货
 - https://github.com/sailay1996/awesome_windows_logical_bugs
 - https://github.com/topics/windows-privilege-escalation
-- http://www.fuzzysecurity.com/tutorials/16.html
+- http://www.fuzzysecurity.com
+
+
+
+
 
 ## 待整理
 
@@ -304,11 +318,6 @@
 https://github.com/gtworek/Priv2Admin](https://github.com/gtworek/Priv2Admin)
 
   ・ Priv2Admin：在 Windows 中利用漏洞提权。 – [potato](https://sec.today/user/dc071663-2f31-4d9f-928e-150b2cafeef3/pushes/)
-
-• Windows Privileges: [
-https://speakerdeck.com/fr0gger/windows-privileges](https://speakerdeck.com/fr0gger/windows-privileges)
-
-  ・ 【图片】有关 Windows privileges 的备忘录。 – [potato](https://sec.today/user/dc071663-2f31-4d9f-928e-150b2cafeef3/pushes/)
 
 https://wadcoms.github.io/
 
@@ -349,3 +358,9 @@ http://blog.quarkslab.com/analysis-of-a-windows-ipv6-fragmentation-vulnerability
 https://github.com/commial/experiments/tree/master/windows-defender/ASR](https://github.com/commial/experiments/tree/master/windows-defender/ASR)
 
   ・ 揭秘 Windows 减少攻击面（ASR：attack surface reduction）的细节。 – [potato](https://sec.today/user/dc071663-2f31-4d9f-928e-150b2cafeef3/pushes/)
+
+- 【openark】：一款Windows平台上的开源Ark工具. Ark是Anti-Rootkit（对抗恶意程序）的简写, OpenArk目标成为逆向工程师、编程人员的工具，同时也能为那些希望清理恶意软件的用户服务
+  - [download](https://github.com/BlackINT3/OpenArk)
+- 【FourEye】：exe、shellcode免杀
+  - [download](https://github.com/lengjibo/FourEye)
+
