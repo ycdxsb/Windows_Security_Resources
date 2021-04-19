@@ -1,6 +1,7 @@
 # Windows_Kernel_Resources
 
 > 在学习Windows kernel时搜集到的资源列表
+
 - [Windows_Kernel_Resources](#windows_kernel_resources)
   - [Windows基础知识](#windows基础知识)
     - [Windows相关书籍](#windows相关书籍)
@@ -19,14 +20,17 @@
       - [综述](#综述)
     - [堆利用](#堆利用)
     - [保护绕过](#保护绕过)
+    - [Payload](#payload)
     - [综述](#综述-1)
   - [Windows 漏洞分析](#windows-漏洞分析)
     - [Windows 补丁](#windows-补丁)
     - [Windows 漏洞集合](#windows-漏洞集合)
     - [Windows 分析工具](#windows-分析工具)
+  - [Windows 渗透测试](#windows-渗透测试)
+    - [攻击面分析](#攻击面分析)
+    - [渗透测试工具](#渗透测试工具)
   - [Paper](#paper)
-  - [其他资源](#其他资源)
-  - [待整理](#待整理)
+  - [综合性资源](#综合性资源)
 
 ## Windows基础知识
 
@@ -137,6 +141,8 @@
   - [Code](https://github.com/hatRiot/token-priv)
 - 【windows-privileges】
   - [English pdf][https://speakerdeck.com/fr0gger/windows-privileges]
+- 【Priv2Admin：在 Windows 中利用漏洞提权】
+  - [download](https://github.com/gtworek/Priv2Admin)
 - 【Potato家族本地提权细节】
   - [中文博客](https://xz.aliyun.com/t/7776)
 
@@ -213,6 +219,16 @@
 - 【Windows SMEP Bypass U=S】
   - [English pdf](https://www.coresecurity.com/sites/default/files/2020-06/Windows%20SMEP%20bypass%20U%20equals%20S_0.pdf)
 
+### Payload
+- 【Attack Detection Fundamentals 2021 Windows Lab #1：构建一个可以绕过最常见保护机制的原始 payload】
+  - [English Blog](https://labs.f-secure.com/blog/attack-detection-fundamentals-2021-windows-lab-1/)
+- 【Attack Detection Fundamentals 2021 Windows Lab #2 ：引入其它绕过防御的技术优化 payload】
+  - [English Blog](https://labs.f-secure.com/blog/attack-detection-fundamentals-2021-windows-lab-2/)
+- 【Attack Detection Fundamentals 2021 Windows Lab #3：借助 API HOOK 针对使用远程桌面连接的用户劫持纯文本凭据】
+  - [English Blog](https://labs.f-secure.com/blog/attack-detection-fundamentals-2021-windows-lab-3/)
+- 【Attack Detection Fundamentals 2021 Windows Lab #4：窃取目标用户的 Chrome 浏览器中的 cookie，并探索如何检测这类可疑的劫持行为】
+  - [English Blog](https://labs.f-secure.com/blog/attack-detection-fundamentals-2021-windows-lab-4/)
+
 ### 综述
 - 【猫鼠游戏：Windows内核提权样本狩猎思路分享】
   - [中文博客](https://www.anquanke.com/post/id/235716)
@@ -270,13 +286,25 @@
 - 【drmemory】
   - [download](https://github.com/DynamoRIO/drmemory)
 
+## Windows 渗透测试
+### 攻击面分析
+- 【揭秘 Windows 减少攻击面（ASR：attack surface reduction）的细节】
+  - [English Blog](https://github.com/commial/experiments/tree/master/windows-defender/ASR)
+### 渗透测试工具
+- 【WADComs】：一个CheatSheet工具，包含精选的攻击性安全工具及其各自的命令列表
+  - [download](https://github.com/WADComs/WADComs.github.io)
+- 【openark】：一款Windows平台上的开源Ark工具. Ark是Anti-Rootkit（对抗恶意程序）的简写, OpenArk目标成为逆向工程师、编程人员的工具，同时也能为那些希望清理恶意软件的用户服务
+  - [download](https://github.com/BlackINT3/OpenArk)
+- 【FourEye】：exe、shellcode免杀
+  - [download](https://github.com/lengjibo/FourEye)
+
 ## Paper
 - 【Bugs on the Windshield: Fuzzing the Windows Kernel】：Windows kernel fuzz
   - [English Blog](https://research.checkpoint.com/2020/bugs-on-the-windshield-fuzzing-the-windows-kernel/)
   - [Paper](https://github.com/yoava333/presentations/blob/master/Fuzzing%20the%20Windows%20Kernel%20-%20OffensiveCon%202020.pdf)
 - 【NTFUZZ: Enabling Type-Aware Kernel Fuzzing on Windows with Static Binary Analysis(S& P 2021)】：Windows kernel Fuzz
 
-## 其他资源
+## 综合性资源
 - https://labs.f-secure.com
 - https://3gstudent.github.io/3gstudent.github.io:有很多从渗透测试角度审视的Windows下提权方法
 - https://github.com/3gstudent/Pentest-and-Development-Tips:列举了Windows下渗透测试的Tips
@@ -288,55 +316,3 @@
 - https://github.com/sailay1996/awesome_windows_logical_bugs
 - https://github.com/topics/windows-privilege-escalation
 - http://www.fuzzysecurity.com
-
-## 待整理
-
-• [*Windows, Tools*] gtworek/Priv2Admin: [
-https://github.com/gtworek/Priv2Admin](https://github.com/gtworek/Priv2Admin)
-
-  ・ Priv2Admin：在 Windows 中利用漏洞提权。 – [potato](https://sec.today/user/dc071663-2f31-4d9f-928e-150b2cafeef3/pushes/)
-
-https://wadcoms.github.io/
-
-Attack Detection Fundamentals 2021: Windows - Lab #2: [
-https://labs.f-secure.com/blog/attack-detection-fundamentals-2021-windows-lab-2/](https://labs.f-secure.com/blog/attack-detection-fundamentals-2021-windows-lab-2/)
-
-  ・ Attack Detection Fundamentals 2021 Windows Lab #2 ：引入其它绕过防御的技术优化 payload。 – [potato](https://sec.today/user/dc071663-2f31-4d9f-928e-150b2cafeef3/pushes/)
-
-
-
-• Attack Detection Fundamentals 2021: Windows - Lab #1: [
-https://labs.f-secure.com/blog/attack-detection-fundamentals-2021-windows-lab-1/](https://labs.f-secure.com/blog/attack-detection-fundamentals-2021-windows-lab-1/)
-
-  ・ Attack Detection Fundamentals 2021 Windows Lab #1：构建一个可以绕过最常见保护机制的原始 payload。 – [potato](https://sec.today/user/dc071663-2f31-4d9f-928e-150b2cafeef3/pushes/)
-
-
-
-• Attack Detection Fundamentals 2021: Windows - Lab #3: [
-https://labs.f-secure.com/blog/attack-detection-fundamentals-2021-windows-lab-3/](https://labs.f-secure.com/blog/attack-detection-fundamentals-2021-windows-lab-3/)
-
-  ・ Attack Detection Fundamentals 2021 Windows Lab #3：借助 API HOOK 针对使用远程桌面连接的用户劫持纯文本凭据。 – [potato](https://sec.today/user/dc071663-2f31-4d9f-928e-150b2cafeef3/pushes/)
-
-
-
-• Attack Detection Fundamentals 2021: Windows - Lab #4: [
-https://labs.f-secure.com/blog/attack-detection-fundamentals-2021-windows-lab-4/](https://labs.f-secure.com/blog/attack-detection-fundamentals-2021-windows-lab-4/)
-
-  ・ Attack Detection Fundamentals 2021 Windows Lab #4：窃取目标用户的 Chrome 浏览器中的 cookie，并探索如何检测这类可疑的劫持行为。 – [potato](https://sec.today/user/dc071663-2f31-4d9f-928e-150b2cafeef3/pushes/)
-
-
-
-[*Windows*] Analysis of a Windows IPv6 Fragmentation Vulnerability: CVE-2021-24086: [
-http://blog.quarkslab.com/analysis-of-a-windows-ipv6-fragmentation-vulnerability-cve-2021-24086.html](http://blog.quarkslab.com/analysis-of-a-windows-ipv6-fragmentation-vulnerability-cve-2021-24086.html)
-
-  ・ CVE-2021-24086 漏洞原理分析。CVE-2021-24086 是 Windows IPv6 协议栈存在一处拒绝服务漏洞，远程攻击者可通过向存在此漏洞的系统发送特制数据包，导致目标系统拒绝服务（蓝屏）。 – [potato](https://sec.today/user/dc071663-2f31-4d9f-928e-150b2cafeef3/pushes/)
-
-• Attack Surface Reduction: [
-https://github.com/commial/experiments/tree/master/windows-defender/ASR](https://github.com/commial/experiments/tree/master/windows-defender/ASR)
-
-  ・ 揭秘 Windows 减少攻击面（ASR：attack surface reduction）的细节。 – [potato](https://sec.today/user/dc071663-2f31-4d9f-928e-150b2cafeef3/pushes/)
-
-- 【openark】：一款Windows平台上的开源Ark工具. Ark是Anti-Rootkit（对抗恶意程序）的简写, OpenArk目标成为逆向工程师、编程人员的工具，同时也能为那些希望清理恶意软件的用户服务
-  - [download](https://github.com/BlackINT3/OpenArk)
-- 【FourEye】：exe、shellcode免杀
-  - [download](https://github.com/lengjibo/FourEye)
