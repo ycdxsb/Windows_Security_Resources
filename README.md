@@ -1,7 +1,6 @@
 # Windows_Kernel_Resources
 
 > 在学习Windows kernel时搜集到的资源列表
-
 - [Windows_Kernel_Resources](#windows_kernel_resources)
   - [Windows基础知识](#windows基础知识)
     - [Windows相关书籍](#windows相关书籍)
@@ -25,17 +24,21 @@
   - [Windows 漏洞分析](#windows-漏洞分析)
     - [Windows 补丁](#windows-补丁)
     - [Windows 漏洞集合](#windows-漏洞集合)
+    - [CVE漏洞分析](#cve漏洞分析)
+      - [CVE-2020-0787 BITS任意文件移动漏洞](#cve-2020-0787-bits任意文件移动漏洞)
+      - [CVE-2020-0796 SMB Ghost 整数溢出漏洞](#cve-2020-0796-smb-ghost-整数溢出漏洞)
     - [Windows 分析工具](#windows-分析工具)
   - [Windows 渗透测试](#windows-渗透测试)
     - [攻击面分析](#攻击面分析)
     - [渗透测试工具](#渗透测试工具)
+    - [渗透测试常用漏洞](#渗透测试常用漏洞)
+      - [MS17-010 永恒之蓝](#ms17-010-永恒之蓝)
+    - [综述](#综述-2)
   - [Paper](#paper)
   - [综合性资源](#综合性资源)
-
 ## Windows基础知识
 
 ### Windows相关书籍
-
 - 《寒江独钓——Windows内核安全编程》
 - 《天书夜读——从汇编语言到Windows内核编程》
 - 《Windows内核情景分析》上下册
@@ -266,6 +269,23 @@
 - https://github.com/Al1ex/WindowsElevation
 - https://github.com/nomi-sec/PoC-in-GitHub
 
+### CVE漏洞分析
+
+#### CVE-2020-0787 BITS任意文件移动漏洞
+- https://docs.microsoft.com/en-us/windows/win32/bits/background-intelligent-transfer-service-portal
+- https://xz.aliyun.com/t/7935
+- https://itm4n.github.io/cve-2020-0787-windows-bits-eop/
+- https://github.com/itm4n/BitsArbitraryFileMove
+- https://github.com/cbwang505/CVE-2020-0787-EXP-ALL-WINDOWS-VERSION
+- https://packetstormsecurity.com/files/158056/Background-Intelligent-Transfer-Service-Privilege-Escalation.html
+- https://blog.ycdxsb.cn/57177eae.html
+
+#### CVE-2020-0796 SMB Ghost 整数溢出漏洞
+- https://jcxp.github.io/2020/03/31/CVE-2020-0796-SMB%E6%BC%8F%E6%B4%9E%E5%88%86%E6%9E%90/
+- https://github.com/danigargu/CVE-2020-0796/blob/master/cve-2020-0796-local/exploit.cpp
+- https://paper.seebug.org/1168/
+- https://blog.ycdxsb.cn/6ba048bc.html
+
 ### Windows 分析工具
 - 【accesschk】
   - [download](https://docs.microsoft.com/en-us/sysinternals/downloads/accesschk)
@@ -285,6 +305,7 @@
   - [download](https://github.com/DynamoRIO/drmemory)
 
 ## Windows 渗透测试
+
 ### 攻击面分析
 - 【揭秘 Windows 减少攻击面（ASR：attack surface reduction）的细节】
   - [English Blog](https://github.com/commial/experiments/tree/master/windows-defender/ASR)
@@ -296,13 +317,19 @@
 - 【FourEye】：exe、shellcode免杀
   - [download](https://github.com/lengjibo/FourEye)
 
-### 综述
+### 渗透测试常用漏洞
 
+#### MS17-010 永恒之蓝
+- http://oddboy.cn/2017/ms17-010-python%E8%84%9A%E6%9C%ACexploit/
+- https://blackwolfsec.cc/2017/05/12/Eternalblue_ms17-010/
+- https://github.com/SEC-GO/Red-vs-Blue/blob/master/%E6%B0%B8%E6%81%92%E4%B9%8B%E8%93%9Dms17-010%E7%9A%84%E5%88%A9%E7%94%A8.md
+- https://blog.ycdxsb.cn/24e83041.html
+
+### 综述
 - 【Windows 提权总结】
   - [中文博客](https://www.cnblogs.com/-mo-/p/12718115.html) 
 
 ## Paper
-
 - 【Bugs on the Windshield: Fuzzing the Windows Kernel】：Windows kernel fuzz
   - [English Blog](https://research.checkpoint.com/2020/bugs-on-the-windshield-fuzzing-the-windows-kernel/)
   - [Paper](https://github.com/yoava333/presentations/blob/master/Fuzzing%20the%20Windows%20Kernel%20-%20OffensiveCon%202020.pdf)
