@@ -238,8 +238,6 @@
   - [中文博客](https://www.anquanke.com/post/id/85614)
 - 【关于内核漏洞的原理分析】
   - [中文博客](https://www.yuque.com/posec/public/sp9bs1)
-- 【Windows 提权总结】
-  - [中文博客](https://www.cnblogs.com/-mo-/p/12718115.html) 
 - 【Level Up! Practical Windows Privilege Escalation - Andrew Smith】
   - [Youtube](https://www.youtube.com/watch?v=PC_iMqiuIRQ)
 - 【I Got 99 Problem But a Kernel Pointer Ain’t One】
@@ -298,7 +296,13 @@
 - 【FourEye】：exe、shellcode免杀
   - [download](https://github.com/lengjibo/FourEye)
 
+### 综述
+
+- 【Windows 提权总结】
+  - [中文博客](https://www.cnblogs.com/-mo-/p/12718115.html) 
+
 ## Paper
+
 - 【Bugs on the Windshield: Fuzzing the Windows Kernel】：Windows kernel fuzz
   - [English Blog](https://research.checkpoint.com/2020/bugs-on-the-windshield-fuzzing-the-windows-kernel/)
   - [Paper](https://github.com/yoava333/presentations/blob/master/Fuzzing%20the%20Windows%20Kernel%20-%20OffensiveCon%202020.pdf)
