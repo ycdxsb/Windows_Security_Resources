@@ -359,3 +359,4 @@
 - https://github.com/sailay1996/awesome_windows_logical_bugs
 - https://github.com/topics/windows-privilege-escalation
 - http://www.fuzzysecurity.com
+- https://021w.github.io/
