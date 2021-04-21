@@ -1,6 +1,7 @@
 # Windows_Kernel_Resources
 
 > 在学习Windows kernel时搜集到的资源列表
+
 - [Windows_Kernel_Resources](#windows_kernel_resources)
   - [Windows基础知识](#windows基础知识)
     - [Windows相关书籍](#windows相关书籍)
@@ -31,6 +32,7 @@
   - [Windows 渗透测试](#windows-渗透测试)
     - [攻击面分析](#攻击面分析)
     - [渗透测试工具](#渗透测试工具)
+    - [本地提权工具](#本地提权工具)
     - [渗透测试常用漏洞](#渗透测试常用漏洞)
       - [MS17-010 永恒之蓝](#ms17-010-永恒之蓝)
     - [综述](#综述-2)
@@ -317,6 +319,12 @@
 - 【FourEye】：exe、shellcode免杀
   - [download](https://github.com/lengjibo/FourEye)
 
+### 本地提权工具
+- 【Metasploit Windows最全的漏洞利用列表】
+  - [English Blog](https://www.infosecmatter.com/list-of-metasploit-windows-exploits-detailed-spreadsheet/)
+- 【Perfusion】：利用RpcEptMapper注册表项权限漏洞（Windows 7 / 2088R2 / 8/2012）
+  - [download](https://github.com/itm4n/Perfusion)
+
 ### 渗透测试常用漏洞
 
 #### MS17-010 永恒之蓝
@@ -328,18 +336,18 @@
 ### 综述
 - 【Windows 提权总结】
   - [中文博客](https://www.cnblogs.com/-mo-/p/12718115.html) 
+- 【Windows渗透基础大全】
+  - [中文博客](https://www.anquanke.com/post/id/236522)
 
 ## Paper
 - 【Bugs on the Windshield: Fuzzing the Windows Kernel】：Windows kernel fuzz
   - [English Blog](https://research.checkpoint.com/2020/bugs-on-the-windshield-fuzzing-the-windows-kernel/)
   - [Paper](https://github.com/yoava333/presentations/blob/master/Fuzzing%20the%20Windows%20Kernel%20-%20OffensiveCon%202020.pdf)
 - 【NTFUZZ: Enabling Type-Aware Kernel Fuzzing on Windows with Static Binary Analysis(S& P 2021)】：Windows kernel Fuzz
-
 - 【Meltdown: Reading Kernel Memory from User Space】
   - [Paper](https://www.usenix.org/system/files/conference/usenixsecurity18/sec18-lipp.pdf)
 
 ## 综合性资源
-
 - https://labs.f-secure.com
 - https://3gstudent.github.io/3gstudent.github.io:有很多从渗透测试角度审视的Windows下提权方法
 - https://github.com/3gstudent/Pentest-and-Development-Tips:列举了Windows下渗透测试的Tips
