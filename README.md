@@ -26,8 +26,8 @@
     - [Windows 补丁](#windows-补丁)
     - [Windows 漏洞集合](#windows-漏洞集合)
     - [CVE漏洞分析](#cve漏洞分析)
-      - [CVE-2020-0787 BITS任意文件移动漏洞](#cve-2020-0787-bits任意文件移动漏洞)
       - [CVE-2020-0796 SMB Ghost 整数溢出漏洞](#cve-2020-0796-smb-ghost-整数溢出漏洞)
+      - [CVE-2020-0787 BITS任意文件移动漏洞](#cve-2020-0787-bits任意文件移动漏洞)
     - [Windows 分析工具](#windows-分析工具)
   - [Windows 渗透测试](#windows-渗透测试)
     - [攻击面分析](#攻击面分析)
@@ -52,14 +52,14 @@
   - [download](https://github.com/zhuhuibeishadiao/ntoskrnl)
 - 【ReactOS：A free Windows-compatible Operating System】
   - [download](https://github.com/reactos/reactos)
-- 【Windows内核泄露源码的】
+- 【泄露的Windows内核源码】
   - [download](https://github.com/cryptoAlgorithm/nt5src)
   - [download](https://github.com/travismills82/nt5src)
 
 ### Windows镜像下载
 - https://msdn.itellyou.cn/
 - https://next.itellyou.cn/
-- https://en.wikipedia.org/wiki/Windows_10_version_history：Win10版本关系
+- Win10版本关系：https://en.wikipedia.org/wiki/Windows_10_version_history
 
 ## Windows 内核漏洞利用技术
 ### 内核利用基础知识
@@ -273,6 +273,12 @@
 
 ### CVE漏洞分析
 
+#### CVE-2020-0796 SMB Ghost 整数溢出漏洞
+- https://jcxp.github.io/2020/03/31/CVE-2020-0796-SMB%E6%BC%8F%E6%B4%9E%E5%88%86%E6%9E%90/
+- https://github.com/danigargu/CVE-2020-0796/blob/master/cve-2020-0796-local/exploit.cpp
+- https://paper.seebug.org/1168/
+- https://blog.ycdxsb.cn/6ba048bc.html
+
 #### CVE-2020-0787 BITS任意文件移动漏洞
 - https://docs.microsoft.com/en-us/windows/win32/bits/background-intelligent-transfer-service-portal
 - https://xz.aliyun.com/t/7935
@@ -281,12 +287,6 @@
 - https://github.com/cbwang505/CVE-2020-0787-EXP-ALL-WINDOWS-VERSION
 - https://packetstormsecurity.com/files/158056/Background-Intelligent-Transfer-Service-Privilege-Escalation.html
 - https://blog.ycdxsb.cn/57177eae.html
-
-#### CVE-2020-0796 SMB Ghost 整数溢出漏洞
-- https://jcxp.github.io/2020/03/31/CVE-2020-0796-SMB%E6%BC%8F%E6%B4%9E%E5%88%86%E6%9E%90/
-- https://github.com/danigargu/CVE-2020-0796/blob/master/cve-2020-0796-local/exploit.cpp
-- https://paper.seebug.org/1168/
-- https://blog.ycdxsb.cn/6ba048bc.html
 
 ### Windows 分析工具
 - 【accesschk】
