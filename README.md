@@ -145,7 +145,7 @@
   - [Paper](https://github.com/hatRiot/token-priv/blob/master/abusing_token_eop_1.0.txt)
   - [Code](https://github.com/hatRiot/token-priv)
 - 【windows-privileges】
-  - [English pdf][https://speakerdeck.com/fr0gger/windows-privileges]
+  - [English pdf](https://speakerdeck.com/fr0gger/windows-privileges)
 - 【Priv2Admin：在 Windows 中利用漏洞提权】
   - [download](https://github.com/gtworek/Priv2Admin)
 - 【Potato家族本地提权细节】
@@ -241,6 +241,8 @@
   - [Code](https://github.com/sam-b/windows_kernel_address_leaks)
 - 【通过内核地址保护措施，回顾Windows安全加固技术】
   - [中文博客](https://www.anquanke.com/post/id/85614)
+- 【Windows Security Hardening Through Kernel Address Protection】
+  - [English pdf](https://j00ru.vexillium.org/papers/2011/address_protection.pdf)
 - 【关于内核漏洞的原理分析】
   - [中文博客](https://www.yuque.com/posec/public/sp9bs1)
 - 【Level Up! Practical Windows Privilege Escalation - Andrew Smith】
@@ -253,6 +255,8 @@
   - [English pdf](https://labs.f-secure.com/assets/BlogFiles/mwri-steelcon-2017-samdb-a-window-into-ring0.pdf)
 - 【Easy local Windows Kernel exploitation】
   - [English pdf](https://paper.bobylive.com/Meeting_Papers/BlackHat/USA-2012/BH_US_12_Cerrudo_Windows_Kernel_WP.pdf)
+- 【20-Han-Discovery-20-Yeas-Old-Vulnerabilities-In-Modern-Windows-Kernel】
+  - [English pdf](https://github.com/singularseclab/Slides/blob/main/2020/eu-20-Han-Discovery-20-Yeas-Old-Vulnerabilities-In-Modern-Windows-Kernel.pdf)
 
 ## Windows 漏洞分析
 ### Windows 补丁
