@@ -60,8 +60,47 @@
 - https://msdn.itellyou.cn/
 - https://next.itellyou.cn/
 - Win10版本关系：https://en.wikipedia.org/wiki/Windows_10_version_history
+- Win 7 sp1
+  - `ed2k://|file|cn_windows_7_professional_with_sp1_vl_build_x64_dvd_u_677816.iso|3266004992|5A52F4CCEFA71797D58389B397038B2F|/`
+  - `ed2k://|file|cn_windows_7_professional_with_sp1_vl_build_x86_dvd_u_677939.iso|2502909952|935E5B4B754527BE3C238FA6ABDD9B86|/`
+- Win8
+  - `ed2k://|file|cn_windows_8_x64_dvd_915407.iso|3652950016|5C7F8C212BD3A1827866563773A431C2|/`
+  - `ed2k://|file|cn_windows_8_x86_dvd_915414.iso|2679801856|9AF10141BFD61BC66D9D6459758D7749|/`
+- Win10 1507
+  - `ed2k://|file|cn_windows_10_education_x64_dvd_6847843.iso|4159854592|50A2126871A73D48FAE49D7D928D5343|/`
+  - `ed2k://|file|cn_windows_10_education_x86_dvd_6847858.iso|3097344000|E65D0B95FC75EC17FA6E72DC7433B46F|/`
+- Win10 1511
+  - `ed2k://|file|cn_windows_10_education_version_1511_x64_dvd_7223792.iso|4051984384|C02180B4599239E5F7B9A7FE18B1C89E|/`
+  - `ed2k://|file|cn_windows_10_education_version_1511_x86_dvd_7223795.iso|3057567744|3A9BE18EEFCE9A31B6C93AA710DE5B49|/`
+- Win10 1607
+  - `ed2k://|file|cn_windows_10_education_version_1607_updated_jul_2016_x64_dvd_9056220.iso|4150953984|AD0737D5F182082C37E6D1DB7CCDBB77|/`
+  - `ed2k://|file|cn_windows_10_education_version_1607_updated_jul_2016_x86_dvd_9056381.iso|3103516672|BA95618BB3D14C0B91A7D6D2518DCCFC|/`
+- Win10 1703
+  - `ed2k://|file|cn_windows_10_education_version_1703_updated_march_2017_x64_dvd_10194187.iso|4470315008|BA9D2AB8865B80C2227E6E08BB2DD2AE|/`
+  - `ed2k://|file|cn_windows_10_education_version_1703_updated_march_2017_x86_dvd_10189568.iso|3401973760|5DD08371AF9B6E953F879E574D593607|/`
+- Win10 1709
+  - `ed2k://|file|cn_windows_10_multi-edition_version_1709_updated_sept_2017_x64_dvd_100090804.iso|4740610048|37051C54894776826823DAEBDD03F1DC|/`
+  - `ed2k://|file|cn_windows_10_multi-edition_version_1709_updated_sept_2017_x86_dvd_100090805.iso|3551899648|6C24A796B66CDA6D909508A16C74B406|/`
+- Win10 1803
+  - `ed2k://|file|cn_windows_10_consumer_editions_version_1803_updated_march_2018_x64_dvd_12063766.iso|4714162176|FB8C05DE594CD7E58D88993652DD2102|/`
+  - `ed2k://|file|cn_windows_10_consumer_editions_version_1803_updated_march_2018_x86_dvd_12063452.iso|3480692736|0EC3C40EF13D772798209981F18B6A5D|/`
+- Win10 1809
+  - `ed2k://|file|cn_windows_10_consumer_edition_version_1809_updated_sept_2018_x64_dvd_f7b9c8a9.iso|5085956096|226AB51B290C3C0393A6A17096CB7497|/`
+  - `ed2k://|file|cn_windows_10_consumer_edition_version_1809_updated_sept_2018_x86_dvd_8c32ac6a.iso|3709065216|645A85A963F007C58B67A4FB32DE0925|/`
+- Win10 1903
+  - `ed2k://|file|cn_windows_10_consumer_editions_version_1903_x64_dvd_8f05241d.iso|4905476096|F28FDC23DA34D55BA466BFD6E91DD311|/`
+  - `ed2k://|file|cn_windows_10_consumer_editions_version_1903_x86_dvd_44b77216.iso|3557466112|926D3E6D2503D0E8CB4C8599C8DEC58F|/`
+- Win10 1909
+  - `ed2k://|file|cn_windows_10_consumer_editions_version_1909_x64_dvd_76365bf8.iso|5381154816|6A56DE112B164EC054D1104C53F8F10B|/`
+  - `ed2k://|file|cn_windows_10_consumer_editions_version_1909_x86_dvd_08dd0d3c.iso|3859558400|40991568D016CCBAEE1E67CD38FAABE8|/`
+- Win10 2004
+  - `ed2k://|file|cn_windows_10_consumer_editions_version_2004_updated_sep_2020_x64_dvd_049d70ee.iso|5424910336|9100F2CD41FED19B3314FFCF182DF026|/`
+  - `ed2k://|file|cn_windows_10_consumer_editions_version_2004_updated_sep_2020_x86_dvd_8a8fe8c0.iso|3893041152|B6C95CA453EE875C0C4A6F19125FC5D2|/`
+
+
 
 ## Windows 内核漏洞利用技术
+
 ### 内核利用基础知识
 - Windows架构设计
   - 【Windows架构设计】
@@ -278,10 +317,15 @@
 ### CVE漏洞分析
 
 #### CVE-2020-0796 SMB Ghost 整数溢出漏洞
-- https://jcxp.github.io/2020/03/31/CVE-2020-0796-SMB%E6%BC%8F%E6%B4%9E%E5%88%86%E6%9E%90/
-- https://github.com/danigargu/CVE-2020-0796/blob/master/cve-2020-0796-local/exploit.cpp
-- https://paper.seebug.org/1168/
-- https://blog.ycdxsb.cn/6ba048bc.html
+
+**影响版本**：v1903、v1909
+
+- **Analyse**
+  - https://jcxp.github.io/2020/03/31/CVE-2020-0796-SMB%E6%BC%8F%E6%B4%9E%E5%88%86%E6%9E%90/
+  - https://paper.seebug.org/1168/
+  - https://blog.ycdxsb.cn/6ba048bc.html
+- **Exp**: v1903/v1909成功
+  -  https://github.com/danigargu/CVE-2020-0796/blob/master/cve-2020-0796-local/exploit.cpp
 
 #### CVE-2020-0787 BITS任意文件移动漏洞
 - https://docs.microsoft.com/en-us/windows/win32/bits/background-intelligent-transfer-service-portal
