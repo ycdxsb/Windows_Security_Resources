@@ -48,8 +48,6 @@
   dt nt!_PEB xxxx GdiSharedHandleTable
   ```
 
-  
-
 - 去除无效输出
 
   ```
@@ -59,7 +57,9 @@
 
 - 列出模块：lm m HEVD
 
-- 
+- 查看pool相关信息` dt nt!_POOL_HEADER`
+
+- 查看对象信息`dt nt!_OBJECT_HEADER_QUOTA_INFO`、`dt nt!_OBJECT_HEADER`
 
 
 

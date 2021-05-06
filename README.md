@@ -163,6 +163,10 @@
 - 【HEVD ArbitrayWrite BitMap】:
   - [bitmap 任意地址写漏洞利用](https://50u1w4y.github.io/site/HEVD/bitmap)
   - [Windows Kernel Exploit Part 5](https://paper.seebug.org/876/)
+- 【HEVD BufferOverflow NonPagedPool】
+  - [HEVD 非换页池溢出](https://50u1w4y.github.io/site/HEVD/nonPagedpooloverflow)
+  - [HEVD内核漏洞学习(4)池溢出 ](https://bbs.pediy.com/thread-263097.htm)
+  - [Windows Kernel Exploitation Tutorial Part 4: Pool Feng-Shui –> Pool Overflow](https://rootkits.xyz/blog/2017/11/kernel-pool-overflow/)
 - 【Writeup综合】
   - [www漏洞从win7-win10](https://thunderjie.github.io/2019/08/19/www%E6%BC%8F%E6%B4%9E%E4%BB%8Ewin7-win10/)
   - [thunderjie 的 writeup](https://thunderjie.github.io/2019/06/28/Windows-Kernel-Exploit/)
@@ -296,6 +300,8 @@
   - [English pdf](https://paper.bobylive.com/Meeting_Papers/BlackHat/USA-2012/BH_US_12_Cerrudo_Windows_Kernel_WP.pdf)
 - 【20-Han-Discovery-20-Yeas-Old-Vulnerabilities-In-Modern-Windows-Kernel】
   - [English pdf](https://github.com/singularseclab/Slides/blob/main/2020/eu-20-Han-Discovery-20-Yeas-Old-Vulnerabilities-In-Modern-Windows-Kernel.pdf)
+- 【内核漏洞攻防】
+  - [中文博客](https://zhuanlan.zhihu.com/p/364188890)
 
 ## Windows 漏洞分析
 ### Windows 补丁
@@ -317,9 +323,7 @@
 ### CVE漏洞分析
 
 #### CVE-2020-0796 SMB Ghost 整数溢出漏洞
-
 **影响版本**：v1903、v1909
-
 - **Analyse**
   - https://jcxp.github.io/2020/03/31/CVE-2020-0796-SMB%E6%BC%8F%E6%B4%9E%E5%88%86%E6%9E%90/
   - https://paper.seebug.org/1168/
