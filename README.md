@@ -111,6 +111,8 @@
 - Windows相关结构体
   - 【terminus】：很好的Windows结构搜索网页
     - [page link](http://terminus.rewolf.pl/terminus/)
+  - 【深入研究 Windows PEB】
+    - [English Blog](https://mohamed-fakroud.gitbook.io/t3nb3w/peb)
   - 【关键的windows内核数据结构一览(上)】
     - [中文博客](https://r00tk1ts.github.io/2018/01/08/%E5%85%B3%E9%94%AE%E7%9A%84Windows%E5%86%85%E6%A0%B8%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%80%E8%A7%88%EF%BC%88%E4%B8%8A%EF%BC%89/)
   - 【关键的windows内核数据结构一览(下)】
@@ -364,6 +366,14 @@
 - 【揭秘 Windows 减少攻击面（ASR：attack surface reduction）的细节】
   - [English Blog](https://github.com/commial/experiments/tree/master/windows-defender/ASR)
 ### 渗透测试工具
+
+- 【Sysmon】:
+  - [download](https://docs.microsoft.com/en-us/sysinternals/downloads/sysmon)
+  - [使用Sysmon工具分析已知的DLL劫持和命名管道令牌模拟攻击测试](https://labs.jumpsec.com/detecting-known-dll-hijacking-and-named-pipe-token-impersonation-attacks-with-sysmon/)
+
+- 【PrivescCheck】：Windows 提权攻击面分析工具，来自itm4n
+  - [download](https://github.com/itm4n/PrivescCheck)
+
 - 【WADComs】：一个CheatSheet工具，包含精选的攻击性安全工具及其各自的命令列表
   - [download](https://github.com/WADComs/WADComs.github.io)
 - 【openark】：一款Windows平台上的开源Ark工具. Ark是Anti-Rootkit（对抗恶意程序）的简写, OpenArk目标成为逆向工程师、编程人员的工具，同时也能为那些希望清理恶意软件的用户服务
@@ -399,7 +409,20 @@
 - 【Meltdown: Reading Kernel Memory from User Space】
   - [Paper](https://www.usenix.org/system/files/conference/usenixsecurity18/sec18-lipp.pdf)
 
+## Talk
+
+- 【The Rise of Potatoes Privilege Escalations in Windows Services】
+  - [PDF](http://i.blackhat.com/asia-21/Thursday-Handouts/as21-Cocomazzi-The-Rise-of-Potatoes-Privilege-Escalations-in-Windows-Services.pdf)
+
+## Misc
+
+-  【关于深入理解 Windows 的一些逆向代码笔记】
+  - [download](https://github.com/vxcute/WindowsReversed)
+
+
+
 ## 综合性资源
+
 - https://labs.f-secure.com
 - https://3gstudent.github.io/3gstudent.github.io:有很多从渗透测试角度审视的Windows下提权方法
 - https://github.com/3gstudent/Pentest-and-Development-Tips:列举了Windows下渗透测试的Tips
@@ -412,3 +435,6 @@
 - https://github.com/topics/windows-privilege-escalation
 - http://www.fuzzysecurity.com
 - https://021w.github.io/
+
+
+
