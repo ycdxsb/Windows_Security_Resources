@@ -1,7 +1,6 @@
 # Windows_Kernel_Resources
 
 > 在学习Windows kernel时搜集到的资源列表
-
 - [Windows_Kernel_Resources](#windows_kernel_resources)
   - [Windows基础知识](#windows基础知识)
     - [Windows相关书籍](#windows相关书籍)
@@ -26,8 +25,10 @@
     - [Windows 补丁](#windows-补丁)
     - [Windows 漏洞集合](#windows-漏洞集合)
     - [CVE漏洞分析](#cve漏洞分析)
+      - [CVE-2020-1054 堆越界读写](#cve-2020-1054-堆越界读写)
       - [CVE-2020-0796 SMB Ghost 整数溢出漏洞](#cve-2020-0796-smb-ghost-整数溢出漏洞)
       - [CVE-2020-0787 BITS任意文件移动漏洞](#cve-2020-0787-bits任意文件移动漏洞)
+      - [MS16-098 堆越界写](#ms16-098-堆越界写)
     - [Windows 分析工具](#windows-分析工具)
   - [Windows 渗透测试](#windows-渗透测试)
     - [攻击面分析](#攻击面分析)
@@ -37,6 +38,8 @@
       - [MS17-010 永恒之蓝](#ms17-010-永恒之蓝)
     - [综述](#综述-2)
   - [Paper](#paper)
+  - [Talk](#talk)
+  - [Misc](#misc)
   - [综合性资源](#综合性资源)
 ## Windows基础知识
 
@@ -324,6 +327,12 @@
 
 ### CVE漏洞分析
 
+#### CVE-2020-1054 堆越界读写
+
+- https://www.anquanke.com/post/id/209329
+- https://0xeb-bp.com/blog/2020/06/15/cve-2020-1054-analysis.html
+- https://bbs.pediy.com/thread-260884.htm
+
 #### CVE-2020-0796 SMB Ghost 整数溢出漏洞
 **影响版本**：v1903、v1909
 - **Analyse**
@@ -341,6 +350,14 @@
 - https://github.com/cbwang505/CVE-2020-0787-EXP-ALL-WINDOWS-VERSION
 - https://packetstormsecurity.com/files/158056/Background-Intelligent-Transfer-Service-Privilege-Escalation.html
 - https://blog.ycdxsb.cn/57177eae.html
+
+#### MS16-098 堆越界写
+
+- http://repwn.com/archives/26/
+- https://sensepost.com/blog/2017/exploiting-ms16-098-rgnobj-integer-overflow-on-windows-8.1-x64-bit-by-abusing-gdi-objects/
+- https://xz.aliyun.com/t/2919
+- https://security.tencent.com/index.php/blog/msg/117
+- https://www.anquanke.com/post/id/85302
 
 ### Windows 分析工具
 - 【accesschk】
@@ -370,10 +387,8 @@
 - 【Sysmon】:
   - [download](https://docs.microsoft.com/en-us/sysinternals/downloads/sysmon)
   - [使用Sysmon工具分析已知的DLL劫持和命名管道令牌模拟攻击测试](https://labs.jumpsec.com/detecting-known-dll-hijacking-and-named-pipe-token-impersonation-attacks-with-sysmon/)
-
 - 【PrivescCheck】：Windows 提权攻击面分析工具，来自itm4n
   - [download](https://github.com/itm4n/PrivescCheck)
-
 - 【WADComs】：一个CheatSheet工具，包含精选的攻击性安全工具及其各自的命令列表
   - [download](https://github.com/WADComs/WADComs.github.io)
 - 【openark】：一款Windows平台上的开源Ark工具. Ark是Anti-Rootkit（对抗恶意程序）的简写, OpenArk目标成为逆向工程师、编程人员的工具，同时也能为那些希望清理恶意软件的用户服务
@@ -416,10 +431,10 @@
 
 ## Misc
 
--  【关于深入理解 Windows 的一些逆向代码笔记】
+- 【关于深入理解 Windows 的一些逆向代码笔记】
   - [download](https://github.com/vxcute/WindowsReversed)
-
-
+- 【利用 Windows Defender ASR 规则的漏洞执行 Shellcode】
+  - [Github](https://github.com/optiv/Dent)
 
 ## 综合性资源
 
