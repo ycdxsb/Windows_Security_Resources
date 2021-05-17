@@ -316,6 +316,8 @@
   -  [English Blog](https://wumb0.in/extracting-and-diffing-ms-patches-in-2020.html)
   -  [PatchExtract.ps1](https://gist.github.com/wumb0/306f97dc8376c6f53b9f9865f60b4fb5#file-patchextract-ps1)
   -  [delta_patch.py](https://gist.github.com/wumb0/9542469e3915953f7ae02d63998d2553#file-delta_patch-py)
+- 【Bindiff】：二进制差异分析工具
+  - [download](https://www.zynamics.com/bindiff.html)
 
 ### Windows 漏洞集合
 - https://github.com/SecWiki/windows-kernel-exploits
