@@ -309,11 +309,13 @@
   - [中文博客](https://zhuanlan.zhihu.com/p/364188890)
 
 ## Windows 漏洞分析
-### Windows 补丁
-- https://msrc.microsoft.com/update-guide/：官方KB对应补丁信息
-- https://bugs.hacking8.com/tiquan/：根据KB补丁号或者systeminfo查找对应的exp
+### Windows 补丁分析
+- https://msrc.microsoft.com/update-guide：官方KB对应补丁信息
+- https://bugs.hacking8.com/tiquan：根据KB补丁号或者systeminfo查找对应的exp
 - 【Extracting and Diffing Windows Patches in 2020】： 通过Windows更新提取和分析补丁（含代码）
   -  [English Blog](https://wumb0.in/extracting-and-diffing-ms-patches-in-2020.html)
+  -  [PatchExtract.ps1](https://gist.github.com/wumb0/306f97dc8376c6f53b9f9865f60b4fb5#file-patchextract-ps1)
+  -  [delta_patch.py](https://gist.github.com/wumb0/9542469e3915953f7ae02d63998d2553#file-delta_patch-py)
 
 ### Windows 漏洞集合
 - https://github.com/SecWiki/windows-kernel-exploits
