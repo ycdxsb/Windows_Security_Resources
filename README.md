@@ -307,6 +307,8 @@
   - [English pdf](https://github.com/singularseclab/Slides/blob/main/2020/eu-20-Han-Discovery-20-Yeas-Old-Vulnerabilities-In-Modern-Windows-Kernel.pdf)
 - 【内核漏洞攻防】
   - [中文博客](https://zhuanlan.zhihu.com/p/364188890)
+- 【基于用户模式回调函数的内核漏洞分析、利用与防范】
+  - [中文博客](https://translation-zh-cn.readthedocs.io/zh_CN/latest/)
 
 ## Windows 漏洞分析
 ### Windows 补丁分析
