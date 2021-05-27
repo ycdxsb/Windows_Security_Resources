@@ -21,14 +21,18 @@
     - [保护绕过](#保护绕过)
     - [Payload](#payload)
     - [综述](#综述-1)
+  - [Windows 服务漏洞](#windows-服务漏洞)
+    - [任意文件移动/dll劫持](#任意文件移动dll劫持)
+    - [分析工具](#分析工具)
   - [Windows 漏洞分析](#windows-漏洞分析)
-    - [Windows 补丁](#windows-补丁)
+    - [Windows 补丁分析](#windows-补丁分析)
     - [Windows 漏洞集合](#windows-漏洞集合)
     - [CVE漏洞分析](#cve漏洞分析)
       - [CVE-2020-1054 堆越界读写](#cve-2020-1054-堆越界读写)
       - [CVE-2020-0796 SMB Ghost 整数溢出漏洞](#cve-2020-0796-smb-ghost-整数溢出漏洞)
       - [CVE-2020-0787 BITS任意文件移动漏洞](#cve-2020-0787-bits任意文件移动漏洞)
       - [MS16-098 堆越界写](#ms16-098-堆越界写)
+      - [MS15-010 UAF](#ms15-010-uaf)
     - [Windows 分析工具](#windows-分析工具)
   - [Windows 渗透测试](#windows-渗透测试)
     - [攻击面分析](#攻击面分析)
@@ -55,9 +59,11 @@
   - [download](https://github.com/zhuhuibeishadiao/ntoskrnl)
 - 【ReactOS：A free Windows-compatible Operating System】
   - [download](https://github.com/reactos/reactos)
-- 【泄露的Windows内核源码】
+- 【泄露的Windows内核源码 NT5】
   - [download](https://github.com/cryptoAlgorithm/nt5src)
   - [download](https://github.com/travismills82/nt5src)
+- 【泄露的windows server 2003源代码】
+  - [download](https://github.com/PubDom/Windows-Server-2003)
 
 ### Windows镜像下载
 - https://msdn.itellyou.cn/
@@ -194,6 +200,8 @@
   - [Code](https://github.com/hatRiot/token-priv)
 - 【windows-privileges】
   - [English pdf](https://speakerdeck.com/fr0gger/windows-privileges)
+- 【NTLM-RELAY】
+  - [English Blog](https://en.hackndo.com/ntlm-relay/)
 - 【Priv2Admin：在 Windows 中利用漏洞提权】
   - [download](https://github.com/gtworek/Priv2Admin)
 - 【Potato家族本地提权细节】
@@ -310,7 +318,34 @@
 - 【基于用户模式回调函数的内核漏洞分析、利用与防范】
   - [中文博客](https://translation-zh-cn.readthedocs.io/zh_CN/latest/)
 
+## Windows 服务漏洞
+
+### 任意文件移动/dll劫持
+
+- 【An introduction to privileged file operation abuse on Windows】
+  - [English Blog](https://offsec.almond.consulting/intro-to-file-operation-abuse-on-Windows.html)
+  - [symboliclink-testing-tools](https://github.com/googleprojectzero/symboliclink-testing-tools)
+  - [NtApiDotNet](https://github.com/googleprojectzero/sandbox-attacksurface-analysis-tools/tree/master/NtApiDotNet)
+
+### 分析工具
+
+- 【accesschk】
+  - [download](https://docs.microsoft.com/en-us/sysinternals/downloads/accesschk)
+- 【oleview】
+  - [download](https://github.com/tyranid/oleviewdotnet)
+- 【process monitor】
+  - [download](https://docs.microsoft.com/en-us/sysinternals/downloads/procmon)
+- 【Windows-Kernel-Explorer】
+  - [download](https://github.com/AxtMueller/Windows-Kernel-Explorer/)
+- 【sandbox-attacksurface-analysis-tools】
+  - [download](https://github.com/googleprojectzero/sandbox-attacksurface-analysis-tools)
+- 【SystemExplorer】
+  - [download](https://github.com/zodiacon/SystemExplorer)
+- 【ProcessHacker】
+  - [download](https://processhacker.sourceforge.io/downloads.php)
+
 ## Windows 漏洞分析
+
 ### Windows 补丁分析
 - https://msrc.microsoft.com/update-guide：官方KB对应补丁信息
 - https://bugs.hacking8.com/tiquan：根据KB补丁号或者systeminfo查找对应的exp
@@ -365,21 +400,19 @@
 - https://security.tencent.com/index.php/blog/msg/117
 - https://www.anquanke.com/post/id/85302
 
+#### MS15-010 UAF
+
+- https://paper.seebug.org/1439/
+- https://paper.seebug.org/873/
+- https://xz.aliyun.com/t/4549
+- https://xz.aliyun.com/t/8984
+- https://0x3f97.github.io/exploit/2018/11/09/windows-kernel-exploit-uaf-cve-2015-0057/
+- https://www.blackhat.com/docs/asia-16/materials/asia-16-Wang-A-New-CVE-2015-0057-Exploit-Technology-wp.pdf
+- https://research.nccgroup.com/wp-content/uploads/2020/12/Exploiting-CVE-2015.pdf
+- https://github.com/0x3f97/windows-kernel-exploit/blob/master/cve-2015-0057/poc/main.cpp
+
 ### Windows 分析工具
-- 【accesschk】
-  - [download](https://docs.microsoft.com/en-us/sysinternals/downloads/accesschk)
-- 【oleview】
-  - [download](https://github.com/tyranid/oleviewdotnet)
-- 【process monitor】
-  - [download](https://docs.microsoft.com/en-us/sysinternals/downloads/procmon)
-- 【Windows-Kernel-Explorer】
-  - [download](https://github.com/AxtMueller/Windows-Kernel-Explorer/)
-- 【sandbox-attacksurface-analysis-tools】
-  - [download](https://github.com/googleprojectzero/sandbox-attacksurface-analysis-tools)
-- 【SystemExplorer】
-  - [download](https://github.com/zodiacon/SystemExplorer)
-- 【ProcessHacker】
-  - [download](https://processhacker.sourceforge.io/downloads.php)
+
 - 【drmemory】
   - [download](https://github.com/DynamoRIO/drmemory)
 
@@ -427,6 +460,7 @@
   - [English Blog](https://research.checkpoint.com/2020/bugs-on-the-windshield-fuzzing-the-windows-kernel/)
   - [Paper](https://github.com/yoava333/presentations/blob/master/Fuzzing%20the%20Windows%20Kernel%20-%20OffensiveCon%202020.pdf)
 - 【NTFUZZ: Enabling Type-Aware Kernel Fuzzing on Windows with Static Binary Analysis(S& P 2021)】：Windows kernel Fuzz
+  - [Paper](https://softsec.kaist.ac.kr/~jschoi/data/oakland2021.pdf)
 - 【Meltdown: Reading Kernel Memory from User Space】
   - [Paper](https://www.usenix.org/system/files/conference/usenixsecurity18/sec18-lipp.pdf)
 
@@ -456,6 +490,3 @@
 - https://github.com/topics/windows-privilege-escalation
 - http://www.fuzzysecurity.com
 - https://021w.github.io/
-
-
-
