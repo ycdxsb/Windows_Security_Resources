@@ -42,7 +42,7 @@
       - [MS17-010 永恒之蓝](#ms17-010-永恒之蓝)
     - [综述](#综述-2)
   - [Paper](#paper)
-  - [Talk](#talk)
+  - [Fuzz](#fuzz)
   - [Misc](#misc)
   - [综合性资源](#综合性资源)
 ## Windows基础知识
@@ -105,8 +105,6 @@
 - Win10 2004
   - `ed2k://|file|cn_windows_10_consumer_editions_version_2004_updated_sep_2020_x64_dvd_049d70ee.iso|5424910336|9100F2CD41FED19B3314FFCF182DF026|/`
   - `ed2k://|file|cn_windows_10_consumer_editions_version_2004_updated_sep_2020_x86_dvd_8a8fe8c0.iso|3893041152|B6C95CA453EE875C0C4A6F19125FC5D2|/`
-
-
 
 ## Windows 内核漏洞利用技术
 
@@ -204,6 +202,8 @@
   - [English Blog](https://en.hackndo.com/ntlm-relay/)
 - 【Priv2Admin：在 Windows 中利用漏洞提权】
   - [download](https://github.com/gtworek/Priv2Admin)
+- 【The Rise of Potatoes Privilege Escalations in Windows Services】
+  - [PDF](http://i.blackhat.com/asia-21/Thursday-Handouts/as21-Cocomazzi-The-Rise-of-Potatoes-Privilege-Escalations-in-Windows-Services.pdf)
 - 【Potato家族本地提权细节】
   - [中文博客](https://xz.aliyun.com/t/7776)
 
@@ -321,14 +321,17 @@
 ## Windows 服务漏洞
 
 ### 任意文件移动/dll劫持
-
 - 【An introduction to privileged file operation abuse on Windows】
   - [English Blog](https://offsec.almond.consulting/intro-to-file-operation-abuse-on-Windows.html)
-  - [symboliclink-testing-tools](https://github.com/googleprojectzero/symboliclink-testing-tools)
-  - [NtApiDotNet](https://github.com/googleprojectzero/sandbox-attacksurface-analysis-tools/tree/master/NtApiDotNet)
+  - [中文博客](https://www.freebuf.com/vuls/242472.html)
+- 【Windows Exploitation Tricks: Exploiting Arbitrary File Writes for Local Elevation of Privilege】
+  - [English Blog](https://googleprojectzero.blogspot.com/2018/04/windows-exploitation-tricks-exploiting.html)
+- 【symboliclink-testing-tools】
+  - [download](https://github.com/googleprojectzero/symboliclink-testing-tools)
+- 【NtApiDotNet】
+  - [download](https://github.com/googleprojectzero/sandbox-attacksurface-analysis-tools/tree/master/NtApiDotNet)
 
 ### 分析工具
-
 - 【accesschk】
   - [download](https://docs.microsoft.com/en-us/sysinternals/downloads/accesschk)
 - 【oleview】
@@ -369,7 +372,6 @@
 ### CVE漏洞分析
 
 #### CVE-2020-1054 堆越界读写
-
 - https://www.anquanke.com/post/id/209329
 - https://0xeb-bp.com/blog/2020/06/15/cve-2020-1054-analysis.html
 - https://bbs.pediy.com/thread-260884.htm
@@ -393,7 +395,6 @@
 - https://blog.ycdxsb.cn/57177eae.html
 
 #### MS16-098 堆越界写
-
 - http://repwn.com/archives/26/
 - https://sensepost.com/blog/2017/exploiting-ms16-098-rgnobj-integer-overflow-on-windows-8.1-x64-bit-by-abusing-gdi-objects/
 - https://xz.aliyun.com/t/2919
@@ -401,7 +402,6 @@
 - https://www.anquanke.com/post/id/85302
 
 #### MS15-010 UAF
-
 - https://paper.seebug.org/1439/
 - https://paper.seebug.org/873/
 - https://xz.aliyun.com/t/4549
@@ -412,7 +412,6 @@
 - https://github.com/0x3f97/windows-kernel-exploit/blob/master/cve-2015-0057/poc/main.cpp
 
 ### Windows 分析工具
-
 - 【drmemory】
   - [download](https://github.com/DynamoRIO/drmemory)
 
@@ -422,7 +421,6 @@
 - 【揭秘 Windows 减少攻击面（ASR：attack surface reduction）的细节】
   - [English Blog](https://github.com/commial/experiments/tree/master/windows-defender/ASR)
 ### 渗透测试工具
-
 - 【Sysmon】:
   - [download](https://docs.microsoft.com/en-us/sysinternals/downloads/sysmon)
   - [使用Sysmon工具分析已知的DLL劫持和命名管道令牌模拟攻击测试](https://labs.jumpsec.com/detecting-known-dll-hijacking-and-named-pipe-token-impersonation-attacks-with-sysmon/)
@@ -442,7 +440,6 @@
   - [download](https://github.com/itm4n/Perfusion)
 
 ### 渗透测试常用漏洞
-
 #### MS17-010 永恒之蓝
 - http://oddboy.cn/2017/ms17-010-python%E8%84%9A%E6%9C%ACexploit/
 - https://blackwolfsec.cc/2017/05/12/Eternalblue_ms17-010/
@@ -464,20 +461,26 @@
 - 【Meltdown: Reading Kernel Memory from User Space】
   - [Paper](https://www.usenix.org/system/files/conference/usenixsecurity18/sec18-lipp.pdf)
 
-## Talk
+## Fuzz
+- 【NtCall64】：一个windows 系统调用Fuzz工具
+  - [download](https://github.com/hfiref0x/NtCall64)
+- 【NTFuzz】：基于类型推断的windows系统调用Fuzz
+  - [Paper](https://softsec.kaist.ac.kr/~jschoi/data/oakland2021.pdf)
+- 【IOCTLFuzzer】：通过IOCTL 接口Fuzz驱动的工具
+  - [download](https://github.com/Cr4sh/ioctlfuzzer)
+- 【IOCTLBF】：通过IOCTL 接口Fuzz驱动的工具
+  - [download](https://github.com/koutto/ioctlbf)
+- 【BrokenType】：Fuzz windows 字体
+  - [download](https://github.com/googleprojectzero/BrokenType)
 
-- 【The Rise of Potatoes Privilege Escalations in Windows Services】
-  - [PDF](http://i.blackhat.com/asia-21/Thursday-Handouts/as21-Cocomazzi-The-Rise-of-Potatoes-Privilege-Escalations-in-Windows-Services.pdf)
 
 ## Misc
-
 - 【关于深入理解 Windows 的一些逆向代码笔记】
   - [download](https://github.com/vxcute/WindowsReversed)
 - 【利用 Windows Defender ASR 规则的漏洞执行 Shellcode】
   - [Github](https://github.com/optiv/Dent)
 
 ## 综合性资源
-
 - https://labs.f-secure.com
 - https://3gstudent.github.io/3gstudent.github.io:有很多从渗透测试角度审视的Windows下提权方法
 - https://github.com/3gstudent/Pentest-and-Development-Tips:列举了Windows下渗透测试的Tips
