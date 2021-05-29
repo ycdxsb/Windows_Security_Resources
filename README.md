@@ -421,7 +421,7 @@
 - 【揭秘 Windows 减少攻击面（ASR：attack surface reduction）的细节】
   - [English Blog](https://github.com/commial/experiments/tree/master/windows-defender/ASR)
 ### 渗透测试工具
-- 【Sysmon】:
+- 【Sysmon】
   - [download](https://docs.microsoft.com/en-us/sysinternals/downloads/sysmon)
   - [使用Sysmon工具分析已知的DLL劫持和命名管道令牌模拟攻击测试](https://labs.jumpsec.com/detecting-known-dll-hijacking-and-named-pipe-token-impersonation-attacks-with-sysmon/)
 - 【PrivescCheck】：Windows 提权攻击面分析工具，来自itm4n
@@ -432,6 +432,8 @@
   - [download](https://github.com/BlackINT3/OpenArk)
 - 【FourEye】：exe、shellcode免杀
   - [download](https://github.com/lengjibo/FourEye)
+- 【nishang】
+  - [download](https://github.com/samratashok/nishang)
 
 ### 本地提权工具
 - 【Metasploit Windows最全的漏洞利用列表】
@@ -460,6 +462,8 @@
   - [Paper](https://softsec.kaist.ac.kr/~jschoi/data/oakland2021.pdf)
 - 【Meltdown: Reading Kernel Memory from User Space】
   - [Paper](https://www.usenix.org/system/files/conference/usenixsecurity18/sec18-lipp.pdf)
+- 【Different is Good: Detecting the Use of Uninitialized Variables through Differential Replay(CCS 2019)】
+  - [Paper](http://malgenomeproject.org/papers/ccs19_timeplayer.pdf)
 
 ## Fuzz
 - 【NtCall64】：一个windows 系统调用Fuzz工具
