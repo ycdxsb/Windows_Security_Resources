@@ -5,6 +5,7 @@
   - [Windows基础知识](#windows基础知识)
     - [Windows相关书籍](#windows相关书籍)
     - [Windows相关源代码](#windows相关源代码)
+    - [Windows API编程](#windows-api编程)
     - [Windows镜像下载](#windows镜像下载)
   - [Windows 内核漏洞利用技术](#windows-内核漏洞利用技术)
     - [内核利用基础知识](#内核利用基础知识)
@@ -53,6 +54,7 @@
 - 《Windows内核情景分析》上下册
 - 《Windows驱动开发技术详解》
 - 《深入解析Windows操作系统(第6版)》上下册
+- 《COM技术内幕》
 
 ### Windows相关源代码
 - 【The Windows Research Kernel AKA WRK】
@@ -64,6 +66,18 @@
   - [download](https://github.com/travismills82/nt5src)
 - 【泄露的windows server 2003源代码】
   - [download](https://github.com/PubDom/Windows-Server-2003)
+
+### Windows API编程
+
+- 【pywin32】
+  - [download](https://github.com/mhammond/pywin32)
+- 【pythonforwindows】
+  - [download](https://github.com/hakril/PythonForWindows)
+
+- 【WinAPI-Tricks】
+  - [download](https://github.com/vxunderground/WinAPI-Tricks)
+- 【windows_kernel_address_leaks】
+  - [download](https://github.com/sam-b/windows_kernel_address_leaks)
 
 ### Windows镜像下载
 - https://msdn.itellyou.cn/
@@ -107,7 +121,6 @@
   - `ed2k://|file|cn_windows_10_consumer_editions_version_2004_updated_sep_2020_x86_dvd_8a8fe8c0.iso|3893041152|B6C95CA453EE875C0C4A6F19125FC5D2|/`
 
 ## Windows 内核漏洞利用技术
-
 ### 内核利用基础知识
 - Windows架构设计
   - 【Windows架构设计】
@@ -319,7 +332,6 @@
   - [中文博客](https://translation-zh-cn.readthedocs.io/zh_CN/latest/)
 
 ## Windows 服务漏洞
-
 ### 任意文件移动/dll劫持
 - 【An introduction to privileged file operation abuse on Windows】
   - [English Blog](https://offsec.almond.consulting/intro-to-file-operation-abuse-on-Windows.html)
@@ -330,6 +342,10 @@
   - [download](https://github.com/googleprojectzero/symboliclink-testing-tools)
 - 【NtApiDotNet】
   - [download](https://github.com/googleprojectzero/sandbox-attacksurface-analysis-tools/tree/master/NtApiDotNet)
+- 【Diving in to Spooler: Discovering LPE and RCE Vulnerabilities in Windows Printer】
+  - [Topic](https://www.blackhat.com/us-21/briefings/schedule/index.html?fbclid=IwAR3TWHTC1UXsa54x9VcdpG82Jdgd0QWgFYgAc5LWqUNxd6CWR6Hp9Dcpvqs#diving-in-to-spooler-discovering-lpe-and-rce-vulnerabilities-in-windows-printer-23315)
+- 【Exploiting Windows COM/WinRT Services】
+  - [Topic](https://www.blackhat.com/us-21/briefings/schedule/#exploiting-windows-comwinrt-services-23653)
 
 ### 分析工具
 - 【accesschk】
@@ -476,7 +492,6 @@
   - [download](https://github.com/koutto/ioctlbf)
 - 【BrokenType】：Fuzz windows 字体
   - [download](https://github.com/googleprojectzero/BrokenType)
-
 
 ## Misc
 - 【关于深入理解 Windows 的一些逆向代码笔记】
