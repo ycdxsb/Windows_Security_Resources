@@ -54,6 +54,13 @@
 - 《Windows内核情景分析》上下册
 - 《Windows驱动开发技术详解》
 - 《深入解析Windows操作系统(第6版)》上下册
+- 《Windows编程调试技术内幕》
+- 《Windows核心编程(第五版)》
+- 《Windows内核编程》
+- 《Windows程序设计(第六版) C#》
+- 《Windows 程序设计(第五版) C》
+- 《Windows API 程序设计参考大全》
+- 《精通Windows API-函数、接口、编程实例》
 - 《COM技术内幕》
 
 ### Windows相关源代码
@@ -73,13 +80,26 @@
   - [download](https://github.com/mhammond/pywin32)
 - 【pythonforwindows】
   - [download](https://github.com/hakril/PythonForWindows)
-
 - 【WinAPI-Tricks】
   - [download](https://github.com/vxunderground/WinAPI-Tricks)
 - 【windows_kernel_address_leaks】
   - [download](https://github.com/sam-b/windows_kernel_address_leaks)
+- 【phnt】：windows header
+  - [download](https://github.com/processhacker/phnt)
+- 【Kernel Bradge】：用 C++ 编写的 Windows 内核黑客框架、驱动程序模板、管理程序和 API
+  - [download](https://github.com/HoShiMin/Kernel-Bridge)
+- 【WinReg】
+  - [download](https://github.com/GiovanniDicanio/WinReg)
+
+### Windows 系统知识
+
+- 【svchost.exe详细解析，运行过程】
+  - [中文博客](https://www.cnblogs.com/lonelyshy/p/12465654.html)
+
+
 
 ### Windows镜像下载
+
 - https://msdn.itellyou.cn/
 - https://next.itellyou.cn/
 - Win10版本关系：https://en.wikipedia.org/wiki/Windows_10_version_history
@@ -203,7 +223,7 @@
   - https://github.com/dhn/OSEE/tree/master/Kernel_Exploitation/HEVD
   - https://github.com/ThunderJie/Windows-Kernel-Exploit
 
-### token 权限滥用
+### Token 权限滥用
 - 【windows-privilege-abuse-auditing-detection-and-defense】：windows token利用
   - [English Blog](https://medium.com/palantir/windows-privilege-abuse-auditing-detection-and-defense-3078a403d74e)
 - 【Abusing Token Privileges For EoP】：windows token权限滥用利用文章（含代码）
@@ -350,6 +370,8 @@
 ### 分析工具
 - 【accesschk】
   - [download](https://docs.microsoft.com/en-us/sysinternals/downloads/accesschk)
+- 【Winobj】
+  - [download](https://docs.microsoft.com/zh-cn/sysinternals/downloads/winobj)
 - 【oleview】
   - [download](https://github.com/tyranid/oleviewdotnet)
 - 【process monitor】
@@ -480,6 +502,7 @@
   - [Paper](https://www.usenix.org/system/files/conference/usenixsecurity18/sec18-lipp.pdf)
 - 【Different is Good: Detecting the Use of Uninitialized Variables through Differential Replay(CCS 2019)】
   - [Paper](http://malgenomeproject.org/papers/ccs19_timeplayer.pdf)
+- 【Static Detection of File Access Control Vulnerabilities on Windows System】
 
 ## Fuzz
 - 【NtCall64】：一个windows 系统调用Fuzz工具
@@ -492,6 +515,7 @@
   - [download](https://github.com/koutto/ioctlbf)
 - 【BrokenType】：Fuzz windows 字体
   - [download](https://github.com/googleprojectzero/BrokenType)
+- 【https://github.com/jackullrich/Windows-API-Fuzzer】
 
 ## Misc
 - 【关于深入理解 Windows 的一些逆向代码笔记】
