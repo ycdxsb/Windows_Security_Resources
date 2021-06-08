@@ -90,6 +90,8 @@
   - [download](https://github.com/HoShiMin/Kernel-Bridge)
 - 【WinReg】
   - [download](https://github.com/GiovanniDicanio/WinReg)
+- 【nt_wrapper】
+  - [download](https://github.com/JustasMasiulis/nt_wrapper)
 
 ### Windows 系统知识
 
