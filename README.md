@@ -92,6 +92,8 @@
   - [download](https://github.com/GiovanniDicanio/WinReg)
 - 【nt_wrapper】
   - [download](https://github.com/JustasMasiulis/nt_wrapper)
+- 【ProcMonXv2】：使用Event Tracing 监控信息，和windows系统工具的ProcMon类似
+  - [download](https://github.com/zodiacon/ProcMonXv2)
 
 ### Windows 系统知识
 
@@ -369,7 +371,13 @@
 - 【Exploiting Windows COM/WinRT Services】
   - [Topic](https://www.blackhat.com/us-21/briefings/schedule/#exploiting-windows-comwinrt-services-23653)
 
-### 分析工具
+### COM 组件安全
+
+- 【MSGraph COM组件漏洞(Fuzz)】
+  - [English Blog](https://research.checkpoint.com/2021/fuzzing-the-office-ecosystem/)
+
+### 系统分析工具
+
 - 【accesschk】
   - [download](https://docs.microsoft.com/en-us/sysinternals/downloads/accesschk)
 - 【Winobj】
@@ -378,6 +386,7 @@
   - [download](https://github.com/tyranid/oleviewdotnet)
 - 【process monitor】
   - [download](https://docs.microsoft.com/en-us/sysinternals/downloads/procmon)
+  - [procmon_parser](https://github.com/eronnen/procmon-parser)：python解析procmon的文件
 - 【Windows-Kernel-Explorer】
   - [download](https://github.com/AxtMueller/Windows-Kernel-Explorer/)
 - 【sandbox-attacksurface-analysis-tools】
@@ -538,3 +547,5 @@
 - https://github.com/topics/windows-privilege-escalation
 - http://www.fuzzysecurity.com
 - https://021w.github.io/
+- https://github.com/TCM-Course-Resources/Windows-Privilege-Escalation-Resources
+- https://github.com/alphaSeclab/windows-security
