@@ -243,6 +243,8 @@
   - [PDF](http://i.blackhat.com/asia-21/Thursday-Handouts/as21-Cocomazzi-The-Rise-of-Potatoes-Privilege-Escalations-in-Windows-Services.pdf)
 - 【Potato家族本地提权细节】
   - [中文博客](https://xz.aliyun.com/t/7776)
+- 【Potato家族本地提权】
+  - [中文博客](http://iv4n.cc/potato-family-local-priv-elevate/)
 
 ### GDI 滥用提权
 
