@@ -172,6 +172,10 @@
     - [Windows Desktop Heap](https://docs.microsoft.com/zh-cn/archive/blogs/ntdebugging/desktop-heap-overview)
 
 ### 内核调试工具
+
+- 【pdbparse】:windows pdb解析工具
+  - [download](https://github.com/moyix/pdbparse)
+
 - 【Windbg】：windows kernel调试工具
   - [download](https://docs.microsoft.com/zh-cn/windows-hardware/drivers/debugger/debugger-download-tools)
   - [getting-started-with-windows-debugging](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/getting-started-with-windows-debugging)
@@ -241,6 +245,8 @@
   - [download](https://github.com/gtworek/Priv2Admin)
 - 【The Rise of Potatoes Privilege Escalations in Windows Services】
   - [PDF](http://i.blackhat.com/asia-21/Thursday-Handouts/as21-Cocomazzi-The-Rise-of-Potatoes-Privilege-Escalations-in-Windows-Services.pdf)
+- 【Potato家族提权分析】
+  - [中文博客](https://www.geekby.site/2020/08/potato%E5%AE%B6%E6%97%8F%E6%8F%90%E6%9D%83%E5%88%86%E6%9E%90/)
 - 【Potato家族本地提权细节】
   - [中文博客](https://xz.aliyun.com/t/7776)
 - 【Potato家族本地提权】
