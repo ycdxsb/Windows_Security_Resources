@@ -6,12 +6,13 @@
     - [Windows相关书籍](#windows相关书籍)
     - [Windows相关源代码](#windows相关源代码)
     - [Windows API编程](#windows-api编程)
+    - [Windows系统知识](#windows系统知识)
     - [Windows镜像下载](#windows镜像下载)
   - [Windows 内核漏洞利用技术](#windows-内核漏洞利用技术)
     - [内核利用基础知识](#内核利用基础知识)
     - [内核调试工具](#内核调试工具)
     - [HEVD 内核利用教程](#hevd-内核利用教程)
-    - [token 权限滥用](#token-权限滥用)
+    - [Token 权限滥用](#token-权限滥用)
     - [GDI 滥用提权](#gdi-滥用提权)
       - [BitMap  RS1(v1607)前](#bitmap--rs1v1607前)
       - [Accelerator Table RS1(v1607)](#accelerator-table-rs1v1607)
@@ -19,12 +20,17 @@
       - [Palette RS3 (v1709)](#palette-rs3-v1709)
       - [综述](#综述)
     - [堆利用](#堆利用)
-    - [保护绕过](#保护绕过)
+    - [保护和绕过](#保护和绕过)
     - [Payload](#payload)
     - [综述](#综述-1)
   - [Windows 服务漏洞](#windows-服务漏洞)
     - [任意文件移动/dll劫持](#任意文件移动dll劫持)
-    - [分析工具](#分析工具)
+    - [COM 组件安全](#com-组件安全)
+    - [RPC知识](#rpc知识)
+    - [系统分析工具](#系统分析工具)
+  - [Windows域安全](#windows域安全)
+    - [域安全知识](#域安全知识)
+    - [域安全工具](#域安全工具)
   - [Windows 漏洞分析](#windows-漏洞分析)
     - [Windows 补丁分析](#windows-补丁分析)
     - [Windows 漏洞集合](#windows-漏洞集合)
@@ -36,7 +42,7 @@
       - [MS15-010 UAF](#ms15-010-uaf)
     - [Windows 分析工具](#windows-分析工具)
   - [Windows 渗透测试](#windows-渗透测试)
-    - [攻击面分析](#攻击面分析)
+    - [渗透测试知识](#渗透测试知识)
     - [渗透测试工具](#渗透测试工具)
     - [本地提权工具](#本地提权工具)
     - [渗透测试常用漏洞](#渗透测试常用漏洞)
@@ -46,8 +52,9 @@
   - [Fuzz](#fuzz)
   - [Misc](#misc)
   - [综合性资源](#综合性资源)
-## Windows基础知识
+  - [未归档](#未归档)
 
+## Windows基础知识
 ### Windows相关书籍
 - 《寒江独钓——Windows内核安全编程》
 - 《天书夜读——从汇编语言到Windows内核编程》
@@ -75,7 +82,6 @@
   - [download](https://github.com/PubDom/Windows-Server-2003)
 
 ### Windows API编程
-
 - 【pywin32】
   - [download](https://github.com/mhammond/pywin32)
 - 【pythonforwindows】
@@ -95,15 +101,14 @@
 - 【ProcMonXv2】：使用Event Tracing 监控信息，和windows系统工具的ProcMon类似
   - [download](https://github.com/zodiacon/ProcMonXv2)
 
-### Windows 系统知识
-
+### Windows系统知识
 - 【svchost.exe详细解析，运行过程】
   - [中文博客](https://www.cnblogs.com/lonelyshy/p/12465654.html)
-
-
+- 【从 mimikatz 学习 Windows 安全之访问控制模型】
+  - [第一部分](https://paper.seebug.org/1669/)
+  - [第二部分](http://paper.seebug.org/1672/)
 
 ### Windows镜像下载
-
 - https://msdn.itellyou.cn/
 - https://next.itellyou.cn/
 - Win10版本关系：https://en.wikipedia.org/wiki/Windows_10_version_history
@@ -152,7 +157,7 @@
 - Windows权限管理
   - 【浅析Windows的访问权限检查机制】
     - [中文博客](http://drops.xmd5.com/static/drops/tips-11803.html)
-- Windows相关结构体
+- Windows相关结构
   - 【terminus】：很好的Windows结构搜索网页
     - [page link](http://terminus.rewolf.pl/terminus/)
   - 【深入研究 Windows PEB】
@@ -170,12 +175,14 @@
     - [kernel Object](https://docs.microsoft.com/zh-cn/windows/win32/sysinfo/kernel-objects?redirectedfrom=MSDN)
     - [Windows Object Header](https://codemachine.com/articles/object_headers.html)
     - [Windows Desktop Heap](https://docs.microsoft.com/zh-cn/archive/blogs/ntdebugging/desktop-heap-overview)
+  - 【Peb结构及利用】
+    - [English Blog](https://malwareandstuff.com/peb-where-magic-is-stored/)
+  - 【xntsv】：一款展示windows数据结构的工具
+    - [download](https://github.com/horsicq/xntsv)
 
 ### 内核调试工具
-
 - 【pdbparse】:windows pdb解析工具
   - [download](https://github.com/moyix/pdbparse)
-
 - 【Windbg】：windows kernel调试工具
   - [download](https://docs.microsoft.com/zh-cn/windows-hardware/drivers/debugger/debugger-download-tools)
   - [getting-started-with-windows-debugging](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/getting-started-with-windows-debugging)
@@ -197,6 +204,8 @@
   - [download](https://sysprogs.com/legacy/virtualkd/)
 - 【VirtualKD-Redux】：双机调试工具，支持最新版本VMWare
   - [download](https://github.com/4d61726b/VirtualKD-Redux)
+- 【HyperDbg】：一款开源调试器，利用 Hypervisor 特性，支持用户态和内核态调试，主要为逆向分析、调试、Fuzz 设计使用
+  - [download](https://github.com/HyperDbg/HyperDbg)
 
 ### HEVD 内核利用教程
 - 【HackSysExtremeVulnerableDriver】：windows内核利用技术学习项目
@@ -251,6 +260,13 @@
   - [中文博客](https://xz.aliyun.com/t/7776)
 - 【Potato家族本地提权】
   - [中文博客](http://iv4n.cc/potato-family-local-priv-elevate/)
+- 【NamedPipePTH】
+  - [download](https://github.com/S3cur3Th1sSh1t/NamedPipePTH)
+- 【SharpImpersonation】
+  - [English Blog](https://s3cur3th1ssh1t.github.io/SharpImpersonation-Introduction/)
+  - [download](https://github.com/S3cur3Th1sSh1t/SharpImpersonation)
+- 【lowbox token permissive learning mode】：James Forshaw 对 Windows LowBox Token Permissive Learning Mode 的分析
+  - [English Blog](https://www.tiraniddo.dev/2021/09/lowbox-token-permissive-learning-mode.html)
 
 ### GDI 滥用提权
 
@@ -304,18 +320,26 @@
 - 【Windows内核池喷射的乐趣】
   - [中文博客](https://www.anquanke.com/post/id/86896)
   - [English Blog](https://theevilbit.blogspot.com/2017/09/pool-spraying-fun-part-1.html)
-- 【Windows kernel pool spraying fun - Part 1 - Determine kernel object size】
-  - [English Blog](https://theevilbit.blogspot.com/2017/09/pool-spraying-fun-part-1.html)
-- 【Windows kernel pool spraying fun - Part 2 - More objects】
-  - [English Blog](https://theevilbit.blogspot.com/2017/09/windows-kernel-pool-spraying-fun-part-2.html)
-- 【Windows kernel pool spraying fun - Part 3 - Let's make holes】
-  - [English Blog](https://theevilbit.blogspot.com/2017/09/windows-kernel-pool-spraying-fun-part-3.html)
-- 【Windows kernel pool spraying fun - Part 4 - object & pool headers, kex & putting it all together】
-  - [English Blog](https://theevilbit.blogspot.com/2017/09/windows-kernel-pool-spraying-fun-part-4.html)
+  
+- 【Windows kernel pool spraying fun】
+  - [ Part 1 - Determine kernel object size](https://theevilbit.blogspot.com/2017/09/pool-spraying-fun-part-1.html)
+  - [Part 2 - More objects](https://theevilbit.blogspot.com/2017/09/windows-kernel-pool-spraying-fun-part-2.html)
+  - [Part 3 - Let's make holes](https://theevilbit.blogspot.com/2017/09/windows-kernel-pool-spraying-fun-part-3.html)
+  - [Part 4 - object & pool headers, kex & putting it all together](https://theevilbit.blogspot.com/2017/09/windows-kernel-pool-spraying-fun-part-4.html)
 - 【Kernel Pool Exploitation on Windows 7】
-  - [English paper](https://www.exploit-db.com/docs/english/16032-kernel-pool-exploitation-on-windows-7.pdf)
+  - [English paper](https://www.exploit-db.com/docs/english/16032-kernel-pool-exploitation-on-windows-7.pdf) 
+- 【PoolViewer】：查看和转储 Win10RS5+ 转储文件的池
+  - [download](https://github.com/yardenshafir/PoolViewer)
+- 【Windows Pool OverFlow漏洞利用】
+  - [中文博客](https://vul.360.net/archives/83)
+- 【Windows-Non-Paged-Pool-Overflow-Exploitation】
+  - [English Blog](https://github.com/vp777/Windows-Non-Paged-Pool-Overflow-Exploitation)
+- 【SSTIC2020-Article-pool_overflow_exploitation_since_windows_10_19h1-bayet_fariello】：Windows 10 版本内核堆管理的细节以及 Heap Overflow 漏洞的利用
+  - [pdf](https://www.sstic.org/media/SSTIC2020/SSTIC-actes/pool_overflow_exploitation_since_windows_10_19h1/SSTIC2020-Article-pool_overflow_exploitation_since_windows_10_19h1-bayet_fariello.pdf)
 
-### 保护绕过
+### 保护和绕过
+- 【Windows Mitigation】
+  - [Github](https://github.com/nccgroup/exploit_mitigations/blob/master/windows_mitigations.md)
 - 【SMEP和SMAP绕过】
   - [中文博客](https://bbs.pediy.com/thread-261744.htm)
 - 【Windows 10 x64上令牌窃取有效载荷问题，并绕过SMEP 上】
@@ -324,6 +348,8 @@
   - [中文博客](https://www.4hou.com/posts/4YAV)
 - 【Windows SMEP Bypass U=S】
   - [English pdf](https://www.coresecurity.com/sites/default/files/2020-06/Windows%20SMEP%20bypass%20U%20equals%20S_0.pdf)
+- 【RestrictedKernelLeaks】：可以实现 Windows 10 KASLR Bypass 的 API 列表
+  - [Github](https://github.com/waleedassar/RestrictedKernelLeaks)
 
 ### Payload
 - 【Attack Detection Fundamentals 2021 Windows Lab #1：构建一个可以绕过最常见保护机制的原始 payload】
@@ -378,14 +404,28 @@
   - [Topic](https://www.blackhat.com/us-21/briefings/schedule/index.html?fbclid=IwAR3TWHTC1UXsa54x9VcdpG82Jdgd0QWgFYgAc5LWqUNxd6CWR6Hp9Dcpvqs#diving-in-to-spooler-discovering-lpe-and-rce-vulnerabilities-in-windows-printer-23315)
 - 【Exploiting Windows COM/WinRT Services】
   - [Topic](https://www.blackhat.com/us-21/briefings/schedule/#exploiting-windows-comwinrt-services-23653)
+- 【From directory deletion to SYSTEM shell】：通过任意文件删除漏洞提权
+  - [English Blog](https://secret.club/2020/04/23/directory-deletion-shell.html)
+- 【dll 劫持和应用】
+  - [中文博客](https://paper.seebug.org/1713/)
 
 ### COM 组件安全
-
+- 【COM 对象的利用与挖掘】
+  - [中文博客](http://paper.seebug.org/1624/)
 - 【MSGraph COM组件漏洞(Fuzz)】
   - [English Blog](https://research.checkpoint.com/2021/fuzzing-the-office-ecosystem/)
+- 【WFH】：用于评估 Windows 可执行程序是否存在 DLL sideloading 以及 COM 劫持漏洞
+  - [download](https://github.com/xforcered/WFH)
+
+### RPC知识
+- 【使用 RpcView 对 Windows RPC 进行模糊测试】
+  - [English Blog](https://itm4n.github.io/fuzzing-windows-rpc-rpcview/)
+- 【From RpcView to PetitPotam】
+  - [English Blog](https://itm4n.github.io/from-rpcview-to-petitpotam/)
+- 【基于 Windows 的 RPC 接口实现反弹 Shell 】
+  - [English Blog](https://sensepost.com/blog/2021/building-an-offensive-rpc-interface/)
 
 ### 系统分析工具
-
 - 【accesschk】
   - [download](https://docs.microsoft.com/en-us/sysinternals/downloads/accesschk)
 - 【Winobj】
@@ -403,9 +443,25 @@
   - [download](https://github.com/zodiacon/SystemExplorer)
 - 【ProcessHacker】
   - [download](https://processhacker.sourceforge.io/downloads.php)
+- 【PSBits】
+  - [download](https://github.com/gtworek/PSBits)
+
+## Windows域安全
+### 域安全知识
+- 【WindowsDomainAbout】：windows域安全知识
+  - [Github](https://github.com/evilAdan0s/WindowsDomainAbout)
+- 【active-directory-basics-1】：活动目录知识
+  - [English Blog]
+- 【Active Directory 渗透测试备忘单】：
+  - [English Blog](https://infosecwriteups.com/active-directory-penetration-testing-cheatsheet-5f45aa5b44ff)
+
+###  域安全工具
+- 【smartbrute】：用于Active Directory 域服务的密码喷射和暴力破解工具
+  - [download](https://github.com/ShutdownRepo/smartbrute)
+- 【adalanche】：Active Directory ACL 可视化工具
+  - [download](https://github.com/lkarlslund/adalanche)
 
 ## Windows 漏洞分析
-
 ### Windows 补丁分析
 - https://msrc.microsoft.com/update-guide：官方KB对应补丁信息
 - https://bugs.hacking8.com/tiquan：根据KB补丁号或者systeminfo查找对应的exp
@@ -415,6 +471,8 @@
   -  [delta_patch.py](https://gist.github.com/wumb0/9542469e3915953f7ae02d63998d2553#file-delta_patch-py)
 - 【Bindiff】：二进制差异分析工具
   - [download](https://www.zynamics.com/bindiff.html)
+- 【winbindex】: 用于获取windows 二进制文件的网站
+  - [download](https://github.com/m417z/winbindex)
 
 ### Windows 漏洞集合
 - https://github.com/SecWiki/windows-kernel-exploits
@@ -427,7 +485,6 @@
 - https://github.com/nomi-sec/PoC-in-GitHub
 
 ### CVE漏洞分析
-
 #### CVE-2020-1054 堆越界读写
 - https://www.anquanke.com/post/id/209329
 - https://0xeb-bp.com/blog/2020/06/15/cve-2020-1054-analysis.html
@@ -473,10 +530,11 @@
   - [download](https://github.com/DynamoRIO/drmemory)
 
 ## Windows 渗透测试
-
-### 攻击面分析
+###  渗透测试知识
 - 【揭秘 Windows 减少攻击面（ASR：attack surface reduction）的细节】
   - [English Blog](https://github.com/commial/experiments/tree/master/windows-defender/ASR)
+- 【Understanding Windows Lateral Movements】
+  - [pdf](https://attl4s.github.io/assets/pdf/Understanding_Windows_Lateral_Movements.pdf)
 ### 渗透测试工具
 - 【Sysmon】
   - [download](https://docs.microsoft.com/en-us/sysinternals/downloads/sysmon)
@@ -491,6 +549,8 @@
   - [download](https://github.com/lengjibo/FourEye)
 - 【nishang】
   - [download](https://github.com/samratashok/nishang)
+- 【windows-command-line-obfuscation】：命令行混淆
+  - [download](https://github.com/wietze/windows-command-line-obfuscation)
 
 ### 本地提权工具
 - 【Metasploit Windows最全的漏洞利用列表】
@@ -534,13 +594,29 @@
   - [download](https://github.com/koutto/ioctlbf)
 - 【BrokenType】：Fuzz windows 字体
   - [download](https://github.com/googleprojectzero/BrokenType)
-- 【https://github.com/jackullrich/Windows-API-Fuzzer】
+- 【Windows-API-Fuzzer】
+  - [download](https://github.com/jackullrich/Windows-API-Fuzzer)
+- 【KernelFuzzer】
+  - [download](https://github.com/FSecureLABS/KernelFuzzer)
+- 【kDriverFuzzer】
+  - [中文博客](https://paper.seebug.org/523/)
+  - [download](https://github.com/k0keoyo/kDriver-Fuzzer)
+- 【wtf】
+  - [download](https://github.com/0vercl0k/wtf)
+- 【对 Windows 的 RDP 客户端和服务器进行模糊测试】
+  - [English Blog](https://www.cyberark.com/resources/threat-research-blog/fuzzing-rdp-holding-the-stick-at-both-ends)
+- 【Fuzzing RDP: Holding the Stick at Both Ends】：利用 AFL Fuzz Windows RDP 协议
+  - [English Blog](https://www.cyberark.com/resources/threat-research-blog/fuzzing-rdp-holding-the-stick-at-both-ends)
+- 【kernel-fuzzer-for-xen-project】：基于 Xen 和 AFL 实现的内核 Fuzzer
+  - [download](https://github.com/intel/kernel-fuzzer-for-xen-project)
 
 ## Misc
 - 【关于深入理解 Windows 的一些逆向代码笔记】
   - [download](https://github.com/vxcute/WindowsReversed)
 - 【利用 Windows Defender ASR 规则的漏洞执行 Shellcode】
   - [Github](https://github.com/optiv/Dent)
+- 【magnumdb】：可以用来搜索一些magic number
+  - [index](https://www.magnumdb.com/)
 
 ## 综合性资源
 - https://labs.f-secure.com
@@ -557,3 +633,5 @@
 - https://021w.github.io/
 - https://github.com/TCM-Course-Resources/Windows-Privilege-Escalation-Resources
 - https://github.com/alphaSeclab/windows-security
+
+## 未归档
