@@ -320,7 +320,6 @@
 - 【Windows内核池喷射的乐趣】
   - [中文博客](https://www.anquanke.com/post/id/86896)
   - [English Blog](https://theevilbit.blogspot.com/2017/09/pool-spraying-fun-part-1.html)
-  
 - 【Windows kernel pool spraying fun】
   - [ Part 1 - Determine kernel object size](https://theevilbit.blogspot.com/2017/09/pool-spraying-fun-part-1.html)
   - [Part 2 - More objects](https://theevilbit.blogspot.com/2017/09/windows-kernel-pool-spraying-fun-part-2.html)
