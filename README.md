@@ -349,6 +349,8 @@
   - [English pdf](https://www.coresecurity.com/sites/default/files/2020-06/Windows%20SMEP%20bypass%20U%20equals%20S_0.pdf)
 - 【RestrictedKernelLeaks】：可以实现 Windows 10 KASLR Bypass 的 API 列表
   - [Github](https://github.com/waleedassar/RestrictedKernelLeaks)
+- 【KCon 2021:剑走偏锋-蓝军实战缓解措施】
+  - [中文pdf](https://github.com/knownsec/KCon/blob/master/2021/%E5%89%91%E8%B5%B0%E5%81%8F%E9%94%8B-%E8%93%9D%E5%86%9B%E5%AE%9E%E6%88%98%E7%BC%93%E8%A7%A3%E6%8E%AA%E6%96%BD.pdf)
 
 ### Payload
 - 【Attack Detection Fundamentals 2021 Windows Lab #1：构建一个可以绕过最常见保护机制的原始 payload】
@@ -608,6 +610,8 @@
   - [English Blog](https://www.cyberark.com/resources/threat-research-blog/fuzzing-rdp-holding-the-stick-at-both-ends)
 - 【kernel-fuzzer-for-xen-project】：基于 Xen 和 AFL 实现的内核 Fuzzer
   - [download](https://github.com/intel/kernel-fuzzer-for-xen-project)
+- 【KCon 2021:一枚字体crash到fuzzing】
+  - [中文pdf](https://github.com/knownsec/KCon/blob/master/2021/%E4%B8%80%E6%9E%9A%E5%AD%97%E4%BD%93crash%E5%88%B0fuzzing.pdf)
 
 ## Misc
 - 【关于深入理解 Windows 的一些逆向代码笔记】
